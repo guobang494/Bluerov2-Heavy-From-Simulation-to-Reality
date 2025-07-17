@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_thruster_manager/srv/GetThrusterCurve.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_thruster_manager/srv/GetThrusterCurve.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.lisp"
   "CMakeFiles/uuv_thruster_manager_generate_messages_lisp"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/uuv_auv_control_allocator/msg/_AUVCommand.py"
-  "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/uuv_auv_control_allocator/msg/__init__.py"
+  "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/uuv_auv_control_allocator/msg/_AUVCommand.py"
+  "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/uuv_auv_control_allocator/msg/__init__.py"
   "CMakeFiles/uuv_auv_control_allocator_generate_messages_py"
 )
 

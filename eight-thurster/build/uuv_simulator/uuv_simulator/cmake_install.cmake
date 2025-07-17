@@ -1,8 +1,8 @@
-# Install script for directory: /home/zeb/eight-thurster/src/uuv_simulator/uuv_simulator
+# Install script for directory: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_simulator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zeb/eight-thurster/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zeb/test-8/eight-thurster/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_simulator" TYPE FILE FILES "/home/zeb/eight-thurster/src/uuv_simulator/uuv_simulator/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_simulator" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_simulator/package.xml")
 endif()
 

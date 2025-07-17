@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/bluerov2_dobmpc/msg/Pose.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/bluerov2_dobmpc/msg/Reference.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/bluerov2_dobmpc/msg/Pose.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/bluerov2_dobmpc/msg/Reference.lisp"
   "CMakeFiles/bluerov2_dobmpc_generate_messages_lisp"
 )
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/zeb/eight-thurster/src/bluerov2/bluerov2_control
+# Install script for directory: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zeb/eight-thurster/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zeb/test-8/eight-thurster/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,131 +38,131 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/safe_execute_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/msg" TYPE FILE FILES
-    "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
-    "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
+    "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+    "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/srv" TYPE FILE FILES
-    "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
-    "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
+    "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
+    "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/action" TYPE FILE FILES "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/action/FollowWaypoints.action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/action" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/action/FollowWaypoints.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/msg" TYPE FILE FILES
-    "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
-    "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
-    "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
-    "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
-    "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
-    "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
-    "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+    "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
+    "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
+    "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
+    "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
+    "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
+    "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
+    "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/cmake" TYPE FILE FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_control-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/cmake" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_control-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/devel/include/bluerov2_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/devel/include/bluerov2_control")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/devel/share/roseus/ros/bluerov2_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/bluerov2_control")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/devel/share/common-lisp/ros/bluerov2_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/bluerov2_control")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/devel/share/gennodejs/ros/bluerov2_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/bluerov2_control")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/bluerov2_control" TYPE FILE FILES "/home/zeb/eight-thurster/devel/include/bluerov2_control/pid_reconfigConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/bluerov2_control" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/devel/include/bluerov2_control/pid_reconfigConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/bluerov2_control" TYPE FILE FILES "/home/zeb/eight-thurster/devel/include/bluerov2_control/marker_reconfigConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/bluerov2_control" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/devel/include/bluerov2_control/marker_reconfigConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/bluerov2_control" TYPE FILE FILES "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/bluerov2_control" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control/cfg")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/bluerov2_control" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/bluerov2_control" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/bluerov2_control/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_control.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_control.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/cmake" TYPE FILE FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_control-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/cmake" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_control-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control/cmake" TYPE FILE FILES
-    "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_controlConfig.cmake"
-    "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_controlConfig-version.cmake"
+    "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_controlConfig.cmake"
+    "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov2_controlConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control" TYPE FILE FILES "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_control" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/set_gm_current.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/set_gm_current.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/user_mav")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/user_mav")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/video")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/video")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/sitl.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/sitl.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bluerov_node.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bridge.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/bridge.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bluerov2_control" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/catkin_generated/installspace/node")
 endif()
 

@@ -2,7 +2,7 @@
 
 message(STATUS "bluerov2_control: 9 messages, 2 services")
 
-set(MSG_I_FLAGS "-Ibluerov2_control:/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg;-Ibluerov2_control:/home/zeb/eight-thurster/devel/share/bluerov2_control/msg;-Igeographic_msgs:/opt/ros/noetic/share/geographic_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Iuuid_msgs:/opt/ros/noetic/share/uuid_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ibluerov2_control:/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg;-Ibluerov2_control:/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg;-Igeographic_msgs:/opt/ros/noetic/share/geographic_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Iuuid_msgs:/opt/ros/noetic/share/uuid_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,59 +17,59 @@ add_custom_target(bluerov2_control_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" ""
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" "std_msgs/Header:std_msgs/Time:bluerov2_control/FollowWaypointsGoal:uuv_control_msgs/WaypointSet:bluerov2_control/FollowWaypointsActionResult:bluerov2_control/FollowWaypointsFeedback:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:bluerov2_control/FollowWaypointsActionFeedback:geometry_msgs/Point:bluerov2_control/FollowWaypointsResult:bluerov2_control/FollowWaypointsActionGoal:uuv_control_msgs/Waypoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" "bluerov2_control/FollowWaypointsActionFeedback:bluerov2_control/FollowWaypointsActionGoal:std_msgs/Header:std_msgs/Time:bluerov2_control/FollowWaypointsActionResult:geometry_msgs/Point:uuv_control_msgs/WaypointSet:actionlib_msgs/GoalID:bluerov2_control/FollowWaypointsGoal:uuv_control_msgs/Waypoint:bluerov2_control/FollowWaypointsFeedback:bluerov2_control/FollowWaypointsResult:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" "std_msgs/Time:std_msgs/Header:bluerov2_control/FollowWaypointsGoal:uuv_control_msgs/WaypointSet:actionlib_msgs/GoalID:geometry_msgs/Point:uuv_control_msgs/Waypoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" "std_msgs/Time:std_msgs/Header:geometry_msgs/Point:uuv_control_msgs/WaypointSet:actionlib_msgs/GoalID:bluerov2_control/FollowWaypointsGoal:uuv_control_msgs/Waypoint"
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" "bluerov2_control/FollowWaypointsResult:std_msgs/Header:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" "actionlib_msgs/GoalID:bluerov2_control/FollowWaypointsResult:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" "std_msgs/Header:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:bluerov2_control/FollowWaypointsFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" "bluerov2_control/FollowWaypointsFeedback:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" "std_msgs/Time:std_msgs/Header:uuv_control_msgs/WaypointSet:geometry_msgs/Point:uuv_control_msgs/Waypoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" "std_msgs/Time:std_msgs/Header:geometry_msgs/Point:uuv_control_msgs/WaypointSet:uuv_control_msgs/Waypoint"
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" ""
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" "geographic_msgs/GeoPoint:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" "geographic_msgs/GeoPoint:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
 add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" "bluerov2_control/ControlMode"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_control" "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" "bluerov2_control/ControlMode"
 )
 
 #
@@ -79,55 +79,55 @@ add_custom_target(_bluerov2_control_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
@@ -135,15 +135,15 @@ _generate_msg_cpp(bluerov2_control
 
 ### Generating Services
 _generate_srv_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geographic_msgs/cmake/../msg/GeoPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 _generate_srv_cpp(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_control
 )
 
@@ -159,27 +159,27 @@ add_custom_target(bluerov2_control_generate_messages_cpp
 add_dependencies(bluerov2_control_generate_messages bluerov2_control_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_cpp _bluerov2_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -192,55 +192,55 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS bluerov2_control_generate_messages_
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_eus(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
@@ -248,15 +248,15 @@ _generate_msg_eus(bluerov2_control
 
 ### Generating Services
 _generate_srv_eus(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geographic_msgs/cmake/../msg/GeoPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 _generate_srv_eus(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_control
 )
 
@@ -272,27 +272,27 @@ add_custom_target(bluerov2_control_generate_messages_eus
 add_dependencies(bluerov2_control_generate_messages bluerov2_control_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_eus _bluerov2_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -305,55 +305,55 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS bluerov2_control_generate_messages_
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
@@ -361,15 +361,15 @@ _generate_msg_lisp(bluerov2_control
 
 ### Generating Services
 _generate_srv_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geographic_msgs/cmake/../msg/GeoPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 _generate_srv_lisp(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_control
 )
 
@@ -385,27 +385,27 @@ add_custom_target(bluerov2_control_generate_messages_lisp
 add_dependencies(bluerov2_control_generate_messages bluerov2_control_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_lisp _bluerov2_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -418,55 +418,55 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS bluerov2_control_generate_messages_
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
@@ -474,15 +474,15 @@ _generate_msg_nodejs(bluerov2_control
 
 ### Generating Services
 _generate_srv_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geographic_msgs/cmake/../msg/GeoPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 _generate_srv_nodejs(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_control
 )
 
@@ -498,27 +498,27 @@ add_custom_target(bluerov2_control_generate_messages_nodejs
 add_dependencies(bluerov2_control_generate_messages bluerov2_control_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_nodejs _bluerov2_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -531,55 +531,55 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS bluerov2_control_generate_messages_
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Time.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg;/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_msg_py(bluerov2_control
-  "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
+  "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
@@ -587,15 +587,15 @@ _generate_msg_py(bluerov2_control
 
 ### Generating Services
 _generate_srv_py(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geographic_msgs/cmake/../msg/GeoPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 _generate_srv_py(bluerov2_control
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv"
   "${MSG_I_FLAGS}"
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_control
 )
 
@@ -611,27 +611,27 @@ add_custom_target(bluerov2_control_generate_messages_py
 add_dependencies(bluerov2_control_generate_messages bluerov2_control_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/ControlMode.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/msg/Autopilot.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsAction.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsActionFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsGoal.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsResult.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/devel/share/bluerov2_control/msg/FollowWaypointsFeedback.msg" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/ConvertGeoPoints.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_control/srv/SetControlMode.srv" NAME_WE)
 add_dependencies(bluerov2_control_generate_messages_py _bluerov2_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

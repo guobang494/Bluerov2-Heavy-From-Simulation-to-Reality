@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/include/bluerov2_dobmpc/Pose.h"
-  "/home/zeb/eight-thurster/devel/include/bluerov2_dobmpc/Reference.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/bluerov2_dobmpc/Pose.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/bluerov2_dobmpc/Reference.h"
   "CMakeFiles/bluerov2_dobmpc_generate_messages_cpp"
 )
 

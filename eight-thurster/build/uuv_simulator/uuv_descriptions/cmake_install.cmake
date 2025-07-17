@@ -1,8 +1,8 @@
-# Install script for directory: /home/zeb/eight-thurster/src/uuv_simulator/uuv_descriptions
+# Install script for directory: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_descriptions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zeb/eight-thurster/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zeb/test-8/eight-thurster/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,30 +38,30 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/eight-thurster/build/uuv_simulator/uuv_descriptions/catkin_generated/installspace/uuv_descriptions.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_descriptions/catkin_generated/installspace/uuv_descriptions.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_descriptions/cmake" TYPE FILE FILES
-    "/home/zeb/eight-thurster/build/uuv_simulator/uuv_descriptions/catkin_generated/installspace/uuv_descriptionsConfig.cmake"
-    "/home/zeb/eight-thurster/build/uuv_simulator/uuv_descriptions/catkin_generated/installspace/uuv_descriptionsConfig-version.cmake"
+    "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_descriptions/catkin_generated/installspace/uuv_descriptionsConfig.cmake"
+    "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_descriptions/catkin_generated/installspace/uuv_descriptionsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_descriptions" TYPE FILE FILES "/home/zeb/eight-thurster/src/uuv_simulator/uuv_descriptions/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_descriptions" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_descriptions/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uuv_descriptions" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/uuv_simulator/uuv_descriptions/catkin_generated/installspace/spawn_model")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uuv_descriptions" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_descriptions/catkin_generated/installspace/spawn_model")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_descriptions" TYPE DIRECTORY FILES
-    "/home/zeb/eight-thurster/src/uuv_simulator/uuv_descriptions/launch"
-    "/home/zeb/eight-thurster/src/uuv_simulator/uuv_descriptions/meshes"
-    "/home/zeb/eight-thurster/src/uuv_simulator/uuv_descriptions/robots"
-    "/home/zeb/eight-thurster/src/uuv_simulator/uuv_descriptions/urdf"
+    "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_descriptions/launch"
+    "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_descriptions/meshes"
+    "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_descriptions/robots"
+    "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_descriptions/urdf"
     REGEX "/[^/]*\\~$" EXCLUDE)
 endif()
 

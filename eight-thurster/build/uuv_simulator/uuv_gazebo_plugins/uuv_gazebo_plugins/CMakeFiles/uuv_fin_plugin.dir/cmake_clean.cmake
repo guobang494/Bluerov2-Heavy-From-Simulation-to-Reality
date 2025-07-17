@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so"
   "CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o"
   "CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o"
 )

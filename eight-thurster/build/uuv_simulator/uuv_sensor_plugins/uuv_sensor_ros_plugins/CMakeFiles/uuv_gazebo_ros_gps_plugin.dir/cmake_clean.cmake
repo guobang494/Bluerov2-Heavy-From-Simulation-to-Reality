@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_gazebo_ros_gps_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_gazebo_ros_gps_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_ros_gps_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_ros_gps_plugin.so"
   "CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/GPSROSPlugin.cc.o"
   "CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBasePlugin.cc.o"
   "CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBaseSensorPlugin.cc.o"

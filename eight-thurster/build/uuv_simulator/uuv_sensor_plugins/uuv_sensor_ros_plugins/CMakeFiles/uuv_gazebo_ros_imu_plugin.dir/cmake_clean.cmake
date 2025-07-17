@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_gazebo_ros_imu_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_gazebo_ros_imu_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_ros_imu_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_ros_imu_plugin.so"
   "CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/IMUROSPlugin.cc.o"
   "CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBaseModelPlugin.cc.o"
   "CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBasePlugin.cc.o"

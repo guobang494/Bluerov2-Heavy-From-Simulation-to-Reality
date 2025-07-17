@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Utility rule file for _uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
 include uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/progress.make
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel:
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py uuv_gazebo_ros_plugins_msgs /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg geometry_msgs/Inertia:geometry_msgs/Vector3
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py uuv_gazebo_ros_plugins_msgs /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg geometry_msgs/Vector3:geometry_msgs/Inertia
 
 _uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel
 _uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/build.make
@@ -67,10 +67,10 @@ uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gaz
 .PHONY : uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/build
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/clean:
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/cmake_clean.cmake
 .PHONY : uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/clean
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/CMakeFiles/_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_UnderwaterObjectModel.dir/depend
 

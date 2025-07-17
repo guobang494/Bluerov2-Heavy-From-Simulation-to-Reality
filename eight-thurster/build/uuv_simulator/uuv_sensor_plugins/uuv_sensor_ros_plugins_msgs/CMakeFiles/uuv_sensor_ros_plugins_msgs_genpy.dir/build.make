@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Utility rule file for uuv_sensor_ros_plugins_msgs_genpy.
 
@@ -63,10 +63,10 @@ uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/CMakeFiles/uuv_sens
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/build
 
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/clean:
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs && $(CMAKE_COMMAND) -P CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs && $(CMAKE_COMMAND) -P CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/cmake_clean.cmake
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/clean
 
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs /home/zeb/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/CMakeFiles/uuv_sensor_ros_plugins_msgs_genpy.dir/depend
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/include/uuv_auv_control_allocator/AUVCommand.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/uuv_auv_control_allocator/AUVCommand.h"
   "CMakeFiles/uuv_auv_control_allocator_generate_messages_cpp"
 )
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/zeb/eight-thurster/src/bluerov2/bluerov2_states
+# Install script for directory: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zeb/eight-thurster/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zeb/test-8/eight-thurster/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,37 +38,37 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_states/cmake" TYPE FILE FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_states-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_states/cmake" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_states-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/devel/share/roseus/ros/bluerov2_states")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/bluerov2_states")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/bluerov2_states")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/bluerov2_states")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/bluerov2_states")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/bluerov2_states")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_states.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_states.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_states/cmake" TYPE FILE FILES "/home/zeb/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_states-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_states/cmake" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_states-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_states/cmake" TYPE FILE FILES
-    "/home/zeb/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_statesConfig.cmake"
-    "/home/zeb/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_statesConfig-version.cmake"
+    "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_statesConfig.cmake"
+    "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states/catkin_generated/installspace/bluerov2_statesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_states" TYPE FILE FILES "/home/zeb/eight-thurster/src/bluerov2/bluerov2_states/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bluerov2_states" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states/package.xml")
 endif()
 

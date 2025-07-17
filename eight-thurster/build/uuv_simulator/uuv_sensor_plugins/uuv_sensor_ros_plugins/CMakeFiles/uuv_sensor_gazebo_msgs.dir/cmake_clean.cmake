@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_sensor_gazebo_msgs.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_sensor_gazebo_msgs.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_sensor_gazebo_msgs.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_sensor_gazebo_msgs.so"
   "CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorDvl.pb.cc.o"
   "CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorImu.pb.cc.o"
   "CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorMagnetic.pb.cc.o"

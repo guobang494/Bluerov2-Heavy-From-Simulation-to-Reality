@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/uuv_assistants/uuv_message_to_tf"
-  "/home/zeb/eight-thurster/devel/lib/uuv_assistants/uuv_message_to_tf.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/uuv_assistants/uuv_message_to_tf"
+  "/home/zeb/test-8/eight-thurster/devel/lib/uuv_assistants/uuv_message_to_tf.pdb"
   "CMakeFiles/uuv_message_to_tf.dir/src/message_to_tf.cc.o"
 )
 

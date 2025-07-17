@@ -7,10 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/zeb/eight-thurster/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/home/zeb/eight-thurster/devel/lib:/opt/ros/noetic/lib:/home/zeb/acados/lib:/root/acados/lib'
-export PKG_CONFIG_PATH="/home/zeb/eight-thurster/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/zeb/eight-thurster/build'
-export PYTHONPATH="/home/zeb/eight-thurster/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/zeb/eight-thurster/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/zeb/eight-thurster/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/zeb/test-8/eight-thurster/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/home/zeb/test-8/eight-thurster/devel/lib:/opt/ros/noetic/lib:/home/zeb/acados/lib:/root/acados/lib'
+export PKG_CONFIG_PATH="/home/zeb/test-8/eight-thurster/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/zeb/test-8/eight-thurster/build'
+export PYTHONPATH="/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/zeb/test-8/eight-thurster/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/zeb/test-8/eight-thurster/src:$ROS_PACKAGE_PATH"

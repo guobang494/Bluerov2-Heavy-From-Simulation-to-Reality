@@ -67,14 +67,14 @@ set(uuv_world_ros_plugins_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(uuv_world_ros_plugins_SOURCE_PREFIX /home/zeb/eight-thurster/src/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins)
-  set(uuv_world_ros_plugins_DEVEL_PREFIX /home/zeb/eight-thurster/devel)
+  set(uuv_world_ros_plugins_SOURCE_PREFIX /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins)
+  set(uuv_world_ros_plugins_DEVEL_PREFIX /home/zeb/test-8/eight-thurster/devel)
   set(uuv_world_ros_plugins_INSTALL_PREFIX "")
   set(uuv_world_ros_plugins_PREFIX ${uuv_world_ros_plugins_DEVEL_PREFIX})
 else()
   set(uuv_world_ros_plugins_SOURCE_PREFIX "")
   set(uuv_world_ros_plugins_DEVEL_PREFIX "")
-  set(uuv_world_ros_plugins_INSTALL_PREFIX /home/zeb/eight-thurster/install)
+  set(uuv_world_ros_plugins_INSTALL_PREFIX /home/zeb/test-8/eight-thurster/install)
   set(uuv_world_ros_plugins_PREFIX ${uuv_world_ros_plugins_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zeb/eight-thurster/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zeb/test-8/eight-thurster/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

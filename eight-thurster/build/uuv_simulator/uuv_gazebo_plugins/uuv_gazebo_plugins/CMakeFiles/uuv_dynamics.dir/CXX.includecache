@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/include/uuv_gazebo_plugins/Dynamics.hh
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/include/uuv_gazebo_plugins/Dynamics.hh
 map
 -
 string
@@ -14,7 +14,7 @@ string
 sdf/sdf.hh
 -
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/Dynamics.cc
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/Dynamics.cc
 gazebo/gazebo.hh
 -
 uuv_gazebo_plugins/Dynamics.hh

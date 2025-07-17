@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_inspection_node.cpp" "/home/zeb/eight-thurster/build/bluerov2/bluerov2_dobmpc/CMakeFiles/bluerov2_inspection_node.dir/src/bluerov2_inspection_node.cpp.o"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_inspection_node.cpp" "/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_dobmpc/CMakeFiles/bluerov2_inspection_node.dir/src/bluerov2_inspection_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,11 +23,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/zeb/eight-thurster/devel/include"
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include"
+  "/home/zeb/test-8/eight-thurster/devel/include"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code"
   "/home/zeb/acados/include"
   "/home/zeb/acados/include/blasfeo/include"
   "/home/zeb/acados/include/hpipm/include"

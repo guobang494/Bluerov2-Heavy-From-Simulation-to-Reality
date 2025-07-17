@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChangeSensorState.h
+/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChangeSensorState.h
 ros/service_traits.h
 -
 uuv_sensor_ros_plugins_msgs/ChangeSensorStateRequest.h
@@ -14,7 +14,7 @@ uuv_sensor_ros_plugins_msgs/ChangeSensorStateRequest.h
 uuv_sensor_ros_plugins_msgs/ChangeSensorStateResponse.h
 -
 
-/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChangeSensorStateRequest.h
+/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChangeSensorStateRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChangeSensorStateResponse.h
+/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChangeSensorStateResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/PositionWithCovariance.h
+/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/PositionWithCovariance.h
 string
 -
 vector
@@ -64,7 +64,7 @@ ros/message_operations.h
 geometry_msgs/Point.h
 -
 
-/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/PositionWithCovarianceStamped.h
+/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/PositionWithCovarianceStamped.h
 string
 -
 vector
@@ -84,7 +84,7 @@ std_msgs/Header.h
 uuv_sensor_ros_plugins_msgs/PositionWithCovariance.h
 -
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/Common.hh
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/Common.hh
 string
 -
 Eigen/Dense
@@ -92,7 +92,7 @@ Eigen/Dense
 gazebo/gazebo.hh
 -
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/ROSBaseModelPlugin.hh
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/ROSBaseModelPlugin.hh
 gazebo/common/Plugin.hh
 -
 gazebo/gazebo.hh
@@ -118,7 +118,7 @@ tf/tf.h
 tf/transform_broadcaster.h
 -
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/ROSBasePlugin.hh
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/ROSBasePlugin.hh
 gazebo/common/common.hh
 -
 gazebo/physics/physics.hh
@@ -152,7 +152,7 @@ string
 map
 -
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/RPTROSPlugin.hh
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/RPTROSPlugin.hh
 gazebo/gazebo.hh
 -
 ros/ros.h
@@ -164,17 +164,17 @@ uuv_sensor_ros_plugins_msgs/PositionWithCovarianceStamped.h
 geometry_msgs/PoseWithCovarianceStamped.h
 -
 SensorRpt.pb.h
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/SensorRpt.pb.h
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/uuv_sensor_ros_plugins/SensorRpt.pb.h
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBaseModelPlugin.cc
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBaseModelPlugin.cc
 uuv_sensor_ros_plugins/ROSBaseModelPlugin.hh
 -
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc
 uuv_sensor_ros_plugins/ROSBasePlugin.hh
 -
 
-/home/zeb/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/RPTROSPlugin.cc
+/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/RPTROSPlugin.cc
 uuv_sensor_ros_plugins/RPTROSPlugin.hh
 -
 

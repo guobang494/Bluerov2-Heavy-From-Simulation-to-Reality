@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/bluerov2_dobmpc/msg/Pose.js"
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/bluerov2_dobmpc/msg/Reference.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/bluerov2_dobmpc/msg/Pose.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/bluerov2_dobmpc/msg/Reference.js"
   "CMakeFiles/bluerov2_dobmpc_generate_messages_nodejs"
 )
 

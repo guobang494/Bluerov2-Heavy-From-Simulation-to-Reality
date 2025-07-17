@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_gazebo_plugins_msgs.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_gazebo_plugins_msgs.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_plugins_msgs.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_plugins_msgs.so"
   "Accel.pb.cc"
   "Accel.pb.h"
   "CMakeFiles/uuv_gazebo_plugins_msgs.dir/Accel.pb.cc.o"

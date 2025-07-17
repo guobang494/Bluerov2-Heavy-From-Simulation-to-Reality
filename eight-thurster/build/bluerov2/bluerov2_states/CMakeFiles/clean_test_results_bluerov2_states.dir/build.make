@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Utility rule file for clean_test_results_bluerov2_states.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
 include bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/progress.make
 
 bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states:
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_states && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/zeb/eight-thurster/build/test_results/bluerov2_states
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/zeb/test-8/eight-thurster/build/test_results/bluerov2_states
 
 clean_test_results_bluerov2_states: bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states
 clean_test_results_bluerov2_states: bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/build.make
@@ -67,10 +67,10 @@ bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/build
 .PHONY : bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/build
 
 bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/clean:
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_states && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_bluerov2_states.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_bluerov2_states.dir/cmake_clean.cmake
 .PHONY : bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/clean
 
 bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/bluerov2/bluerov2_states /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/bluerov2/bluerov2_states /home/zeb/eight-thurster/build/bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bluerov2/bluerov2_states/CMakeFiles/clean_test_results_bluerov2_states.dir/depend
 

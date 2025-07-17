@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Include any dependencies generated for this target.
 include bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/depend.make
@@ -58,17 +58,17 @@ include bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/progress.make
 include bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/flags.make
 
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/flags.make
-bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o"
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_mpc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o -c /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp
+bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o"
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_mpc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o -c /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp
 
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.i"
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_mpc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp > CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.i
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_mpc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp > CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.i
 
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.s"
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_mpc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp -o CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.s
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_mpc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp -o CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.s
 
 # Object files for target bluerov2_mpc_node
 bluerov2_mpc_node_OBJECTS = \
@@ -77,41 +77,41 @@ bluerov2_mpc_node_OBJECTS = \
 # External object files for target bluerov2_mpc_node
 bluerov2_mpc_node_EXTERNAL_OBJECTS =
 
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/build.make
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/scripts/c_generated_code/libacados_ocp_solver_bluerov2.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: ~/acados/lib/libacados.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/libroscpp.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/librosconsole.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/librostime.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node"
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_mpc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bluerov2_mpc_node.dir/link.txt --verbose=$(VERBOSE)
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/build.make
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/scripts/c_generated_code/libacados_ocp_solver_bluerov2.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: ~/acados/lib/libacados.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/libroscpp.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/librosconsole.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/librostime.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node: bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node"
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_mpc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bluerov2_mpc_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/build: /home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node
+bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/build: /home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node
 
 .PHONY : bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/build
 
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/clean:
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_mpc && $(CMAKE_COMMAND) -P CMakeFiles/bluerov2_mpc_node.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_mpc && $(CMAKE_COMMAND) -P CMakeFiles/bluerov2_mpc_node.dir/cmake_clean.cmake
 .PHONY : bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/clean
 
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/bluerov2/bluerov2_mpc /home/zeb/eight-thurster/build/bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_mpc /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/depend
 

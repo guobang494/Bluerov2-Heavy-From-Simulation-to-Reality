@@ -42,10 +42,10 @@ bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/acados/include/hpipm/include/hpipm_d_ocp_qp_dim.h
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/acados/include/hpipm/include/hpipm_d_ocp_qp_res.h
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/acados/include/hpipm/include/hpipm_d_ocp_qp_sol.h
-bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/eight-thurster/devel/include/uuv_gazebo_ros_plugins_msgs/FloatStamped.h
-bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/scripts/c_generated_code/acados_solver_bluerov2.h
-bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/scripts/c_generated_code/bluerov2_model/bluerov2_model.h
-bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp
+bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/test-8/eight-thurster/devel/include/uuv_gazebo_ros_plugins_msgs/FloatStamped.h
+bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/scripts/c_generated_code/acados_solver_bluerov2.h
+bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/scripts/c_generated_code/bluerov2_model/bluerov2_model.h
+bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/src/bluerov2_mpc_node.cpp
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/PointStamped.h
 bluerov2/bluerov2_mpc/CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Pose.h

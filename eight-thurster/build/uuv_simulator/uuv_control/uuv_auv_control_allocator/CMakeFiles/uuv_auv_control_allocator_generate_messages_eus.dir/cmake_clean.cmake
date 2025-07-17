@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_auv_control_allocator/manifest.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_auv_control_allocator/msg/AUVCommand.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_auv_control_allocator/manifest.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_auv_control_allocator/msg/AUVCommand.l"
   "CMakeFiles/uuv_auv_control_allocator_generate_messages_eus"
 )
 

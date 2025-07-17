@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_auv_control_allocator/msg/AUVCommand.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_auv_control_allocator/msg/AUVCommand.js"
   "CMakeFiles/uuv_auv_control_allocator_generate_messages_nodejs"
 )
 

@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"bluerov2_mpc\"
 
-CXX_INCLUDES = -I/home/zeb/eight-thurster/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zeb/eight-thurster/src/bluerov2/bluerov2_mpc/scripts/c_generated_code -I/home/zeb/acados/include -I/home/zeb/acados/include/blasfeo/include -I/home/zeb/acados/include/hpipm/include -I/home/zeb/acados/include/acados -I/home/zeb/acados/include/qpOASES_e 
+CXX_INCLUDES = -I/home/zeb/test-8/eight-thurster/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/scripts/c_generated_code -I/home/zeb/acados/include -I/home/zeb/acados/include/blasfeo/include -I/home/zeb/acados/include/hpipm/include -I/home/zeb/acados/include/acados -I/home/zeb/acados/include/qpOASES_e 
 

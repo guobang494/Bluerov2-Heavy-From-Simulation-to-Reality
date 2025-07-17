@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Include any dependencies generated for this target.
 include uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/depend.make
@@ -58,30 +58,30 @@ include uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_p
 include uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/flags.make
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/flags.make
-uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o: /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/LiftDragModel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o -c /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/LiftDragModel.cc
+uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/LiftDragModel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o"
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o -c /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/LiftDragModel.cc
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.i"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/LiftDragModel.cc > CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.i
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/LiftDragModel.cc > CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.i
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.s"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/LiftDragModel.cc -o CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.s
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/LiftDragModel.cc -o CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.s
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/flags.make
-uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o: /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/FinPlugin.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o -c /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/FinPlugin.cc
+uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/FinPlugin.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o"
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o -c /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/FinPlugin.cc
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.i"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/FinPlugin.cc > CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/FinPlugin.cc > CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.i
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.s"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/FinPlugin.cc -o CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/src/FinPlugin.cc -o CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.s
 
 # Object files for target uuv_fin_plugin
 uuv_fin_plugin_OBJECTS = \
@@ -91,78 +91,78 @@ uuv_fin_plugin_OBJECTS = \
 # External object files for target uuv_fin_plugin
 uuv_fin_plugin_EXTERNAL_OBJECTS =
 
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/build.make
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /home/zeb/eight-thurster/devel/lib/libuuv_dynamics.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /home/zeb/eight-thurster/devel/lib/libuuv_gazebo_plugins_msgs.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libSimTKsimbody.so.3.6
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libdart.so.6.9.2
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libsdformat9.so.9.10.1
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-common3-graphics.so.3.17.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libSimTKmath.so.3.6
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libSimTKcommon.so.3.6
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libblas.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/liblapack.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libblas.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/liblapack.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libdart-external-odelcpsolver.so.6.9.2
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libccd.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libfcl.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libassimp.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/liboctomap.so.1.9.3
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/liboctomath.so.1.9.3
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.5.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-fuel_tools4.so.4.9.1
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-msgs5.so.5.11.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-math6.so.6.15.1
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-common3.so.3.17.0
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uuv_fin_plugin.dir/link.txt --verbose=$(VERBOSE)
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/build.make
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /home/zeb/test-8/eight-thurster/devel/lib/libuuv_dynamics.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_plugins_msgs.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libSimTKsimbody.so.3.6
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libdart.so.6.9.2
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libsdformat9.so.9.10.1
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-common3-graphics.so.3.17.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libSimTKmath.so.3.6
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libSimTKcommon.so.3.6
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libblas.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/liblapack.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libblas.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/liblapack.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libdart-external-odelcpsolver.so.6.9.2
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libccd.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libfcl.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libassimp.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/liboctomap.so.1.9.3
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/liboctomath.so.1.9.3
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.5.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-fuel_tools4.so.4.9.1
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-msgs5.so.5.11.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-math6.so.6.15.1
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-common3.so.3.17.0
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so: uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so"
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uuv_fin_plugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/build: /home/zeb/eight-thurster/devel/lib/libuuv_fin_plugin.so
+uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/build: /home/zeb/test-8/eight-thurster/devel/lib/libuuv_fin_plugin.so
 
 .PHONY : uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/build
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/clean:
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && $(CMAKE_COMMAND) -P CMakeFiles/uuv_fin_plugin.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins && $(CMAKE_COMMAND) -P CMakeFiles/uuv_fin_plugin.dir/cmake_clean.cmake
 .PHONY : uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/clean
 
 uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/CMakeFiles/uuv_fin_plugin.dir/depend
 

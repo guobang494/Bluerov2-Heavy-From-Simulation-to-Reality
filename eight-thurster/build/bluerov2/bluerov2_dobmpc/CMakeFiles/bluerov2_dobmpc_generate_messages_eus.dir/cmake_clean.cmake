@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/bluerov2_dobmpc/manifest.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/bluerov2_dobmpc/msg/Pose.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/bluerov2_dobmpc/msg/Reference.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/bluerov2_dobmpc/manifest.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/bluerov2_dobmpc/msg/Pose.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/bluerov2_dobmpc/msg/Reference.l"
   "CMakeFiles/bluerov2_dobmpc_generate_messages_eus"
 )
 

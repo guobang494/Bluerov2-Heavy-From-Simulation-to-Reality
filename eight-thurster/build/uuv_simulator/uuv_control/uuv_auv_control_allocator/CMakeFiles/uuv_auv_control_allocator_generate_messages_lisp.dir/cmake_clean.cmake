@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_auv_control_allocator/msg/AUVCommand.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_auv_control_allocator/msg/AUVCommand.lisp"
   "CMakeFiles/uuv_auv_control_allocator_generate_messages_lisp"
 )
 

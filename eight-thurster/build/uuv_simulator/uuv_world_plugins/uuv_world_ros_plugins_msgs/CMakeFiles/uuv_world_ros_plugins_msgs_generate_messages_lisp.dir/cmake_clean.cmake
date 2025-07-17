@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/GetCurrentModel.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/GetOriginSphericalCoord.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/SetCurrentDirection.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/SetCurrentModel.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/SetCurrentVelocity.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/SetOriginSphericalCoord.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/TransformFromSphericalCoord.lisp"
-  "/home/zeb/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/TransformToSphericalCoord.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/GetCurrentModel.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/GetOriginSphericalCoord.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/SetCurrentDirection.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/SetCurrentModel.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/SetCurrentVelocity.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/SetOriginSphericalCoord.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/TransformFromSphericalCoord.lisp"
+  "/home/zeb/test-8/eight-thurster/devel/share/common-lisp/ros/uuv_world_ros_plugins_msgs/srv/TransformToSphericalCoord.lisp"
   "CMakeFiles/uuv_world_ros_plugins_msgs_generate_messages_lisp"
 )
 

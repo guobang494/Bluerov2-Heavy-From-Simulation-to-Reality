@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_sc_ros_interface_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_sc_ros_interface_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_sc_ros_interface_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_sc_ros_interface_plugin.so"
   "CMakeFiles/uuv_sc_ros_interface_plugin.dir/src/SphericalCoordinatesROSInterfacePlugin.cc.o"
 )
 

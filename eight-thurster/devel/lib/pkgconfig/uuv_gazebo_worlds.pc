@@ -1,4 +1,4 @@
-prefix=/home/zeb/eight-thurster/devel
+prefix=/home/zeb/test-8/eight-thurster/devel
 
 Name: uuv_gazebo_worlds
 Description: Description of uuv_gazebo_worlds

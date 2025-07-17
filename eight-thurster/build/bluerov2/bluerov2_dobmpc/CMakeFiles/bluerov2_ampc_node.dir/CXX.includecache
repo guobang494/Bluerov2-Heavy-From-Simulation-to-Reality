@@ -334,7 +334,7 @@ blasfeo_common.h
 hpipm_d_ocp_qp_dim.h
 /home/zeb/acados/include/hpipm/include/hpipm_d_ocp_qp_dim.h
 
-/home/zeb/eight-thurster/devel/include/bluerov2_dobmpc/Reference.h
+/home/zeb/test-8/eight-thurster/devel/include/bluerov2_dobmpc/Reference.h
 string
 -
 vector
@@ -356,7 +356,7 @@ geometry_msgs/Pose.h
 geometry_msgs/Twist.h
 -
 
-/home/zeb/eight-thurster/devel/include/uuv_gazebo_ros_plugins_msgs/FloatStamped.h
+/home/zeb/test-8/eight-thurster/devel/include/uuv_gazebo_ros_plugins_msgs/FloatStamped.h
 string
 -
 vector
@@ -374,7 +374,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/bluerov2_ampc.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/bluerov2_ampc.h
 ros/ros.h
 -
 tf/tf.h
@@ -414,43 +414,43 @@ iomanip
 random
 -
 acados/utils/print.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados/utils/print.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados/utils/print.h
 acados_c/ocp_nlp_interface.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados_c/ocp_nlp_interface.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados_c/ocp_nlp_interface.h
 acados_c/external_function_interface.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados_c/external_function_interface.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados_c/external_function_interface.h
 acados/ocp_nlp/ocp_nlp_constraints_bgh.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados/ocp_nlp/ocp_nlp_constraints_bgh.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados/ocp_nlp/ocp_nlp_constraints_bgh.h
 acados/ocp_nlp/ocp_nlp_cost_ls.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados/ocp_nlp/ocp_nlp_cost_ls.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados/ocp_nlp/ocp_nlp_cost_ls.h
 blasfeo/include/blasfeo_d_aux.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/blasfeo/include/blasfeo_d_aux.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/blasfeo/include/blasfeo_d_aux.h
 blasfeo/include/blasfeo_d_aux_ext_dep.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/blasfeo/include/blasfeo_d_aux_ext_dep.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/blasfeo/include/blasfeo_d_aux_ext_dep.h
 bluerov2_model/bluerov2_model.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/bluerov2_model/bluerov2_model.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/bluerov2_model/bluerov2_model.h
 acados_solver_bluerov2.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados_solver_bluerov2.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/include/bluerov2_dobmpc/acados_solver_bluerov2.h
 
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/acados_solver_bluerov2.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/acados_solver_bluerov2.h
 acados/utils/types.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/acados/utils/types.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/acados/utils/types.h
 acados_c/ocp_nlp_interface.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/acados_c/ocp_nlp_interface.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/acados_c/ocp_nlp_interface.h
 acados_c/external_function_interface.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/acados_c/external_function_interface.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/acados_c/external_function_interface.h
 
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/bluerov2_model/bluerov2_model.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/bluerov2_model/bluerov2_model.h
 
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_ampc.cpp
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_ampc.cpp
 bluerov2_dobmpc/bluerov2_ampc.h
 -
 
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_ampc_node.cpp
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_ampc_node.cpp
 ros/ros.h
 -
 bluerov2_dobmpc/bluerov2_ampc.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_dobmpc/bluerov2_ampc.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_dobmpc/bluerov2_ampc.h
 
 /opt/ros/noetic/include/gazebo_msgs/ApplyBodyWrench.h
 ros/service_traits.h

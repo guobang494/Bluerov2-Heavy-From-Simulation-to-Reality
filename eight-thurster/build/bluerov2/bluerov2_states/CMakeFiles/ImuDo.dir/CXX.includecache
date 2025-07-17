@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_states/include/ImuDo.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states/include/ImuDo.h
 essential.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_states/include/essential.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states/include/essential.h
 sophus/se3.hpp
 -
 pluginlib/class_list_macros.h
@@ -32,7 +32,7 @@ queue
 mutex
 -
 
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_states/include/essential.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states/include/essential.h
 ros/ros.h
 -
 ros/console.h
@@ -118,9 +118,9 @@ visualization_msgs/Marker.h
 tf/tf.h
 -
 
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_states/src/ImuDo.cpp
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states/src/ImuDo.cpp
 ../include/ImuDo.h
-/home/zeb/eight-thurster/src/bluerov2/bluerov2_states/include/ImuDo.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states/include/ImuDo.h
 
 /opt/ros/noetic/include/class_loader/class_loader.hpp
 boost/bind/bind.hpp

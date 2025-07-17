@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_thruster_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_thruster_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_thruster_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_thruster_plugin.so"
   "CMakeFiles/uuv_thruster_plugin.dir/src/ThrusterConversionFcn.cc.o"
   "CMakeFiles/uuv_thruster_plugin.dir/src/ThrusterPlugin.cc.o"
 )

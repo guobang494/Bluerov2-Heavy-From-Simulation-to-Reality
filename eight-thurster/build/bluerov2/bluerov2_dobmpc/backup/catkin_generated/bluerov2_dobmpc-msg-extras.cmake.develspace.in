@@ -1,2 +1,0 @@
-set(bluerov2_dobmpc_MESSAGE_FILES "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/backup/msg/Reference.msg;/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/backup/msg/Pose.msg")
-set(bluerov2_dobmpc_SERVICE_FILES "")

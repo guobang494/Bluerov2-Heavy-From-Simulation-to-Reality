@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Utility rule file for std_srvs_generate_messages_py.
 
@@ -63,10 +63,10 @@ bluerov2/bluerov2_dobmpc/CMakeFiles/std_srvs_generate_messages_py.dir/build: std
 .PHONY : bluerov2/bluerov2_dobmpc/CMakeFiles/std_srvs_generate_messages_py.dir/build
 
 bluerov2/bluerov2_dobmpc/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_dobmpc && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_dobmpc && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : bluerov2/bluerov2_dobmpc/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 
 bluerov2/bluerov2_dobmpc/CMakeFiles/std_srvs_generate_messages_py.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/bluerov2/bluerov2_dobmpc /home/zeb/eight-thurster/build/bluerov2/bluerov2_dobmpc/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_dobmpc /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_dobmpc/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bluerov2/bluerov2_dobmpc/CMakeFiles/std_srvs_generate_messages_py.dir/depend
 

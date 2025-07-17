@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/_GetThrusterCurve.py"
-  "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/_GetThrusterManagerConfig.py"
-  "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/_SetThrusterManagerConfig.py"
-  "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/_ThrusterManagerInfo.py"
-  "/home/zeb/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/__init__.py"
+  "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/_GetThrusterCurve.py"
+  "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/_GetThrusterManagerConfig.py"
+  "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/_SetThrusterManagerConfig.py"
+  "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/_ThrusterManagerInfo.py"
+  "/home/zeb/test-8/eight-thurster/devel/lib/python3/dist-packages/uuv_thruster_manager/srv/__init__.py"
   "CMakeFiles/uuv_thruster_manager_generate_messages_py"
 )
 

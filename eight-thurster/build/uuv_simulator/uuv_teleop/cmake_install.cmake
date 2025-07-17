@@ -1,8 +1,8 @@
-# Install script for directory: /home/zeb/eight-thurster/src/uuv_simulator/uuv_teleop
+# Install script for directory: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_teleop
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zeb/eight-thurster/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zeb/test-8/eight-thurster/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/uuv_teleop.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/uuv_teleop.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_teleop/cmake" TYPE FILE FILES
-    "/home/zeb/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/uuv_teleopConfig.cmake"
-    "/home/zeb/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/uuv_teleopConfig-version.cmake"
+    "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/uuv_teleopConfig.cmake"
+    "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/uuv_teleopConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_teleop" TYPE FILE FILES "/home/zeb/eight-thurster/src/uuv_simulator/uuv_teleop/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_teleop" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_teleop/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_teleop" TYPE DIRECTORY FILES "/home/zeb/eight-thurster/src/uuv_simulator/uuv_teleop/launch" REGEX "/[^/]*\\~$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_teleop" TYPE DIRECTORY FILES "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_teleop/launch" REGEX "/[^/]*\\~$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uuv_teleop" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/vehicle_teleop.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uuv_teleop" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/vehicle_teleop.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uuv_teleop" TYPE PROGRAM FILES "/home/zeb/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/finned_uuv_teleop.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uuv_teleop" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_teleop/catkin_generated/installspace/finned_uuv_teleop.py")
 endif()
 

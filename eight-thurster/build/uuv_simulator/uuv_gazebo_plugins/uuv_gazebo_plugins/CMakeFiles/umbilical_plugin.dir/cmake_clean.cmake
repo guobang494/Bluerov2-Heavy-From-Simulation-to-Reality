@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libumbilical_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libumbilical_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libumbilical_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libumbilical_plugin.so"
   "CMakeFiles/umbilical_plugin.dir/src/UmbilicalModel.cc.o"
   "CMakeFiles/umbilical_plugin.dir/src/UmbilicalPlugin.cc.o"
 )

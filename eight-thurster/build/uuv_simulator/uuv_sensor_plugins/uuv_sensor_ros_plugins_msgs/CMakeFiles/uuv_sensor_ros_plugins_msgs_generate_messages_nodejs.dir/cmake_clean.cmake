@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/ChemicalParticleConcentration.js"
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/DVL.js"
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/DVLBeam.js"
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovariance.js"
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovarianceStamped.js"
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/Salinity.js"
-  "/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/srv/ChangeSensorState.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/ChemicalParticleConcentration.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/DVL.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/DVLBeam.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovariance.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovarianceStamped.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/msg/Salinity.js"
+  "/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_sensor_ros_plugins_msgs/srv/ChangeSensorState.js"
   "CMakeFiles/uuv_sensor_ros_plugins_msgs_generate_messages_nodejs"
 )
 

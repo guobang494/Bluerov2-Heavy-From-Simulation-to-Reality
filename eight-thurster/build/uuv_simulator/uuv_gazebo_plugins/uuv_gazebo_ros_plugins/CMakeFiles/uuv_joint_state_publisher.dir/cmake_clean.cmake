@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_joint_state_publisher.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_joint_state_publisher.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_joint_state_publisher.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_joint_state_publisher.so"
   "CMakeFiles/uuv_joint_state_publisher.dir/src/JointStatePublisher.cc.o"
 )
 

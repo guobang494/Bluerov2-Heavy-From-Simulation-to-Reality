@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/eight-thurster/build/CMakeFiles /home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/CMakeFiles/progress.marks
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/eight-thurster/build/CMakeFiles 0
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/test-8/eight-thurster/build/CMakeFiles /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/CMakeFiles/progress.marks
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/test-8/eight-thurster/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/clean
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/preinstall
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/preinstall
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.dir/rule
 .PHONY : uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ gazebo_ros_gencfg: uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.
 
 # fast build rule for target.
 gazebo_ros_gencfg/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.dir/build.make uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.dir/build.make uuv_simulator/uuv_gazebo_worlds/CMakeFiles/gazebo_ros_gencfg.dir/build
 .PHONY : gazebo_ros_gencfg/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

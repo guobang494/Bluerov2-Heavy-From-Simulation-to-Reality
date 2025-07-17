@@ -67,14 +67,14 @@ set(uuv_gazebo_ros_plugins_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(uuv_gazebo_ros_plugins_SOURCE_PREFIX /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins)
-  set(uuv_gazebo_ros_plugins_DEVEL_PREFIX /home/zeb/eight-thurster/devel)
+  set(uuv_gazebo_ros_plugins_SOURCE_PREFIX /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins)
+  set(uuv_gazebo_ros_plugins_DEVEL_PREFIX /home/zeb/test-8/eight-thurster/devel)
   set(uuv_gazebo_ros_plugins_INSTALL_PREFIX "")
   set(uuv_gazebo_ros_plugins_PREFIX ${uuv_gazebo_ros_plugins_DEVEL_PREFIX})
 else()
   set(uuv_gazebo_ros_plugins_SOURCE_PREFIX "")
   set(uuv_gazebo_ros_plugins_DEVEL_PREFIX "")
-  set(uuv_gazebo_ros_plugins_INSTALL_PREFIX /home/zeb/eight-thurster/install)
+  set(uuv_gazebo_ros_plugins_INSTALL_PREFIX /home/zeb/test-8/eight-thurster/install)
   set(uuv_gazebo_ros_plugins_PREFIX ${uuv_gazebo_ros_plugins_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(uuv_gazebo_ros_plugins_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/include " STREQUAL " ")
+if(NOT "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/include " STREQUAL " ")
   set(uuv_gazebo_ros_plugins_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/include")
+  set(_include_dirs "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo
         message(FATAL_ERROR "Project 'uuv_gazebo_ros_plugins' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'uuv_gazebo_ros_plugins' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'uuv_gazebo_ros_plugins' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/${idir}'.  ${_report}")
     endif()
     _list_append_unique(uuv_gazebo_ros_plugins_INCLUDE_DIRS ${include})
   endforeach()
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zeb/eight-thurster/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zeb/test-8/eight-thurster/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

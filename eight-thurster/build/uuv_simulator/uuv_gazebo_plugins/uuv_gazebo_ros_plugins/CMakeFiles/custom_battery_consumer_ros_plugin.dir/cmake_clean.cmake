@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libcustom_battery_consumer_ros_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libcustom_battery_consumer_ros_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libcustom_battery_consumer_ros_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libcustom_battery_consumer_ros_plugin.so"
   "CMakeFiles/custom_battery_consumer_ros_plugin.dir/src/CustomBatteryConsumerROSPlugin.cc.o"
 )
 

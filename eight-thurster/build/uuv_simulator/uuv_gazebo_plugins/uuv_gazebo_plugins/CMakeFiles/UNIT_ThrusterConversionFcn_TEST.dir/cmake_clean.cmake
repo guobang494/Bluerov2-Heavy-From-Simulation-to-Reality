@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/uuv_gazebo_plugins/UNIT_ThrusterConversionFcn_TEST"
-  "/home/zeb/eight-thurster/devel/lib/uuv_gazebo_plugins/UNIT_ThrusterConversionFcn_TEST.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/uuv_gazebo_plugins/UNIT_ThrusterConversionFcn_TEST"
+  "/home/zeb/test-8/eight-thurster/devel/lib/uuv_gazebo_plugins/UNIT_ThrusterConversionFcn_TEST.pdb"
   "CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/src/ThrusterConversionFcn_TEST.cc.o"
 )
 

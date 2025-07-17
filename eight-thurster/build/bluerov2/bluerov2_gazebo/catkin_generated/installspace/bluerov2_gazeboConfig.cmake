@@ -67,14 +67,14 @@ set(bluerov2_gazebo_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(bluerov2_gazebo_SOURCE_PREFIX /home/zeb/eight-thurster/src/bluerov2/bluerov2_gazebo)
-  set(bluerov2_gazebo_DEVEL_PREFIX /home/zeb/eight-thurster/devel)
+  set(bluerov2_gazebo_SOURCE_PREFIX /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_gazebo)
+  set(bluerov2_gazebo_DEVEL_PREFIX /home/zeb/test-8/eight-thurster/devel)
   set(bluerov2_gazebo_INSTALL_PREFIX "")
   set(bluerov2_gazebo_PREFIX ${bluerov2_gazebo_DEVEL_PREFIX})
 else()
   set(bluerov2_gazebo_SOURCE_PREFIX "")
   set(bluerov2_gazebo_DEVEL_PREFIX "")
-  set(bluerov2_gazebo_INSTALL_PREFIX /home/zeb/eight-thurster/install)
+  set(bluerov2_gazebo_INSTALL_PREFIX /home/zeb/test-8/eight-thurster/install)
   set(bluerov2_gazebo_PREFIX ${bluerov2_gazebo_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zeb/eight-thurster/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zeb/test-8/eight-thurster/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

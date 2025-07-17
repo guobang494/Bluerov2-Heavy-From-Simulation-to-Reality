@@ -1,4 +1,4 @@
-prefix=/home/zeb/eight-thurster/install
+prefix=/home/zeb/test-8/eight-thurster/install
 
 Name: uuv_control_utils
 Description: Description of uuv_control_utils

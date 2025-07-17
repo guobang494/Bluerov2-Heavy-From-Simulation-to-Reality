@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_gazebo_ros_camera_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_gazebo_ros_camera_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_ros_camera_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_gazebo_ros_camera_plugin.so"
   "CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/src/UnderwaterCameraROSPlugin.cc.o"
 )
 

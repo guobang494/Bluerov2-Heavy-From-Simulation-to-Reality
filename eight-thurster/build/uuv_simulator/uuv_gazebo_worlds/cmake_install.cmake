@@ -1,8 +1,8 @@
-# Install script for directory: /home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds
+# Install script for directory: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zeb/eight-thurster/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zeb/test-8/eight-thurster/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,26 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/catkin_generated/installspace/uuv_gazebo_worlds.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/catkin_generated/installspace/uuv_gazebo_worlds.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_gazebo_worlds/cmake" TYPE FILE FILES
-    "/home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/catkin_generated/installspace/uuv_gazebo_worldsConfig.cmake"
-    "/home/zeb/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/catkin_generated/installspace/uuv_gazebo_worldsConfig-version.cmake"
+    "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/catkin_generated/installspace/uuv_gazebo_worldsConfig.cmake"
+    "/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/catkin_generated/installspace/uuv_gazebo_worldsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_gazebo_worlds" TYPE FILE FILES "/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_gazebo_worlds" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uuv_gazebo_worlds" TYPE DIRECTORY FILES
-    "/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/launch"
-    "/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/Media"
-    "/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/worlds"
-    "/home/zeb/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/models"
+    "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/launch"
+    "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/Media"
+    "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/worlds"
+    "/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_gazebo_worlds/models"
     REGEX "/[^/]*\\~$" EXCLUDE)
 endif()
 

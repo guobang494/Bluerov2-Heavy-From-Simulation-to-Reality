@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Utility rule file for bluerov2_states_genlisp.
 
@@ -63,10 +63,10 @@ bluerov2/bluerov2_states/CMakeFiles/bluerov2_states_genlisp.dir/build: bluerov2_
 .PHONY : bluerov2/bluerov2_states/CMakeFiles/bluerov2_states_genlisp.dir/build
 
 bluerov2/bluerov2_states/CMakeFiles/bluerov2_states_genlisp.dir/clean:
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_states && $(CMAKE_COMMAND) -P CMakeFiles/bluerov2_states_genlisp.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states && $(CMAKE_COMMAND) -P CMakeFiles/bluerov2_states_genlisp.dir/cmake_clean.cmake
 .PHONY : bluerov2/bluerov2_states/CMakeFiles/bluerov2_states_genlisp.dir/clean
 
 bluerov2/bluerov2_states/CMakeFiles/bluerov2_states_genlisp.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/bluerov2/bluerov2_states /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/bluerov2/bluerov2_states /home/zeb/eight-thurster/build/bluerov2/bluerov2_states/CMakeFiles/bluerov2_states_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states/CMakeFiles/bluerov2_states_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bluerov2/bluerov2_states/CMakeFiles/bluerov2_states_genlisp.dir/depend
 

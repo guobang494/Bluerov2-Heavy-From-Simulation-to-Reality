@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChangeSensorState.h"
-  "/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChemicalParticleConcentration.h"
-  "/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/DVL.h"
-  "/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/DVLBeam.h"
-  "/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/PositionWithCovariance.h"
-  "/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/PositionWithCovarianceStamped.h"
-  "/home/zeb/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/Salinity.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChangeSensorState.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/ChemicalParticleConcentration.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/DVL.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/DVLBeam.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/PositionWithCovariance.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/PositionWithCovarianceStamped.h"
+  "/home/zeb/test-8/eight-thurster/devel/include/uuv_sensor_ros_plugins_msgs/Salinity.h"
   "CMakeFiles/uuv_sensor_ros_plugins_msgs_generate_messages_cpp"
 )
 

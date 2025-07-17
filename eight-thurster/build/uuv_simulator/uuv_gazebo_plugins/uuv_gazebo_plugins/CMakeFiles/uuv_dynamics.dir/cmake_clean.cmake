@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_dynamics.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_dynamics.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_dynamics.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_dynamics.so"
   "CMakeFiles/uuv_dynamics.dir/src/Dynamics.cc.o"
 )
 

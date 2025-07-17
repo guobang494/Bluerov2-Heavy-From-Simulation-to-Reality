@@ -43,47 +43,47 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Utility rule file for uuv_thruster_manager_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/progress.make
 
-uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs: /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterCurve.js
-uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs: /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.js
-uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs: /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.js
-uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs: /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.js
+uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs: /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterCurve.js
+uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs: /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.js
+uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs: /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.js
+uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs: /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.js
 
 
-/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterCurve.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterCurve.js: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterCurve.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from uuv_thruster_manager/GetThrusterCurve.srv"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterCurve.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p uuv_thruster_manager -o /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv
+/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterCurve.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterCurve.js: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterCurve.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from uuv_thruster_manager/GetThrusterCurve.srv"
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterCurve.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p uuv_thruster_manager -o /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv
 
-/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.js: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/ThrusterManagerInfo.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from uuv_thruster_manager/ThrusterManagerInfo.srv"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/ThrusterManagerInfo.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p uuv_thruster_manager -o /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv
+/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.js: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/ThrusterManagerInfo.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from uuv_thruster_manager/ThrusterManagerInfo.srv"
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/ThrusterManagerInfo.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p uuv_thruster_manager -o /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv
 
-/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.js: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/SetThrusterManagerConfig.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from uuv_thruster_manager/SetThrusterManagerConfig.srv"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/SetThrusterManagerConfig.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p uuv_thruster_manager -o /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv
+/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.js: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/SetThrusterManagerConfig.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from uuv_thruster_manager/SetThrusterManagerConfig.srv"
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/SetThrusterManagerConfig.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p uuv_thruster_manager -o /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv
 
-/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.js: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterManagerConfig.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from uuv_thruster_manager/GetThrusterManagerConfig.srv"
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterManagerConfig.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p uuv_thruster_manager -o /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv
+/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.js: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterManagerConfig.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from uuv_thruster_manager/GetThrusterManagerConfig.srv"
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterManagerConfig.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p uuv_thruster_manager -o /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv
 
 uuv_thruster_manager_generate_messages_nodejs: uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs
-uuv_thruster_manager_generate_messages_nodejs: /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterCurve.js
-uuv_thruster_manager_generate_messages_nodejs: /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.js
-uuv_thruster_manager_generate_messages_nodejs: /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.js
-uuv_thruster_manager_generate_messages_nodejs: /home/zeb/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.js
+uuv_thruster_manager_generate_messages_nodejs: /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterCurve.js
+uuv_thruster_manager_generate_messages_nodejs: /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/ThrusterManagerInfo.js
+uuv_thruster_manager_generate_messages_nodejs: /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/SetThrusterManagerConfig.js
+uuv_thruster_manager_generate_messages_nodejs: /home/zeb/test-8/eight-thurster/devel/share/gennodejs/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.js
 uuv_thruster_manager_generate_messages_nodejs: uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/build.make
 
 .PHONY : uuv_thruster_manager_generate_messages_nodejs
@@ -94,10 +94,10 @@ uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_g
 .PHONY : uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/build
 
 uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/clean:
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && $(CMAKE_COMMAND) -P CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager && $(CMAKE_COMMAND) -P CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/clean
 
 uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : uuv_simulator/uuv_control/uuv_thruster_manager/CMakeFiles/uuv_thruster_manager_generate_messages_nodejs.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ bluerov2/bluerov2_description/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : bluerov2/bluerov2_description/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 bluerov2/bluerov2_description/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/zeb/eight-thurster/build/bluerov2/bluerov2_description && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_description && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : bluerov2/bluerov2_description/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 bluerov2/bluerov2_description/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/bluerov2/bluerov2_description /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/bluerov2/bluerov2_description /home/zeb/eight-thurster/build/bluerov2/bluerov2_description/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_description /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_description /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_description/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bluerov2/bluerov2_description/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

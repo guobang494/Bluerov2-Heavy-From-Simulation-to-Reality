@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libImuDo.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libImuDo.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libImuDo.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libImuDo.so"
   "CMakeFiles/ImuDo.dir/src/ImuDo.cpp.o"
 )
 

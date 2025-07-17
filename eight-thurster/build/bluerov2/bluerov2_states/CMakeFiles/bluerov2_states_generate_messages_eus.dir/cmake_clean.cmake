@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/bluerov2_states/manifest.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/bluerov2_states/manifest.l"
   "CMakeFiles/bluerov2_states_generate_messages_eus"
 )
 

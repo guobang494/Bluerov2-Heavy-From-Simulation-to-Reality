@@ -43,293 +43,293 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 # Utility rule file for uuv_control_msgs_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/progress.make
 
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/Hold.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/ResetController.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Hold.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ResetController.h
 
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Trajectory.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Accel.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from uuv_control_msgs/Trajectory.msg"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Trajectory.msg -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Trajectory.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Accel.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from uuv_control_msgs/Trajectory.msg"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Trajectory.msg -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Accel.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from uuv_control_msgs/TrajectoryPoint.msg"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Accel.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from uuv_control_msgs/TrajectoryPoint.msg"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from uuv_control_msgs/Waypoint.msg"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from uuv_control_msgs/Waypoint.msg"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from uuv_control_msgs/WaypointSet.msg"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from uuv_control_msgs/WaypointSet.msg"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/AddWaypoint.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from uuv_control_msgs/AddWaypoint.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/AddWaypoint.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/AddWaypoint.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from uuv_control_msgs/AddWaypoint.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/AddWaypoint.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/ClearWaypoints.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from uuv_control_msgs/ClearWaypoints.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/ClearWaypoints.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/ClearWaypoints.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from uuv_control_msgs/ClearWaypoints.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/ClearWaypoints.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitCircularTrajectory.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from uuv_control_msgs/InitCircularTrajectory.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitCircularTrajectory.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitCircularTrajectory.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from uuv_control_msgs/InitCircularTrajectory.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitCircularTrajectory.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitHelicalTrajectory.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from uuv_control_msgs/InitHelicalTrajectory.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitHelicalTrajectory.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitHelicalTrajectory.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from uuv_control_msgs/InitHelicalTrajectory.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitHelicalTrajectory.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointsFromFile.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/share/std_msgs/msg/String.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from uuv_control_msgs/InitWaypointsFromFile.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointsFromFile.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointsFromFile.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/share/std_msgs/msg/String.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from uuv_control_msgs/InitWaypointsFromFile.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointsFromFile.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetWaypoints.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from uuv_control_msgs/GetWaypoints.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetWaypoints.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetWaypoints.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from uuv_control_msgs/GetWaypoints.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetWaypoints.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoTo.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from uuv_control_msgs/GoTo.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoTo.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoTo.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from uuv_control_msgs/GoTo.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoTo.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoToIncremental.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from uuv_control_msgs/GoToIncremental.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoToIncremental.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoToIncremental.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from uuv_control_msgs/GoToIncremental.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoToIncremental.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Hold.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Hold.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/Hold.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Hold.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/Hold.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from uuv_control_msgs/Hold.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/Hold.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Hold.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Hold.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/Hold.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Hold.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Hold.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from uuv_control_msgs/Hold.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/Hold.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/IsRunningTrajectory.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from uuv_control_msgs/IsRunningTrajectory.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/IsRunningTrajectory.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/IsRunningTrajectory.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from uuv_control_msgs/IsRunningTrajectory.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/IsRunningTrajectory.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointSet.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/String.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from uuv_control_msgs/InitWaypointSet.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointSet.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointSet.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/String.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from uuv_control_msgs/InitWaypointSet.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointSet.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitRectTrajectory.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from uuv_control_msgs/InitRectTrajectory.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitRectTrajectory.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitRectTrajectory.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from uuv_control_msgs/InitRectTrajectory.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitRectTrajectory.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/StartTrajectory.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from uuv_control_msgs/StartTrajectory.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/StartTrajectory.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/StartTrajectory.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from uuv_control_msgs/StartTrajectory.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/StartTrajectory.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SwitchToAutomatic.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating C++ code from uuv_control_msgs/SwitchToAutomatic.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SwitchToAutomatic.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SwitchToAutomatic.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating C++ code from uuv_control_msgs/SwitchToAutomatic.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SwitchToAutomatic.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SwitchToManual.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from uuv_control_msgs/SwitchToManual.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SwitchToManual.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SwitchToManual.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from uuv_control_msgs/SwitchToManual.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SwitchToManual.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetPIDParams.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating C++ code from uuv_control_msgs/SetPIDParams.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetPIDParams.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetPIDParams.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating C++ code from uuv_control_msgs/SetPIDParams.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetPIDParams.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetPIDParams.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating C++ code from uuv_control_msgs/GetPIDParams.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetPIDParams.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetPIDParams.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating C++ code from uuv_control_msgs/GetPIDParams.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetPIDParams.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetSMControllerParams.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating C++ code from uuv_control_msgs/SetSMControllerParams.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetSMControllerParams.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetSMControllerParams.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating C++ code from uuv_control_msgs/SetSMControllerParams.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetSMControllerParams.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetSMControllerParams.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating C++ code from uuv_control_msgs/GetSMControllerParams.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetSMControllerParams.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetSMControllerParams.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating C++ code from uuv_control_msgs/GetSMControllerParams.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetSMControllerParams.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetMBSMControllerParams.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating C++ code from uuv_control_msgs/SetMBSMControllerParams.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetMBSMControllerParams.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetMBSMControllerParams.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating C++ code from uuv_control_msgs/SetMBSMControllerParams.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/SetMBSMControllerParams.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetMBSMControllerParams.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating C++ code from uuv_control_msgs/GetMBSMControllerParams.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetMBSMControllerParams.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetMBSMControllerParams.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating C++ code from uuv_control_msgs/GetMBSMControllerParams.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetMBSMControllerParams.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/ResetController.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/ResetController.h: /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/ResetController.srv
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/ResetController.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/zeb/eight-thurster/devel/include/uuv_control_msgs/ResetController.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating C++ code from uuv_control_msgs/ResetController.srv"
-	cd /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/ResetController.srv -Iuuv_control_msgs:/home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ResetController.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ResetController.h: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/ResetController.srv
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ResetController.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ResetController.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating C++ code from uuv_control_msgs/ResetController.srv"
+	cd /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs && /home/zeb/test-8/eight-thurster/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/ResetController.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 uuv_control_msgs_generate_messages_cpp: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoTo.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/Hold.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h
-uuv_control_msgs_generate_messages_cpp: /home/zeb/eight-thurster/devel/include/uuv_control_msgs/ResetController.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Trajectory.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/TrajectoryPoint.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Waypoint.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/WaypointSet.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/AddWaypoint.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ClearWaypoints.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitCircularTrajectory.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitHelicalTrajectory.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointsFromFile.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetWaypoints.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoTo.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GoToIncremental.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/Hold.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/IsRunningTrajectory.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitWaypointSet.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/InitRectTrajectory.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/StartTrajectory.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToAutomatic.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SwitchToManual.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetPIDParams.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetPIDParams.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetSMControllerParams.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetSMControllerParams.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/SetMBSMControllerParams.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/GetMBSMControllerParams.h
+uuv_control_msgs_generate_messages_cpp: /home/zeb/test-8/eight-thurster/devel/include/uuv_control_msgs/ResetController.h
 uuv_control_msgs_generate_messages_cpp: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/build.make
 
 .PHONY : uuv_control_msgs_generate_messages_cpp
@@ -340,10 +340,10 @@ uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_
 .PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/build
 
 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/clean:
-	cd /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && $(CMAKE_COMMAND) -P CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && $(CMAKE_COMMAND) -P CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/clean
 
 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/eight-thurster/src /home/zeb/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs /home/zeb/eight-thurster/build /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs /home/zeb/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zeb/test-8/eight-thurster/src /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs /home/zeb/test-8/eight-thurster/build /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/depend
 

@@ -4,7 +4,7 @@ message(WARNING "Invoking generate_messages() without having added any message o
 You should either add add_message_files() and/or add_service_files() calls or remove the invocation of generate_messages().")
 message(STATUS "bluerov2_states: 0 messages, 0 services")
 
-set(MSG_I_FLAGS "-Ibluerov2_states:/home/zeb/eight-thurster/src/bluerov2/bluerov2_states/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ibluerov2_states:/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_states/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/eight-thurster/build/CMakeFiles /home/zeb/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/progress.marks
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/eight-thurster/build/CMakeFiles 0
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/test-8/eight-thurster/build/CMakeFiles /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/progress.marks
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/test-8/eight-thurster/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/clean
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/preinstall
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/preinstall
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ _run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test: uuv_simulat
 
 # fast build rule for target.
 _run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/build
 .PHONY : _run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test: uuv_simulato
 
 # fast build rule for target.
 run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test.dir/build
 .PHONY : run_tests_uuv_sensor_ros_plugins_rostest_test_test_urdf_files.test/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ _run_tests_uuv_sensor_ros_plugins: uuv_simulator/uuv_sensor_plugins/uuv_sensor_r
 
 # fast build rule for target.
 _run_tests_uuv_sensor_ros_plugins/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins.dir/build
 .PHONY : _run_tests_uuv_sensor_ros_plugins/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_ros_plugins_xacro_generated_to_devel_space_.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_ros_plugins_xacro_generated_to_devel_space_.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_ros_plugins_xacro_generated_to_devel_space_.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_ros_plugins_xacro_generated_to_devel_space_.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ uuv_sensor_ros_plugins_xacro_generated_to_devel_space_: uuv_simulator/uuv_sensor
 
 # fast build rule for target.
 uuv_sensor_ros_plugins_xacro_generated_to_devel_space_/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_ros_plugins_xacro_generated_to_devel_space_.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_ros_plugins_xacro_generated_to_devel_space_.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_ros_plugins_xacro_generated_to_devel_space_.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_ros_plugins_xacro_generated_to_devel_space_.dir/build
 .PHONY : uuv_sensor_ros_plugins_xacro_generated_to_devel_space_/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ image_sonar_ros_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/
 
 # fast build rule for target.
 image_sonar_ros_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build
 .PHONY : image_sonar_ros_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ run_tests_uuv_sensor_ros_plugins_rostest: uuv_simulator/uuv_sensor_plugins/uuv_s
 
 # fast build rule for target.
 run_tests_uuv_sensor_ros_plugins_rostest/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins_rostest.dir/build
 .PHONY : run_tests_uuv_sensor_ros_plugins_rostest/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ gazebo_plugins_gencfg: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/C
 
 # fast build rule for target.
 gazebo_plugins_gencfg/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build
 .PHONY : gazebo_plugins_gencfg/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ uuv_sensor_gazebo_msgs: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/
 
 # fast build rule for target.
 uuv_sensor_gazebo_msgs/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build
 .PHONY : uuv_sensor_gazebo_msgs/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/clean_test_results_uuv_sensor_ros_plugins.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/clean_test_results_uuv_sensor_ros_plugins.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/clean_test_results_uuv_sensor_ros_plugins.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/clean_test_results_uuv_sensor_ros_plugins.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ clean_test_results_uuv_sensor_ros_plugins: uuv_simulator/uuv_sensor_plugins/uuv_
 
 # fast build rule for target.
 clean_test_results_uuv_sensor_ros_plugins/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/clean_test_results_uuv_sensor_ros_plugins.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/clean_test_results_uuv_sensor_ros_plugins.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/clean_test_results_uuv_sensor_ros_plugins.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/clean_test_results_uuv_sensor_ros_plugins.dir/build
 .PHONY : clean_test_results_uuv_sensor_ros_plugins/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ uuv_gazebo_ros_base_model_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ro
 
 # fast build rule for target.
 uuv_gazebo_ros_base_model_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build
 .PHONY : uuv_gazebo_ros_base_model_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ _run_tests_uuv_sensor_ros_plugins_rostest: uuv_simulator/uuv_sensor_plugins/uuv_
 
 # fast build rule for target.
 _run_tests_uuv_sensor_ros_plugins_rostest/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/_run_tests_uuv_sensor_ros_plugins_rostest.dir/build
 .PHONY : _run_tests_uuv_sensor_ros_plugins_rostest/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ uuv_gazebo_ros_magnetometer_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_
 
 # fast build rule for target.
 uuv_gazebo_ros_magnetometer_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build
 .PHONY : uuv_gazebo_ros_magnetometer_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ uuv_gazebo_ros_base_sensor_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_r
 
 # fast build rule for target.
 uuv_gazebo_ros_base_sensor_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build
 .PHONY : uuv_gazebo_ros_base_sensor_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ uuv_gazebo_ros_gps_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugi
 
 # fast build rule for target.
 uuv_gazebo_ros_gps_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build
 .PHONY : uuv_gazebo_ros_gps_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ uuv_gazebo_ros_pose_gt_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_p
 
 # fast build rule for target.
 uuv_gazebo_ros_pose_gt_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build
 .PHONY : uuv_gazebo_ros_pose_gt_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ uuv_gazebo_ros_subsea_pressure_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sens
 
 # fast build rule for target.
 uuv_gazebo_ros_subsea_pressure_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build
 .PHONY : uuv_gazebo_ros_subsea_pressure_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ uuv_gazebo_ros_dvl_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugi
 
 # fast build rule for target.
 uuv_gazebo_ros_dvl_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build
 .PHONY : uuv_gazebo_ros_dvl_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ run_tests_uuv_sensor_ros_plugins: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ro
 
 # fast build rule for target.
 run_tests_uuv_sensor_ros_plugins/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/run_tests_uuv_sensor_ros_plugins.dir/build
 .PHONY : run_tests_uuv_sensor_ros_plugins/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ uuv_gazebo_ros_imu_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugi
 
 # fast build rule for target.
 uuv_gazebo_ros_imu_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build
 .PHONY : uuv_gazebo_ros_imu_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ uuv_gazebo_ros_camera_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_pl
 
 # fast build rule for target.
 uuv_gazebo_ros_camera_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build
 .PHONY : uuv_gazebo_ros_camera_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ uuv_gazebo_ros_cpc_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugi
 
 # fast build rule for target.
 uuv_gazebo_ros_cpc_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build
 .PHONY : uuv_gazebo_ros_cpc_plugin/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/rule
 .PHONY : uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/rule
 
 # Convenience name for target.
@@ -494,7 +494,7 @@ uuv_gazebo_ros_rpt_plugin: uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugi
 
 # fast build rule for target.
 uuv_gazebo_ros_rpt_plugin/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build
 .PHONY : uuv_gazebo_ros_rpt_plugin/fast
 
 SensorDvl.pb.o: SensorDvl.pb.cc.o
@@ -503,7 +503,7 @@ SensorDvl.pb.o: SensorDvl.pb.cc.o
 
 # target to build an object file
 SensorDvl.pb.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorDvl.pb.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorDvl.pb.cc.o
 .PHONY : SensorDvl.pb.cc.o
 
 SensorDvl.pb.i: SensorDvl.pb.cc.i
@@ -512,7 +512,7 @@ SensorDvl.pb.i: SensorDvl.pb.cc.i
 
 # target to preprocess a source file
 SensorDvl.pb.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorDvl.pb.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorDvl.pb.cc.i
 .PHONY : SensorDvl.pb.cc.i
 
 SensorDvl.pb.s: SensorDvl.pb.cc.s
@@ -521,7 +521,7 @@ SensorDvl.pb.s: SensorDvl.pb.cc.s
 
 # target to generate assembly for a file
 SensorDvl.pb.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorDvl.pb.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorDvl.pb.cc.s
 .PHONY : SensorDvl.pb.cc.s
 
 SensorImu.pb.o: SensorImu.pb.cc.o
@@ -530,7 +530,7 @@ SensorImu.pb.o: SensorImu.pb.cc.o
 
 # target to build an object file
 SensorImu.pb.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorImu.pb.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorImu.pb.cc.o
 .PHONY : SensorImu.pb.cc.o
 
 SensorImu.pb.i: SensorImu.pb.cc.i
@@ -539,7 +539,7 @@ SensorImu.pb.i: SensorImu.pb.cc.i
 
 # target to preprocess a source file
 SensorImu.pb.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorImu.pb.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorImu.pb.cc.i
 .PHONY : SensorImu.pb.cc.i
 
 SensorImu.pb.s: SensorImu.pb.cc.s
@@ -548,7 +548,7 @@ SensorImu.pb.s: SensorImu.pb.cc.s
 
 # target to generate assembly for a file
 SensorImu.pb.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorImu.pb.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorImu.pb.cc.s
 .PHONY : SensorImu.pb.cc.s
 
 SensorMagnetic.pb.o: SensorMagnetic.pb.cc.o
@@ -557,7 +557,7 @@ SensorMagnetic.pb.o: SensorMagnetic.pb.cc.o
 
 # target to build an object file
 SensorMagnetic.pb.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorMagnetic.pb.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorMagnetic.pb.cc.o
 .PHONY : SensorMagnetic.pb.cc.o
 
 SensorMagnetic.pb.i: SensorMagnetic.pb.cc.i
@@ -566,7 +566,7 @@ SensorMagnetic.pb.i: SensorMagnetic.pb.cc.i
 
 # target to preprocess a source file
 SensorMagnetic.pb.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorMagnetic.pb.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorMagnetic.pb.cc.i
 .PHONY : SensorMagnetic.pb.cc.i
 
 SensorMagnetic.pb.s: SensorMagnetic.pb.cc.s
@@ -575,7 +575,7 @@ SensorMagnetic.pb.s: SensorMagnetic.pb.cc.s
 
 # target to generate assembly for a file
 SensorMagnetic.pb.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorMagnetic.pb.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorMagnetic.pb.cc.s
 .PHONY : SensorMagnetic.pb.cc.s
 
 SensorPressure.pb.o: SensorPressure.pb.cc.o
@@ -584,7 +584,7 @@ SensorPressure.pb.o: SensorPressure.pb.cc.o
 
 # target to build an object file
 SensorPressure.pb.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorPressure.pb.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorPressure.pb.cc.o
 .PHONY : SensorPressure.pb.cc.o
 
 SensorPressure.pb.i: SensorPressure.pb.cc.i
@@ -593,7 +593,7 @@ SensorPressure.pb.i: SensorPressure.pb.cc.i
 
 # target to preprocess a source file
 SensorPressure.pb.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorPressure.pb.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorPressure.pb.cc.i
 .PHONY : SensorPressure.pb.cc.i
 
 SensorPressure.pb.s: SensorPressure.pb.cc.s
@@ -602,7 +602,7 @@ SensorPressure.pb.s: SensorPressure.pb.cc.s
 
 # target to generate assembly for a file
 SensorPressure.pb.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorPressure.pb.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorPressure.pb.cc.s
 .PHONY : SensorPressure.pb.cc.s
 
 SensorRpt.pb.o: SensorRpt.pb.cc.o
@@ -611,7 +611,7 @@ SensorRpt.pb.o: SensorRpt.pb.cc.o
 
 # target to build an object file
 SensorRpt.pb.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorRpt.pb.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorRpt.pb.cc.o
 .PHONY : SensorRpt.pb.cc.o
 
 SensorRpt.pb.i: SensorRpt.pb.cc.i
@@ -620,7 +620,7 @@ SensorRpt.pb.i: SensorRpt.pb.cc.i
 
 # target to preprocess a source file
 SensorRpt.pb.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorRpt.pb.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorRpt.pb.cc.i
 .PHONY : SensorRpt.pb.cc.i
 
 SensorRpt.pb.s: SensorRpt.pb.cc.s
@@ -629,7 +629,7 @@ SensorRpt.pb.s: SensorRpt.pb.cc.s
 
 # target to generate assembly for a file
 SensorRpt.pb.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorRpt.pb.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorRpt.pb.cc.s
 .PHONY : SensorRpt.pb.cc.s
 
 src/CPCROSPlugin.o: src/CPCROSPlugin.cc.o
@@ -638,7 +638,7 @@ src/CPCROSPlugin.o: src/CPCROSPlugin.cc.o
 
 # target to build an object file
 src/CPCROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/CPCROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/CPCROSPlugin.cc.o
 .PHONY : src/CPCROSPlugin.cc.o
 
 src/CPCROSPlugin.i: src/CPCROSPlugin.cc.i
@@ -647,7 +647,7 @@ src/CPCROSPlugin.i: src/CPCROSPlugin.cc.i
 
 # target to preprocess a source file
 src/CPCROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/CPCROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/CPCROSPlugin.cc.i
 .PHONY : src/CPCROSPlugin.cc.i
 
 src/CPCROSPlugin.s: src/CPCROSPlugin.cc.s
@@ -656,7 +656,7 @@ src/CPCROSPlugin.s: src/CPCROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/CPCROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/CPCROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/CPCROSPlugin.cc.s
 .PHONY : src/CPCROSPlugin.cc.s
 
 src/DVLROSPlugin.o: src/DVLROSPlugin.cc.o
@@ -665,7 +665,7 @@ src/DVLROSPlugin.o: src/DVLROSPlugin.cc.o
 
 # target to build an object file
 src/DVLROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/DVLROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/DVLROSPlugin.cc.o
 .PHONY : src/DVLROSPlugin.cc.o
 
 src/DVLROSPlugin.i: src/DVLROSPlugin.cc.i
@@ -674,7 +674,7 @@ src/DVLROSPlugin.i: src/DVLROSPlugin.cc.i
 
 # target to preprocess a source file
 src/DVLROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/DVLROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/DVLROSPlugin.cc.i
 .PHONY : src/DVLROSPlugin.cc.i
 
 src/DVLROSPlugin.s: src/DVLROSPlugin.cc.s
@@ -683,7 +683,7 @@ src/DVLROSPlugin.s: src/DVLROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/DVLROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/DVLROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/DVLROSPlugin.cc.s
 .PHONY : src/DVLROSPlugin.cc.s
 
 src/GPSROSPlugin.o: src/GPSROSPlugin.cc.o
@@ -692,7 +692,7 @@ src/GPSROSPlugin.o: src/GPSROSPlugin.cc.o
 
 # target to build an object file
 src/GPSROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/GPSROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/GPSROSPlugin.cc.o
 .PHONY : src/GPSROSPlugin.cc.o
 
 src/GPSROSPlugin.i: src/GPSROSPlugin.cc.i
@@ -701,7 +701,7 @@ src/GPSROSPlugin.i: src/GPSROSPlugin.cc.i
 
 # target to preprocess a source file
 src/GPSROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/GPSROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/GPSROSPlugin.cc.i
 .PHONY : src/GPSROSPlugin.cc.i
 
 src/GPSROSPlugin.s: src/GPSROSPlugin.cc.s
@@ -710,7 +710,7 @@ src/GPSROSPlugin.s: src/GPSROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/GPSROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/GPSROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/GPSROSPlugin.cc.s
 .PHONY : src/GPSROSPlugin.cc.s
 
 src/IMUROSPlugin.o: src/IMUROSPlugin.cc.o
@@ -719,7 +719,7 @@ src/IMUROSPlugin.o: src/IMUROSPlugin.cc.o
 
 # target to build an object file
 src/IMUROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/IMUROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/IMUROSPlugin.cc.o
 .PHONY : src/IMUROSPlugin.cc.o
 
 src/IMUROSPlugin.i: src/IMUROSPlugin.cc.i
@@ -728,7 +728,7 @@ src/IMUROSPlugin.i: src/IMUROSPlugin.cc.i
 
 # target to preprocess a source file
 src/IMUROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/IMUROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/IMUROSPlugin.cc.i
 .PHONY : src/IMUROSPlugin.cc.i
 
 src/IMUROSPlugin.s: src/IMUROSPlugin.cc.s
@@ -737,7 +737,7 @@ src/IMUROSPlugin.s: src/IMUROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/IMUROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/IMUROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/IMUROSPlugin.cc.s
 .PHONY : src/IMUROSPlugin.cc.s
 
 src/MagnetometerROSPlugin.o: src/MagnetometerROSPlugin.cc.o
@@ -746,7 +746,7 @@ src/MagnetometerROSPlugin.o: src/MagnetometerROSPlugin.cc.o
 
 # target to build an object file
 src/MagnetometerROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/MagnetometerROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/MagnetometerROSPlugin.cc.o
 .PHONY : src/MagnetometerROSPlugin.cc.o
 
 src/MagnetometerROSPlugin.i: src/MagnetometerROSPlugin.cc.i
@@ -755,7 +755,7 @@ src/MagnetometerROSPlugin.i: src/MagnetometerROSPlugin.cc.i
 
 # target to preprocess a source file
 src/MagnetometerROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/MagnetometerROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/MagnetometerROSPlugin.cc.i
 .PHONY : src/MagnetometerROSPlugin.cc.i
 
 src/MagnetometerROSPlugin.s: src/MagnetometerROSPlugin.cc.s
@@ -764,7 +764,7 @@ src/MagnetometerROSPlugin.s: src/MagnetometerROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/MagnetometerROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/MagnetometerROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/MagnetometerROSPlugin.cc.s
 .PHONY : src/MagnetometerROSPlugin.cc.s
 
 src/PoseGTROSPlugin.o: src/PoseGTROSPlugin.cc.o
@@ -773,7 +773,7 @@ src/PoseGTROSPlugin.o: src/PoseGTROSPlugin.cc.o
 
 # target to build an object file
 src/PoseGTROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/PoseGTROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/PoseGTROSPlugin.cc.o
 .PHONY : src/PoseGTROSPlugin.cc.o
 
 src/PoseGTROSPlugin.i: src/PoseGTROSPlugin.cc.i
@@ -782,7 +782,7 @@ src/PoseGTROSPlugin.i: src/PoseGTROSPlugin.cc.i
 
 # target to preprocess a source file
 src/PoseGTROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/PoseGTROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/PoseGTROSPlugin.cc.i
 .PHONY : src/PoseGTROSPlugin.cc.i
 
 src/PoseGTROSPlugin.s: src/PoseGTROSPlugin.cc.s
@@ -791,7 +791,7 @@ src/PoseGTROSPlugin.s: src/PoseGTROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/PoseGTROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/PoseGTROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/PoseGTROSPlugin.cc.s
 .PHONY : src/PoseGTROSPlugin.cc.s
 
 src/ROSBaseModelPlugin.o: src/ROSBaseModelPlugin.cc.o
@@ -800,14 +800,14 @@ src/ROSBaseModelPlugin.o: src/ROSBaseModelPlugin.cc.o
 
 # target to build an object file
 src/ROSBaseModelPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBaseModelPlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBaseModelPlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBaseModelPlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBaseModelPlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBaseModelPlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBaseModelPlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBaseModelPlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBaseModelPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBaseModelPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBaseModelPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBaseModelPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBaseModelPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBaseModelPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBaseModelPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBaseModelPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBaseModelPlugin.cc.o
 .PHONY : src/ROSBaseModelPlugin.cc.o
 
 src/ROSBaseModelPlugin.i: src/ROSBaseModelPlugin.cc.i
@@ -816,14 +816,14 @@ src/ROSBaseModelPlugin.i: src/ROSBaseModelPlugin.cc.i
 
 # target to preprocess a source file
 src/ROSBaseModelPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBaseModelPlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBaseModelPlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBaseModelPlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBaseModelPlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBaseModelPlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBaseModelPlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBaseModelPlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBaseModelPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBaseModelPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBaseModelPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBaseModelPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBaseModelPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBaseModelPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBaseModelPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBaseModelPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBaseModelPlugin.cc.i
 .PHONY : src/ROSBaseModelPlugin.cc.i
 
 src/ROSBaseModelPlugin.s: src/ROSBaseModelPlugin.cc.s
@@ -832,14 +832,14 @@ src/ROSBaseModelPlugin.s: src/ROSBaseModelPlugin.cc.s
 
 # target to generate assembly for a file
 src/ROSBaseModelPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBaseModelPlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBaseModelPlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBaseModelPlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBaseModelPlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBaseModelPlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBaseModelPlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBaseModelPlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBaseModelPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBaseModelPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBaseModelPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBaseModelPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBaseModelPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBaseModelPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBaseModelPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBaseModelPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBaseModelPlugin.cc.s
 .PHONY : src/ROSBaseModelPlugin.cc.s
 
 src/ROSBasePlugin.o: src/ROSBasePlugin.cc.o
@@ -848,16 +848,16 @@ src/ROSBasePlugin.o: src/ROSBasePlugin.cc.o
 
 # target to build an object file
 src/ROSBasePlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBasePlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBasePlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBasePlugin.cc.o
 .PHONY : src/ROSBasePlugin.cc.o
 
 src/ROSBasePlugin.i: src/ROSBasePlugin.cc.i
@@ -866,16 +866,16 @@ src/ROSBasePlugin.i: src/ROSBasePlugin.cc.i
 
 # target to preprocess a source file
 src/ROSBasePlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBasePlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBasePlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBasePlugin.cc.i
 .PHONY : src/ROSBasePlugin.cc.i
 
 src/ROSBasePlugin.s: src/ROSBasePlugin.cc.s
@@ -884,16 +884,16 @@ src/ROSBasePlugin.s: src/ROSBasePlugin.cc.s
 
 # target to generate assembly for a file
 src/ROSBasePlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBasePlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBasePlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBasePlugin.cc.s
 .PHONY : src/ROSBasePlugin.cc.s
 
 src/ROSBaseSensorPlugin.o: src/ROSBaseSensorPlugin.cc.o
@@ -902,8 +902,8 @@ src/ROSBaseSensorPlugin.o: src/ROSBaseSensorPlugin.cc.o
 
 # target to build an object file
 src/ROSBaseSensorPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBaseSensorPlugin.cc.o
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBaseSensorPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBaseSensorPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBaseSensorPlugin.cc.o
 .PHONY : src/ROSBaseSensorPlugin.cc.o
 
 src/ROSBaseSensorPlugin.i: src/ROSBaseSensorPlugin.cc.i
@@ -912,8 +912,8 @@ src/ROSBaseSensorPlugin.i: src/ROSBaseSensorPlugin.cc.i
 
 # target to preprocess a source file
 src/ROSBaseSensorPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBaseSensorPlugin.cc.i
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBaseSensorPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBaseSensorPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBaseSensorPlugin.cc.i
 .PHONY : src/ROSBaseSensorPlugin.cc.i
 
 src/ROSBaseSensorPlugin.s: src/ROSBaseSensorPlugin.cc.s
@@ -922,8 +922,8 @@ src/ROSBaseSensorPlugin.s: src/ROSBaseSensorPlugin.cc.s
 
 # target to generate assembly for a file
 src/ROSBaseSensorPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBaseSensorPlugin.cc.s
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBaseSensorPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBaseSensorPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBaseSensorPlugin.cc.s
 .PHONY : src/ROSBaseSensorPlugin.cc.s
 
 src/RPTROSPlugin.o: src/RPTROSPlugin.cc.o
@@ -932,7 +932,7 @@ src/RPTROSPlugin.o: src/RPTROSPlugin.cc.o
 
 # target to build an object file
 src/RPTROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/RPTROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/RPTROSPlugin.cc.o
 .PHONY : src/RPTROSPlugin.cc.o
 
 src/RPTROSPlugin.i: src/RPTROSPlugin.cc.i
@@ -941,7 +941,7 @@ src/RPTROSPlugin.i: src/RPTROSPlugin.cc.i
 
 # target to preprocess a source file
 src/RPTROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/RPTROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/RPTROSPlugin.cc.i
 .PHONY : src/RPTROSPlugin.cc.i
 
 src/RPTROSPlugin.s: src/RPTROSPlugin.cc.s
@@ -950,7 +950,7 @@ src/RPTROSPlugin.s: src/RPTROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/RPTROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/RPTROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/RPTROSPlugin.cc.s
 .PHONY : src/RPTROSPlugin.cc.s
 
 src/SubseaPressureROSPlugin.o: src/SubseaPressureROSPlugin.cc.o
@@ -959,7 +959,7 @@ src/SubseaPressureROSPlugin.o: src/SubseaPressureROSPlugin.cc.o
 
 # target to build an object file
 src/SubseaPressureROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/SubseaPressureROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/SubseaPressureROSPlugin.cc.o
 .PHONY : src/SubseaPressureROSPlugin.cc.o
 
 src/SubseaPressureROSPlugin.i: src/SubseaPressureROSPlugin.cc.i
@@ -968,7 +968,7 @@ src/SubseaPressureROSPlugin.i: src/SubseaPressureROSPlugin.cc.i
 
 # target to preprocess a source file
 src/SubseaPressureROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/SubseaPressureROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/SubseaPressureROSPlugin.cc.i
 .PHONY : src/SubseaPressureROSPlugin.cc.i
 
 src/SubseaPressureROSPlugin.s: src/SubseaPressureROSPlugin.cc.s
@@ -977,7 +977,7 @@ src/SubseaPressureROSPlugin.s: src/SubseaPressureROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/SubseaPressureROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/SubseaPressureROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/SubseaPressureROSPlugin.cc.s
 .PHONY : src/SubseaPressureROSPlugin.cc.s
 
 src/UnderwaterCameraROSPlugin.o: src/UnderwaterCameraROSPlugin.cc.o
@@ -986,7 +986,7 @@ src/UnderwaterCameraROSPlugin.o: src/UnderwaterCameraROSPlugin.cc.o
 
 # target to build an object file
 src/UnderwaterCameraROSPlugin.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/src/UnderwaterCameraROSPlugin.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/src/UnderwaterCameraROSPlugin.cc.o
 .PHONY : src/UnderwaterCameraROSPlugin.cc.o
 
 src/UnderwaterCameraROSPlugin.i: src/UnderwaterCameraROSPlugin.cc.i
@@ -995,7 +995,7 @@ src/UnderwaterCameraROSPlugin.i: src/UnderwaterCameraROSPlugin.cc.i
 
 # target to preprocess a source file
 src/UnderwaterCameraROSPlugin.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/src/UnderwaterCameraROSPlugin.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/src/UnderwaterCameraROSPlugin.cc.i
 .PHONY : src/UnderwaterCameraROSPlugin.cc.i
 
 src/UnderwaterCameraROSPlugin.s: src/UnderwaterCameraROSPlugin.cc.s
@@ -1004,7 +1004,7 @@ src/UnderwaterCameraROSPlugin.s: src/UnderwaterCameraROSPlugin.cc.s
 
 # target to generate assembly for a file
 src/UnderwaterCameraROSPlugin.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/src/UnderwaterCameraROSPlugin.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/src/UnderwaterCameraROSPlugin.cc.s
 .PHONY : src/UnderwaterCameraROSPlugin.cc.s
 
 src/gazebo_ros_image_sonar.o: src/gazebo_ros_image_sonar.cpp.o
@@ -1013,7 +1013,7 @@ src/gazebo_ros_image_sonar.o: src/gazebo_ros_image_sonar.cpp.o
 
 # target to build an object file
 src/gazebo_ros_image_sonar.cpp.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/src/gazebo_ros_image_sonar.cpp.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/src/gazebo_ros_image_sonar.cpp.o
 .PHONY : src/gazebo_ros_image_sonar.cpp.o
 
 src/gazebo_ros_image_sonar.i: src/gazebo_ros_image_sonar.cpp.i
@@ -1022,7 +1022,7 @@ src/gazebo_ros_image_sonar.i: src/gazebo_ros_image_sonar.cpp.i
 
 # target to preprocess a source file
 src/gazebo_ros_image_sonar.cpp.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/src/gazebo_ros_image_sonar.cpp.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/src/gazebo_ros_image_sonar.cpp.i
 .PHONY : src/gazebo_ros_image_sonar.cpp.i
 
 src/gazebo_ros_image_sonar.s: src/gazebo_ros_image_sonar.cpp.s
@@ -1031,7 +1031,7 @@ src/gazebo_ros_image_sonar.s: src/gazebo_ros_image_sonar.cpp.s
 
 # target to generate assembly for a file
 src/gazebo_ros_image_sonar.cpp.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/src/gazebo_ros_image_sonar.cpp.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/build.make uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/CMakeFiles/image_sonar_ros_plugin.dir/src/gazebo_ros_image_sonar.cpp.s
 .PHONY : src/gazebo_ros_image_sonar.cpp.s
 
 # Help Target
@@ -1134,6 +1134,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

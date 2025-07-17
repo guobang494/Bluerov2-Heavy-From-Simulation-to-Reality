@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node"
-  "/home/zeb/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node"
+  "/home/zeb/test-8/eight-thurster/devel/lib/bluerov2_mpc/bluerov2_mpc_node.pdb"
   "CMakeFiles/bluerov2_mpc_node.dir/src/bluerov2_mpc_node.cpp.o"
 )
 

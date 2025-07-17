@@ -2,7 +2,7 @@
 
 message(STATUS "bluerov2_dobmpc: 2 messages, 0 services")
 
-set(MSG_I_FLAGS "-Ibluerov2_dobmpc:/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ibluerov2_dobmpc:/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(bluerov2_dobmpc_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
 add_custom_target(_bluerov2_dobmpc_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_dobmpc" "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" "geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Twist:std_msgs/Header:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_dobmpc" "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" "geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Point:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
 add_custom_target(_bluerov2_dobmpc_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_dobmpc" "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" "geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Twist:std_msgs/Header:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "bluerov2_dobmpc" "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" "geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Point:std_msgs/Header"
 )
 
 #
@@ -34,15 +34,15 @@ add_custom_target(_bluerov2_dobmpc_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_dobmpc
 )
 _generate_msg_cpp(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/bluerov2_dobmpc
 )
 
@@ -60,9 +60,9 @@ add_custom_target(bluerov2_dobmpc_generate_messages_cpp
 add_dependencies(bluerov2_dobmpc_generate_messages bluerov2_dobmpc_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_cpp _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_cpp _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,15 +75,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS bluerov2_dobmpc_generate_messages_c
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_dobmpc
 )
 _generate_msg_eus(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/bluerov2_dobmpc
 )
 
@@ -101,9 +101,9 @@ add_custom_target(bluerov2_dobmpc_generate_messages_eus
 add_dependencies(bluerov2_dobmpc_generate_messages bluerov2_dobmpc_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_eus _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_eus _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,15 +116,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS bluerov2_dobmpc_generate_messages_e
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_dobmpc
 )
 _generate_msg_lisp(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/bluerov2_dobmpc
 )
 
@@ -142,9 +142,9 @@ add_custom_target(bluerov2_dobmpc_generate_messages_lisp
 add_dependencies(bluerov2_dobmpc_generate_messages bluerov2_dobmpc_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_lisp _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_lisp _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,15 +157,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS bluerov2_dobmpc_generate_messages_l
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_dobmpc
 )
 _generate_msg_nodejs(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/bluerov2_dobmpc
 )
 
@@ -183,9 +183,9 @@ add_custom_target(bluerov2_dobmpc_generate_messages_nodejs
 add_dependencies(bluerov2_dobmpc_generate_messages bluerov2_dobmpc_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_nodejs _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_nodejs _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,15 +198,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS bluerov2_dobmpc_generate_messages_n
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_dobmpc
 )
 _generate_msg_py(bluerov2_dobmpc
-  "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
+  "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/bluerov2_dobmpc
 )
 
@@ -224,9 +224,9 @@ add_custom_target(bluerov2_dobmpc_generate_messages_py
 add_dependencies(bluerov2_dobmpc_generate_messages bluerov2_dobmpc_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_py _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
+get_filename_component(_filename "/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Pose.msg" NAME_WE)
 add_dependencies(bluerov2_dobmpc_generate_messages_py _bluerov2_dobmpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

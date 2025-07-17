@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/manifest.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/ChemicalParticleConcentration.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/DVL.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/DVLBeam.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovariance.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovarianceStamped.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/Salinity.l"
-  "/home/zeb/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/srv/ChangeSensorState.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/manifest.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/ChemicalParticleConcentration.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/DVL.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/DVLBeam.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovariance.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovarianceStamped.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/msg/Salinity.l"
+  "/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_sensor_ros_plugins_msgs/srv/ChangeSensorState.l"
   "CMakeFiles/uuv_sensor_ros_plugins_msgs_generate_messages_eus"
 )
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zeb/eight-thurster/src
+CMAKE_SOURCE_DIR = /home/zeb/test-8/eight-thurster/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zeb/eight-thurster/build
+CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/eight-thurster/build/CMakeFiles /home/zeb/eight-thurster/build/uuv_simulator/uuv_assistants/CMakeFiles/progress.marks
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/eight-thurster/build/CMakeFiles 0
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/test-8/eight-thurster/build/CMakeFiles /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_assistants/CMakeFiles/progress.marks
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/test-8/eight-thurster/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/clean
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/preinstall
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/preinstall
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/rule:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/rule
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/rule
 .PHONY : uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ uuv_message_to_tf: uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir
 
 # fast build rule for target.
 uuv_message_to_tf/fast:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build.make uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build.make uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build
 .PHONY : uuv_message_to_tf/fast
 
 src/message_to_tf.o: src/message_to_tf.cc.o
@@ -188,7 +188,7 @@ src/message_to_tf.o: src/message_to_tf.cc.o
 
 # target to build an object file
 src/message_to_tf.cc.o:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build.make uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/src/message_to_tf.cc.o
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build.make uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/src/message_to_tf.cc.o
 .PHONY : src/message_to_tf.cc.o
 
 src/message_to_tf.i: src/message_to_tf.cc.i
@@ -197,7 +197,7 @@ src/message_to_tf.i: src/message_to_tf.cc.i
 
 # target to preprocess a source file
 src/message_to_tf.cc.i:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build.make uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/src/message_to_tf.cc.i
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build.make uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/src/message_to_tf.cc.i
 .PHONY : src/message_to_tf.cc.i
 
 src/message_to_tf.s: src/message_to_tf.cc.s
@@ -206,7 +206,7 @@ src/message_to_tf.s: src/message_to_tf.cc.s
 
 # target to generate assembly for a file
 src/message_to_tf.cc.s:
-	cd /home/zeb/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build.make uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/src/message_to_tf.cc.s
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/build.make uuv_simulator/uuv_assistants/CMakeFiles/uuv_message_to_tf.dir/src/message_to_tf.cc.s
 .PHONY : src/message_to_tf.cc.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zeb/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zeb/test-8/eight-thurster/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

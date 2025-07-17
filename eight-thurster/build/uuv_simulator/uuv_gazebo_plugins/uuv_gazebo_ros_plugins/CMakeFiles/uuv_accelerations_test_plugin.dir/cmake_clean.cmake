@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zeb/eight-thurster/devel/lib/libuuv_accelerations_test_plugin.pdb"
-  "/home/zeb/eight-thurster/devel/lib/libuuv_accelerations_test_plugin.so"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_accelerations_test_plugin.pdb"
+  "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_accelerations_test_plugin.so"
   "CMakeFiles/uuv_accelerations_test_plugin.dir/src/AccelerationsTestPlugin.cc.o"
 )
 
