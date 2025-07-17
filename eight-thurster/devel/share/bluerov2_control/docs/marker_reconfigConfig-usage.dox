@@ -1,0 +1,13 @@
+\subsubsection usage Usage
+\verbatim
+<node name="trajectory_visualizer.py" pkg="bluerov2_control" type="trajectory_visualizer.py">
+  <param name="scale_x" type="double" value="1.0" />
+  <param name="scale_y" type="double" value="1.0" />
+  <param name="scale_z" type="double" value="1.0" />
+  <param name="color_r" type="double" value="1.0" />
+  <param name="color_g" type="double" value="0.0" />
+  <param name="color_b" type="double" value="0.0" />
+  <param name="color_a" type="double" value="1.0" />
+</node>
+\endverbatim
+

@@ -1,0 +1,57 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~accel_x_kp" : \b [double] kp x Gain Acceleration min: -400.0, default: 1.0, max: 400.0
+- \b "~accel_x_ki" : \b [double] ki x Gain Acceleration min: -400.0, default: 0.0, max: 400.0
+- \b "~accel_x_kd" : \b [double] kd x Gain Acceleration min: -400.0, default: 0.0, max: 400.0
+- \b "~accel_x_sat" : \b [double] Surge Force Saturation (N) min: 0.0, default: 1.0, max: 110.0
+- \b "~accel_y_kp" : \b [double] kp y Gain Acceleration min: -400.0, default: 1.0, max: 400.0
+- \b "~accel_y_ki" : \b [double] ki y Gain Acceleration min: -400.0, default: 0.0, max: 400.0
+- \b "~accel_y_kd" : \b [double] kd y Gain Acceleration min: -400.0, default: 0.0, max: 400.0
+- \b "~accel_y_sat" : \b [double] Sway Force Saturation (N) min: 0.0, default: 1.0, max: 110.0
+- \b "~accel_z_kp" : \b [double] kp z Gain Acceleration min: -400.0, default: 1.0, max: 400.0
+- \b "~accel_z_ki" : \b [double] ki z Gain Acceleration min: -400.0, default: 0.0, max: 400.0
+- \b "~accel_z_kd" : \b [double] kd z Gain Acceleration min: -400.0, default: 0.0, max: 400.0
+- \b "~accel_z_sat" : \b [double] Heave Force Saturation (N) min: 0.0, default: 1.0, max: 110.0
+- \b "~accel_r_kp" : \b [double] kp r Gain Acceleration min: -400.0, default: 1.0, max: 400.0
+- \b "~accel_r_ki" : \b [double] ki r Gain Acceleration min: -400.0, default: 0.0, max: 400.0
+- \b "~accel_r_kd" : \b [double] kd r Gain Acceleration min: -400.0, default: 0.0, max: 400.0
+- \b "~accel_r_sat" : \b [double] Yaw Moment Saturation (N) min: 0.0, default: 1.0, max: 40.0
+- \b "~vel_x_kp" : \b [double] kp x Gain Velocity min: -400.0, default: 1.0, max: 400.0
+- \b "~vel_x_ki" : \b [double] ki x Gain Velocity min: -400.0, default: 0.0, max: 400.0
+- \b "~vel_x_kd" : \b [double] kd x Gain Velocity min: -400.0, default: 0.0, max: 400.0
+- \b "~vel_x_sat" : \b [double] x Acceleration SP Limits min: 0.0, default: 1.0, max: 10.0
+- \b "~vel_x_lim" : \b [double] x Velocity SP limit (Overrides Position Controller) min: 0.0, default: 1.0, max: 2.0
+- \b "~vel_y_kp" : \b [double] kp y Gain Velocity min: -400.0, default: 1.0, max: 400.0
+- \b "~vel_y_ki" : \b [double] ki y Gain Velocity min: -400.0, default: 0.0, max: 400.0
+- \b "~vel_y_kd" : \b [double] kd y Gain Velocity min: -400.0, default: 0.0, max: 400.0
+- \b "~vel_y_sat" : \b [double] y Acceleration SP Limits min: 0.0, default: 1.0, max: 10.0
+- \b "~vel_y_lim" : \b [double] y Velocity SP limit (Overrides Position Controller) min: 0.0, default: 1.0, max: 2.0
+- \b "~vel_z_kp" : \b [double] kp z Gain Velocity min: -400.0, default: 1.0, max: 400.0
+- \b "~vel_z_ki" : \b [double] ki z Gain Velocity min: -400.0, default: 0.0, max: 400.0
+- \b "~vel_z_kd" : \b [double] kd z Gain Velocity min: -400.0, default: 0.0, max: 400.0
+- \b "~vel_z_sat" : \b [double] z Acceleration SP Limits min: 0.0, default: 1.0, max: 10.0
+- \b "~vel_z_lim" : \b [double] z Velocity SP limit (Overrides Position Controller) min: 0.0, default: 1.0, max: 2.0
+- \b "~vel_r_kp" : \b [double] kp r Gain Velocity min: -400.0, default: 1.0, max: 400.0
+- \b "~vel_r_ki" : \b [double] ki r Gain Velocity min: -400.0, default: 0.0, max: 400.0
+- \b "~vel_r_kd" : \b [double] kd r Gain Velocity min: -400.0, default: 0.0, max: 400.0
+- \b "~vel_r_sat" : \b [double] r Acceleration SP Limits min: 0.0, default: 1.0, max: 10.0
+- \b "~vel_r_lim" : \b [double] r Velocity limit (Overrides Position Controller) min: 0.0, default: 1.0, max: 0.5
+- \b "~pos_x_kp" : \b [double] kp x Gain Position min: -400.0, default: 1.0, max: 400.0
+- \b "~pos_x_ki" : \b [double] ki x Gain Position min: -400.0, default: 0.0, max: 400.0
+- \b "~pos_x_kd" : \b [double] kd x Gain Position min: -400.0, default: 0.0, max: 400.0
+- \b "~pos_x_sat" : \b [double] x Velocity SP Limits min: 0.0, default: 1.0, max: 2.0
+- \b "~pos_y_kp" : \b [double] kp y Gain Position min: -400.0, default: 1.0, max: 400.0
+- \b "~pos_y_ki" : \b [double] ki y Gain Position min: -400.0, default: 0.0, max: 400.0
+- \b "~pos_y_kd" : \b [double] kd y Gain Position min: -400.0, default: 0.0, max: 400.0
+- \b "~pos_y_sat" : \b [double] y Velocity SP Limits min: 0.0, default: 1.0, max: 2.0
+- \b "~pos_z_kp" : \b [double] kp z Gain Position min: -400.0, default: 1.0, max: 400.0
+- \b "~pos_z_ki" : \b [double] ki z Gain Position min: -400.0, default: 0.0, max: 400.0
+- \b "~pos_z_kd" : \b [double] kd z Gain Position min: -400.0, default: 0.0, max: 400.0
+- \b "~pos_z_sat" : \b [double] z Velocity SP Limits min: 0.0, default: 1.0, max: 2.0
+- \b "~pos_r_kp" : \b [double] kp r Gain Position min: -400.0, default: 1.0, max: 400.0
+- \b "~pos_r_ki" : \b [double] ki r Gain Position min: -400.0, default: 0.0, max: 400.0
+- \b "~pos_r_kd" : \b [double] kd r Gain Position min: -400.0, default: 0.0, max: 400.0
+- \b "~pos_r_sat" : \b [double] yaw Velocity SP Limits min: 0.0, default: 1.0, max: 0.5
+

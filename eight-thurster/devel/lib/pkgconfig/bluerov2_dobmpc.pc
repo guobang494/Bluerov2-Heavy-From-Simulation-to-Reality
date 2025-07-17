@@ -1,0 +1,8 @@
+prefix=/home/zeb/eight-thurster/devel
+
+Name: bluerov2_dobmpc
+Description: Description of bluerov2_dobmpc
+Version: 0.0.0
+Cflags: -I/home/zeb/eight-thurster/devel/include -I/home/zeb/eight-thurster/src/bluerov2/bluerov2_dobmpc/include
+Libs: -L${prefix}/lib -lbluerov2_dobmpc -lbluerov2_ampc
+Requires: gazebo_msgs message_generation message_runtime
