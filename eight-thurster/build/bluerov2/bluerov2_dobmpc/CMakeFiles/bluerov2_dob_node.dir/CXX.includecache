@@ -446,6 +446,12 @@ acados_c/external_function_interface.h
 bluerov2_dobmpc/bluerov2_dob.h
 -
 
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_dob_node.cpp
+ros/ros.h
+-
+bluerov2_dobmpc/bluerov2_dob.h
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_dobmpc/bluerov2_dob.h
+
 /opt/ros/noetic/include/gazebo_msgs/ApplyBodyWrench.h
 ros/service_traits.h
 -
