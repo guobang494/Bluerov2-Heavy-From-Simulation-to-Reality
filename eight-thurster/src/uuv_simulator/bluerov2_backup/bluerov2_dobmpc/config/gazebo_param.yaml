@@ -1,0 +1,9 @@
+auto_yaw: false
+read_wrench: 0
+compensate_d: false
+ref_traj: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_mpc/traj/lemniscate.txt  
+applied_forcex: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/config/forcex.txt
+applied_forcey: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/config/forcey.txt
+applied_forcez: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/config/forcez.txt
+applied_torquez: /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/config/torquez.txt
+yaml_name: /config/gazebo_param.yaml
