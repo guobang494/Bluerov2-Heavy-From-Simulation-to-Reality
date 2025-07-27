@@ -5,10 +5,11 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "bluerov2_dob_node");
     ros::NodeHandle nh;
-    ros::Rate loop_rate(20);
+    
+    ros::Rate loop_rate(20);  
 
     ros::Time start_time = ros::Time::now();
-    ros::Duration duration(50.0); // Set the desired duration to 25 seconds
+    ros::Duration duration(60.0); // Set the desired duration to 25 seconds
 
     BLUEROV2_DOB br(nh);
     while(ros::ok()){

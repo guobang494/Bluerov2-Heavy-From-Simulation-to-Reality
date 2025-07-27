@@ -5,10 +5,12 @@
 import numpy as np
 
 # Parameters
-sample_time = 0.05                 #seconds
+# sample_time = 0.05    
+sample_time = 0.05   #make the speed Lower         #seconds
 duration = 60;                      #seconds
-amp = 20
-frq = 0.1
+amp = 2
+# frq = 0.2
+frq = 2*np.pi/60
 
 x0 = 0
 y0 = 0
@@ -35,5 +37,11 @@ traj[:,12] = 0                      # u1
 traj[:,13] = 0                      # u2
 traj[:,14] = 0                      # u2
 traj[:,15] = 0                      # u2
+
+# Add extra points for MPC horizon (simple fix)
+last_point = traj[-1,:]  # Get the last point
+extra_points = np.tile(last_point, (20, 1))  # Repeat last point 20 times
+traj = np.vstack([traj, extra_points])  # Append to trajectory
+
 # write to txt
 np.savetxt('lemniscate.txt',traj,fmt='%f')
