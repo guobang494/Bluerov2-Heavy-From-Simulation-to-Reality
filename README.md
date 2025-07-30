@@ -1,8 +1,7 @@
 ## Installation 
 ## Reference https://github.com/HKPolyU-UAV/bluerov2/tree/huyang-backup
-## This is based on https://github.com/HKPolyU-UAV/bluerov2/tree/huyang-backup.
-
 ## Based on the reference, eight propellers were introduced: bluerov2 -heavy config.
+
 
 ##Software version Linux Ubuntu 20.04 ROS-neotic，python3.7
   
