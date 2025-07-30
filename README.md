@@ -3,7 +3,7 @@
 ## Based on the reference, eight propellers were introduced: bluerov2 -heavy config.
 
 
-##Software version Linux Ubuntu 20.04 ROS-neotic，python3.7
+### )Software version Linux Ubuntu 20.04 ROS-neotic，python3.7
   
 ### 1) Install Acados
 
