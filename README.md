@@ -50,7 +50,7 @@ roslaunch  ~/xxx_ws/src/bluerov2/bluerov2_dobmpc/launch/start_dob_tank.launch
 Creat the path
 cd ~/xxx_ws/src && \source devel/setup.bash
 cd ~/xxx_ws/src/bluerov2/bluerov2_dobmpc/scripts
-python3 
+python3 export_and_plot_trajectory.py
 
 
 
