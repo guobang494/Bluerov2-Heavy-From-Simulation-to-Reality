@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# BlueROV2 8-Thruster DOB-MPC数据记录脚本
+# 记录机器人位置、参考路径位置、速度和每个推进器的推力
+
+# 设置rosbag文件名（带时间戳）
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+BAG_NAME="bluerov2_dobmpc_${TIMESTAMP}"
+
+# 设置保存路径
+BAG_PATH="/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/rosbag/${BAG_NAME}.bag"
+
+echo "开始记录BlueROV2 DOB-MPC数据..."
+echo "保存文件: ${BAG_PATH}"
+echo "按Ctrl+C停止记录"
+
+# 执行rosbag记录命令
+rosbag record -O ${BAG_PATH} \
+    /bluerov2/pose_gt \
+    /bluerov2/mpc/reference \
+    /bluerov2/thrusters/0/thrust \
+    /bluerov2/thrusters/1/thrust \
+    /bluerov2/thrusters/2/thrust \
+    /bluerov2/thrusters/3/thrust \
+    /bluerov2/thrusters/4/thrust \
+    /bluerov2/thrusters/5/thrust \
+    /bluerov2/thrusters/6/thrust \
+    /bluerov2/thrusters/7/thrust \
+    /bluerov2/thrusters/0/input \
+    /bluerov2/thrusters/1/input \
+    /bluerov2/thrusters/2/input \
+    /bluerov2/thrusters/3/input \
+    /bluerov2/thrusters/4/input \
+    /bluerov2/thrusters/5/input \
+    /bluerov2/thrusters/6/input \
+    /bluerov2/thrusters/7/input \
+    /bluerov2/control_input/0 \
+    /bluerov2/control_input/1 \
+    /bluerov2/control_input/2 \
+    /bluerov2/control_input/3
+
+echo "记录完成！文件保存在: ${BAG_PATH}"

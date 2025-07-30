@@ -6,7 +6,7 @@ import numpy as np
 
 # Parameters
 # sample_time = 0.05    
-sample_time = 0.05   #make the speed Lower         #seconds
+sample_time = 0.05   #
 duration = 60;                      #seconds
 amp = 2
 # frq = 0.2
