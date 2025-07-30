@@ -3,7 +3,11 @@
 ## Based on the reference, eight propellers were introduced: bluerov2 -heavy config.
 
 
-### )Software version Linux Ubuntu 20.04 ROS-neotic，python3.7
+### Software version:
+* Python 3.7
+* ROS ([ROS noetic](http://wiki.ros.org/noetic/Installation/Ubuntu) recommended)
+* [uuv simulator](https://uuvsimulator.github.io/)
+* [Acados](https://docs.acados.org/installation/index.html)
   
 ### 1) Install Acados
 
@@ -37,7 +41,8 @@ git clone --branch huyang-backup https://github.com/HKPolyU-UAV/bluerov2.git
 
 
 ### 4) Set the Acados Path 
-cd xxx_ws/src/dobmpc change  line set(acados_include "~/acados/include") and set(acados_lib "~/acados/lib") to your path
+cd xxx_ws/src/dobmpc/CMakelists.txt
+change  line set(acados_include "~/acados/include") and set(acados_lib "~/acados/lib") to your path
 
 ### 4) Catkin_make
 cd ~/xxx_ws/src/bluerov2/bluerov2_dobmpc/scripts && \
