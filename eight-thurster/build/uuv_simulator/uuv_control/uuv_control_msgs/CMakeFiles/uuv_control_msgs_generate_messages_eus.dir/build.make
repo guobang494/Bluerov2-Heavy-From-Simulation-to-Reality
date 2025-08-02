@@ -84,26 +84,26 @@ uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_
 
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Trajectory.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Accel.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from uuv_control_msgs/Trajectory.msg"
 	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Trajectory.msg -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg
 
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Accel.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/TrajectoryPoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from uuv_control_msgs/TrajectoryPoint.msg"
 	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg
 
@@ -116,18 +116,18 @@ uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_
 
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /opt/ros/noetic/share/std_msgs/msg/Time.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg/WaypointSet.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from uuv_control_msgs/WaypointSet.msg"
 	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/msg
 
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/AddWaypoint.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/AddWaypoint.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/AddWaypoint.srv
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/AddWaypoint.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/AddWaypoint.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/AddWaypoint.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/AddWaypoint.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from uuv_control_msgs/AddWaypoint.srv"
 	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/AddWaypoint.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv
 
@@ -159,17 +159,17 @@ uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_
 
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GetWaypoints.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GetWaypoints.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetWaypoints.srv
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GetWaypoints.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GetWaypoints.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GetWaypoints.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GetWaypoints.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating EusLisp code from uuv_control_msgs/GetWaypoints.srv"
 	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetWaypoints.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv
 
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GoTo.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GoTo.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoTo.srv
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GoTo.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GoTo.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GoTo.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/GoTo.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating EusLisp code from uuv_control_msgs/GoTo.srv"
 	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoTo.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv
 
@@ -193,9 +193,9 @@ uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/InitWaypointSet.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointSet.srv
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/InitWaypointSet.l: /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/InitWaypointSet.l: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/InitWaypointSet.l: /opt/ros/noetic/share/std_msgs/msg/String.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/InitWaypointSet.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/InitWaypointSet.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv/InitWaypointSet.l: /opt/ros/noetic/share/std_msgs/msg/String.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/test-8/eight-thurster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating EusLisp code from uuv_control_msgs/InitWaypointSet.srv"
 	cd /home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointSet.srv -Iuuv_control_msgs:/home/zeb/test-8/eight-thurster/src/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/zeb/test-8/eight-thurster/devel/share/roseus/ros/uuv_control_msgs/srv
 

@@ -3,7 +3,7 @@
     <arg name="record" default="false"/>
     <!-- Initial position and heading of the vehicle (wrt Gazebo's inertial frame)  -->
     <arg name="x" default="0"/>
-    <arg name="y" default="0"/>
+    <arg name="y" default="-1"/>
     <arg name="z" default="-0.6"/>
     <arg name="yaw" default="0"/>
 

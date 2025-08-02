@@ -43,6 +43,9 @@ add_message_files(
   FILES
   Reference.msg
   Pose.msg
+  TrajectoryPoint.msg
+  SyncStatus.msg
+  SystemStatus.msg
 )
 
 generate_messages(

@@ -442,6 +442,10 @@ acados_c/external_function_interface.h
 
 /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/scripts/c_generated_code/bluerov2_model/bluerov2_model.h
 
+/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_ampc.cpp
+bluerov2_dobmpc/bluerov2_ampc.h
+-
+
 /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/src/bluerov2_ampc_node.cpp
 ros/ros.h
 -

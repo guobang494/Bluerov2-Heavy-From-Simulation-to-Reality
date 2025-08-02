@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zeb/test-8/eight-thurster/build
 include bluerov2/bluerov2_dobmpc/CMakeFiles/_bluerov2_dobmpc_generate_messages_check_deps_Reference.dir/progress.make
 
 bluerov2/bluerov2_dobmpc/CMakeFiles/_bluerov2_dobmpc_generate_messages_check_deps_Reference:
-	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_dobmpc && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py bluerov2_dobmpc /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Vector3:geometry_msgs/Point:geometry_msgs/Twist
+	cd /home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_dobmpc && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py bluerov2_dobmpc /home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/msg/Reference.msg geometry_msgs/Point:std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Quaternion
 
 _bluerov2_dobmpc_generate_messages_check_deps_Reference: bluerov2/bluerov2_dobmpc/CMakeFiles/_bluerov2_dobmpc_generate_messages_check_deps_Reference
 _bluerov2_dobmpc_generate_messages_check_deps_Reference: bluerov2/bluerov2_dobmpc/CMakeFiles/_bluerov2_dobmpc_generate_messages_check_deps_Reference.dir/build.make

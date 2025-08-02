@@ -68,17 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -90,6 +79,39 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -112,28 +134,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,304 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/rule
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/rule
 
 # Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/rule
+bluerov2_control_genpy: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/rule
 
-.PHONY : _bluerov2_control_generate_messages_check_deps_ConvertGeoPoints
+.PHONY : bluerov2_control_genpy
 
 # fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_ConvertGeoPoints/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsResult
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsResult/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-bluerov2_control_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/rule
-
-.PHONY : bluerov2_control_generate_messages_cpp
-
-# fast build rule for target.
-bluerov2_control_generate_messages_cpp/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/build
-.PHONY : bluerov2_control_generate_messages_cpp/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_SetControlMode: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_SetControlMode
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_SetControlMode/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_SetControlMode/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-bluerov2_control_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/rule
-
-.PHONY : bluerov2_control_generate_messages_nodejs
-
-# fast build rule for target.
-bluerov2_control_generate_messages_nodejs/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/build
-.PHONY : bluerov2_control_generate_messages_nodejs/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsAction
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsAction/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/rule
-
-# Convenience name for target.
-bluerov2_control_gencpp: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/rule
-
-.PHONY : bluerov2_control_gencpp
-
-# fast build rule for target.
-bluerov2_control_gencpp/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/build
-.PHONY : bluerov2_control_gencpp/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_Autopilot: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_Autopilot
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_Autopilot/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_Autopilot/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_ControlMode: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_ControlMode
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_ControlMode/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_ControlMode/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/rule
-
-# Convenience name for target.
-bluerov2_control_generate_messages: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/rule
-
-.PHONY : bluerov2_control_generate_messages
-
-# fast build rule for target.
-bluerov2_control_generate_messages/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/build
-.PHONY : bluerov2_control_generate_messages/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/rule
-
-# Convenience name for target.
-bluerov2_control_gencfg: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/rule
-
-.PHONY : bluerov2_control_gencfg
-
-# fast build rule for target.
-bluerov2_control_gencfg/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/build
-.PHONY : bluerov2_control_gencfg/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-bluerov2_control_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/rule
-
-.PHONY : bluerov2_control_generate_messages_lisp
-
-# fast build rule for target.
-bluerov2_control_generate_messages_lisp/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/build
-.PHONY : bluerov2_control_generate_messages_lisp/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-bluerov2_control_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/rule
-
-.PHONY : bluerov2_control_generate_messages_eus
-
-# fast build rule for target.
-bluerov2_control_generate_messages_eus/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/build
-.PHONY : bluerov2_control_generate_messages_eus/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/rule
-
-# Convenience name for target.
-bluerov2_control_geneus: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/rule
-
-.PHONY : bluerov2_control_geneus
-
-# fast build rule for target.
-bluerov2_control_geneus/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/build
-.PHONY : bluerov2_control_geneus/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/rule
-
-# Convenience name for target.
-bluerov2_control_genlisp: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/rule
-
-.PHONY : bluerov2_control_genlisp
-
-# fast build rule for target.
-bluerov2_control_genlisp/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/build
-.PHONY : bluerov2_control_genlisp/fast
-
-# Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/rule
-
-# Convenience name for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/rule
-
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback
-
-# fast build rule for target.
-_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/build
-.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback/fast
+bluerov2_control_genpy/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/build
+.PHONY : bluerov2_control_genpy/fast
 
 # Convenience name for target.
 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gennodejs.dir/rule:
@@ -483,6 +198,516 @@ bluerov2_control_gennodejs/fast:
 .PHONY : bluerov2_control_gennodejs/fast
 
 # Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/rule
+
+# Convenience name for target.
+bluerov2_control_genlisp: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/rule
+
+.PHONY : bluerov2_control_genlisp
+
+# fast build rule for target.
+bluerov2_control_genlisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genlisp.dir/build
+.PHONY : bluerov2_control_genlisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bluerov2_control_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/rule
+
+.PHONY : bluerov2_control_generate_messages_lisp
+
+# fast build rule for target.
+bluerov2_control_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_lisp.dir/build
+.PHONY : bluerov2_control_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/rule
+
+# Convenience name for target.
+bluerov2_control_geneus: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/rule
+
+.PHONY : bluerov2_control_geneus
+
+# fast build rule for target.
+bluerov2_control_geneus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_geneus.dir/build
+.PHONY : bluerov2_control_geneus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+bluerov2_control_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/rule
+
+.PHONY : bluerov2_control_generate_messages_eus
+
+# fast build rule for target.
+bluerov2_control_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_eus.dir/build
+.PHONY : bluerov2_control_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/rule
+
+# Convenience name for target.
+bluerov2_control_gencpp: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/rule
+
+.PHONY : bluerov2_control_gencpp
+
+# fast build rule for target.
+bluerov2_control_gencpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencpp.dir/build
+.PHONY : bluerov2_control_gencpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+bluerov2_control_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/rule
+
+.PHONY : bluerov2_control_generate_messages_cpp
+
+# fast build rule for target.
+bluerov2_control_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_cpp.dir/build
+.PHONY : bluerov2_control_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_ConvertGeoPoints
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ConvertGeoPoints.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_ConvertGeoPoints/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_py
+
+# fast build rule for target.
+uuid_msgs_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
+.PHONY : uuid_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+uuid_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
+.PHONY : uuid_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/rule
+
+# Convenience name for target.
+bluerov2_control_gencfg: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/rule
+
+.PHONY : bluerov2_control_gencfg
+
+# fast build rule for target.
+bluerov2_control_gencfg/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_gencfg.dir/build
+.PHONY : bluerov2_control_gencfg/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_py
+
+# fast build rule for target.
+geographic_msgs_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
+.PHONY : geographic_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geographic_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
+.PHONY : geographic_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_eus
+
+# fast build rule for target.
+uuid_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
+.PHONY : uuid_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_cpp
+
+# fast build rule for target.
+uuid_msgs_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
+.PHONY : uuid_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+bluerov2_control_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/rule
+
+.PHONY : bluerov2_control_generate_messages_nodejs
+
+# fast build rule for target.
+bluerov2_control_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/build
+.PHONY : bluerov2_control_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geographic_msgs_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
+.PHONY : geographic_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsAction
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsAction.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsAction/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_SetControlMode: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_SetControlMode
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_SetControlMode/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_SetControlMode.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_SetControlMode/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_lisp
+
+# fast build rule for target.
+uuid_msgs_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build
+.PHONY : uuid_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_py.dir/rule:
 	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_py.dir/rule
 .PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages_py.dir/rule
@@ -498,19 +723,559 @@ bluerov2_control_generate_messages_py/fast:
 .PHONY : bluerov2_control_generate_messages_py/fast
 
 # Convenience name for target.
-bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/rule
-.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/rule
+bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-bluerov2_control_genpy: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/rule
+dynamic_reconfigure_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 
-.PHONY : bluerov2_control_genpy
+.PHONY : dynamic_reconfigure_generate_messages_lisp
 
 # fast build rule for target.
-bluerov2_control_genpy/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_genpy.dir/build
-.PHONY : bluerov2_control_genpy/fast
+dynamic_reconfigure_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geographic_msgs_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build
+.PHONY : geographic_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_py
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_cpp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_ControlMode: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_ControlMode
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_ControlMode/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_ControlMode.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_ControlMode/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_eus
+
+# fast build rule for target.
+geographic_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
+.PHONY : geographic_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsResult
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsResult.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsResult/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+tf2_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_nodejs: bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_py: bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make bluerov2/bluerov2_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_eus: bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_gencfg: bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+
+.PHONY : dynamic_reconfigure_gencfg
+
+# fast build rule for target.
+dynamic_reconfigure_gencfg/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make bluerov2/bluerov2_control/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+.PHONY : dynamic_reconfigure_gencfg/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/rule
+
+# Convenience name for target.
+bluerov2_control_generate_messages: bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/rule
+
+.PHONY : bluerov2_control_generate_messages
+
+# fast build rule for target.
+bluerov2_control_generate_messages/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/build.make bluerov2/bluerov2_control/CMakeFiles/bluerov2_control_generate_messages.dir/build
+.PHONY : bluerov2_control_generate_messages/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult/fast
+
+# Convenience name for target.
+bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/rule
+.PHONY : bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/rule
+
+# Convenience name for target.
+_bluerov2_control_generate_messages_check_deps_Autopilot: bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/rule
+
+.PHONY : _bluerov2_control_generate_messages_check_deps_Autopilot
+
+# fast build rule for target.
+_bluerov2_control_generate_messages_check_deps_Autopilot/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/build.make bluerov2/bluerov2_control/CMakeFiles/_bluerov2_control_generate_messages_check_deps_Autopilot.dir/build
+.PHONY : _bluerov2_control_generate_messages_check_deps_Autopilot/fast
 
 # Help Target
 help:
@@ -518,36 +1283,87 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... _bluerov2_control_generate_messages_check_deps_ConvertGeoPoints"
-	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsResult"
-	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal"
-	@echo "... bluerov2_control_generate_messages_cpp"
-	@echo "... _bluerov2_control_generate_messages_check_deps_SetControlMode"
 	@echo "... install/strip"
-	@echo "... bluerov2_control_generate_messages_nodejs"
-	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsAction"
-	@echo "... bluerov2_control_gencpp"
-	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback"
-	@echo "... _bluerov2_control_generate_messages_check_deps_Autopilot"
-	@echo "... _bluerov2_control_generate_messages_check_deps_ControlMode"
-	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult"
-	@echo "... bluerov2_control_generate_messages"
-	@echo "... bluerov2_control_gencfg"
-	@echo "... test"
-	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal"
-	@echo "... bluerov2_control_generate_messages_lisp"
-	@echo "... bluerov2_control_generate_messages_eus"
-	@echo "... bluerov2_control_geneus"
-	@echo "... bluerov2_control_genlisp"
-	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback"
-	@echo "... bluerov2_control_gennodejs"
-	@echo "... bluerov2_control_generate_messages_py"
 	@echo "... install/local"
-	@echo "... bluerov2_control_genpy"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... list_install_components"
 	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... test"
+	@echo "... bluerov2_control_genpy"
+	@echo "... bluerov2_control_gennodejs"
+	@echo "... bluerov2_control_genlisp"
+	@echo "... bluerov2_control_generate_messages_lisp"
+	@echo "... bluerov2_control_geneus"
+	@echo "... bluerov2_control_generate_messages_eus"
+	@echo "... bluerov2_control_gencpp"
+	@echo "... bluerov2_control_generate_messages_cpp"
+	@echo "... _bluerov2_control_generate_messages_check_deps_ConvertGeoPoints"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... uuid_msgs_generate_messages_nodejs"
+	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionGoal"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... bluerov2_control_gencfg"
+	@echo "... geographic_msgs_generate_messages_py"
+	@echo "... geographic_msgs_generate_messages_nodejs"
+	@echo "... edit_cache"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... uuid_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... uuid_msgs_generate_messages_cpp"
+	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionFeedback"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... bluerov2_control_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... geographic_msgs_generate_messages_cpp"
+	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsAction"
+	@echo "... _bluerov2_control_generate_messages_check_deps_SetControlMode"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsGoal"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... uuid_msgs_generate_messages_lisp"
+	@echo "... bluerov2_control_generate_messages_py"
+	@echo "... dynamic_reconfigure_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... geographic_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... tf_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... _bluerov2_control_generate_messages_check_deps_ControlMode"
+	@echo "... geographic_msgs_generate_messages_eus"
+	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsResult"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsFeedback"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... tf_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
+	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... bluerov2_control_generate_messages"
+	@echo "... rebuild_cache"
+	@echo "... _bluerov2_control_generate_messages_check_deps_FollowWaypointsActionResult"
+	@echo "... _bluerov2_control_generate_messages_check_deps_Autopilot"
 .PHONY : help
 
 

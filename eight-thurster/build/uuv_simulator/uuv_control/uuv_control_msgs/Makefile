@@ -102,15 +102,17 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -123,17 +125,15 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -243,274 +243,79 @@ uuv_control_msgs_generate_messages_lisp/fast:
 .PHONY : uuv_control_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/rule
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/rule
 
 # Convenience name for target.
-uuv_control_msgs_generate_messages_eus: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/rule
+_uuv_control_msgs_generate_messages_check_deps_ResetController: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/rule
 
-.PHONY : uuv_control_msgs_generate_messages_eus
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_ResetController
 
 # fast build rule for target.
-uuv_control_msgs_generate_messages_eus/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/build
-.PHONY : uuv_control_msgs_generate_messages_eus/fast
+_uuv_control_msgs_generate_messages_check_deps_ResetController/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_ResetController/fast
 
 # Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/rule
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/rule
 
 # Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_GetWaypoints: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/rule
+_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/rule
 
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetWaypoints
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams
 
 # fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_GetWaypoints/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetWaypoints/fast
+_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams/fast
 
 # Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/rule
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/rule
 
 # Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/rule
+_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/rule
 
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams
 
 # fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory/fast
+_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams/fast
 
 # Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/rule
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/rule
 
 # Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/rule
+uuv_control_msgs_gencpp: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/rule
 
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory
+.PHONY : uuv_control_msgs_gencpp
 
 # fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory/fast
+uuv_control_msgs_gencpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/build
+.PHONY : uuv_control_msgs_gencpp/fast
 
 # Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/rule
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/rule
 
 # Convenience name for target.
-uuv_control_msgs_geneus: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/rule
+_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/rule
 
-.PHONY : uuv_control_msgs_geneus
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams
 
 # fast build rule for target.
-uuv_control_msgs_geneus/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/build
-.PHONY : uuv_control_msgs_geneus/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_Waypoint: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_Waypoint
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_Waypoint/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_Waypoint/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_StartTrajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_StartTrajectory
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_StartTrajectory/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_StartTrajectory/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_GoTo: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GoTo
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_GoTo/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GoTo/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-uuv_control_msgs_generate_messages_nodejs: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : uuv_control_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-uuv_control_msgs_generate_messages_nodejs/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/build
-.PHONY : uuv_control_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_AddWaypoint: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_AddWaypoint
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_AddWaypoint/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_AddWaypoint/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_SetPIDParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_SetPIDParams
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_SetPIDParams/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_SetPIDParams/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_WaypointSet: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_WaypointSet
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_WaypointSet/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_WaypointSet/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_Trajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_Trajectory
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_Trajectory/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_Trajectory/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/rule
-
-# Convenience name for target.
-uuv_control_msgs_generate_messages: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/rule
-
-.PHONY : uuv_control_msgs_generate_messages
-
-# fast build rule for target.
-uuv_control_msgs_generate_messages/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/build
-.PHONY : uuv_control_msgs_generate_messages/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_Hold: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_Hold
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_Hold/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_Hold/fast
+_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/rule:
@@ -543,19 +348,454 @@ _uuv_control_msgs_generate_messages_check_deps_SetSMControllerParams/fast:
 .PHONY : _uuv_control_msgs_generate_messages_check_deps_SetSMControllerParams/fast
 
 # Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/rule
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/rule
 
 # Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_GoToIncremental: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/rule
+_uuv_control_msgs_generate_messages_check_deps_GetPIDParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/rule
 
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GoToIncremental
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetPIDParams
 
 # fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_GoToIncremental/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GoToIncremental/fast
+_uuv_control_msgs_generate_messages_check_deps_GetPIDParams/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetPIDParams/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_SetPIDParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_SetPIDParams
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_SetPIDParams/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetPIDParams.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_SetPIDParams/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_SwitchToManual: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_SwitchToManual
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_SwitchToManual/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_SwitchToManual/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/rule
+
+# Convenience name for target.
+uuv_control_msgs_generate_messages: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/rule
+
+.PHONY : uuv_control_msgs_generate_messages
+
+# fast build rule for target.
+uuv_control_msgs_generate_messages/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages.dir/build
+.PHONY : uuv_control_msgs_generate_messages/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+uuv_control_msgs_generate_messages_eus: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/rule
+
+.PHONY : uuv_control_msgs_generate_messages_eus
+
+# fast build rule for target.
+uuv_control_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_eus.dir/build
+.PHONY : uuv_control_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_Waypoint: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_Waypoint
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_Waypoint/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_Waypoint/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/rule
+
+# Convenience name for target.
+uuv_control_msgs_geneus: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/rule
+
+.PHONY : uuv_control_msgs_geneus
+
+# fast build rule for target.
+uuv_control_msgs_geneus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_geneus.dir/build
+.PHONY : uuv_control_msgs_geneus/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_Trajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_Trajectory
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_Trajectory/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Trajectory.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_Trajectory/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_Hold: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_Hold
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_Hold/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Hold.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_Hold/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_WaypointSet: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_WaypointSet
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_WaypointSet/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_WaypointSet.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_WaypointSet/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+uuv_control_msgs_generate_messages_nodejs: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : uuv_control_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+uuv_control_msgs_generate_messages_nodejs/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_generate_messages_nodejs.dir/build
+.PHONY : uuv_control_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_AddWaypoint: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_AddWaypoint
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_AddWaypoint/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_AddWaypoint.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_AddWaypoint/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_GetWaypoints: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetWaypoints
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_GetWaypoints/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetWaypoints.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetWaypoints/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_GoTo: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GoTo
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_GoTo/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoTo.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GoTo/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_StartTrajectory: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_StartTrajectory
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_StartTrajectory/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_StartTrajectory.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_StartTrajectory/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointSet.dir/rule:
@@ -571,6 +811,21 @@ _uuv_control_msgs_generate_messages_check_deps_InitWaypointSet: uuv_simulator/uu
 _uuv_control_msgs_generate_messages_check_deps_InitWaypointSet/fast:
 	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointSet.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitWaypointSet.dir/build
 .PHONY : _uuv_control_msgs_generate_messages_check_deps_InitWaypointSet/fast
+
+# Convenience name for target.
+uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/rule:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/rule
+.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/rule
+
+# Convenience name for target.
+_uuv_control_msgs_generate_messages_check_deps_GoToIncremental: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/rule
+
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GoToIncremental
+
+# fast build rule for target.
+_uuv_control_msgs_generate_messages_check_deps_GoToIncremental/fast:
+	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GoToIncremental.dir/build
+.PHONY : _uuv_control_msgs_generate_messages_check_deps_GoToIncremental/fast
 
 # Convenience name for target.
 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitRectTrajectory.dir/rule:
@@ -617,111 +872,6 @@ _uuv_control_msgs_generate_messages_check_deps_SwitchToAutomatic/fast:
 	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToAutomatic.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToAutomatic.dir/build
 .PHONY : _uuv_control_msgs_generate_messages_check_deps_SwitchToAutomatic/fast
 
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_SwitchToManual: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_SwitchToManual
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_SwitchToManual/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SwitchToManual.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_SwitchToManual/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_GetPIDParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetPIDParams
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_GetPIDParams/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetPIDParams.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetPIDParams/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_ResetController: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_ResetController
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_ResetController/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_ResetController.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_ResetController/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/rule
-
-# Convenience name for target.
-_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/rule
-
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams
-
-# fast build rule for target.
-_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams.dir/build
-.PHONY : _uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams/fast
-
-# Convenience name for target.
-uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/rule:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f CMakeFiles/Makefile2 uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/rule
-.PHONY : uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/rule
-
-# Convenience name for target.
-uuv_control_msgs_gencpp: uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/rule
-
-.PHONY : uuv_control_msgs_gencpp
-
-# fast build rule for target.
-uuv_control_msgs_gencpp/fast:
-	cd /home/zeb/test-8/eight-thurster/build && $(MAKE) -f uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/build.make uuv_simulator/uuv_control/uuv_control_msgs/CMakeFiles/uuv_control_msgs_gencpp.dir/build
-.PHONY : uuv_control_msgs_gencpp/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -737,41 +887,51 @@ help:
 	@echo "... uuv_control_msgs_gennodejs"
 	@echo "... uuv_control_msgs_genlisp"
 	@echo "... uuv_control_msgs_generate_messages_lisp"
+	@echo "... install/strip"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_ResetController"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams"
+	@echo "... uuv_control_msgs_gencpp"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams"
+	@echo "... uuv_control_msgs_generate_messages_cpp"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_SetSMControllerParams"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_GetPIDParams"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_SetPIDParams"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_SwitchToManual"
+	@echo "... uuv_control_msgs_generate_messages"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... uuv_control_msgs_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_Waypoint"
+	@echo "... uuv_control_msgs_geneus"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_Trajectory"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... rebuild_cache"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_Hold"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_WaypointSet"
+	@echo "... uuv_control_msgs_generate_messages_nodejs"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_AddWaypoint"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory"
 	@echo "... list_install_components"
 	@echo "... _uuv_control_msgs_generate_messages_check_deps_GetWaypoints"
 	@echo "... _uuv_control_msgs_generate_messages_check_deps_IsRunningTrajectory"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory"
-	@echo "... uuv_control_msgs_geneus"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_InitWaypointsFromFile"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_Waypoint"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_InitCircularTrajectory"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_StartTrajectory"
 	@echo "... _uuv_control_msgs_generate_messages_check_deps_GoTo"
-	@echo "... uuv_control_msgs_generate_messages_nodejs"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_AddWaypoint"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_SetPIDParams"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_WaypointSet"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_TrajectoryPoint"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_Trajectory"
-	@echo "... uuv_control_msgs_generate_messages"
-	@echo "... rebuild_cache"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_Hold"
-	@echo "... uuv_control_msgs_generate_messages_cpp"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_SetSMControllerParams"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_GoToIncremental"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_StartTrajectory"
 	@echo "... _uuv_control_msgs_generate_messages_check_deps_InitWaypointSet"
+	@echo "... _uuv_control_msgs_generate_messages_check_deps_GoToIncremental"
 	@echo "... _uuv_control_msgs_generate_messages_check_deps_InitRectTrajectory"
 	@echo "... _uuv_control_msgs_generate_messages_check_deps_ClearWaypoints"
 	@echo "... _uuv_control_msgs_generate_messages_check_deps_SwitchToAutomatic"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_SwitchToManual"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_GetPIDParams"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_SetMBSMControllerParams"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_GetMBSMControllerParams"
-	@echo "... install/strip"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_ResetController"
-	@echo "... _uuv_control_msgs_generate_messages_check_deps_GetSMControllerParams"
-	@echo "... uuv_control_msgs_gencpp"
 .PHONY : help
 
 

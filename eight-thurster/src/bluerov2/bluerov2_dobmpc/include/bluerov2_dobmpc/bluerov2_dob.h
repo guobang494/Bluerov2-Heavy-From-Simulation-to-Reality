@@ -15,6 +15,7 @@
 #include <gazebo_msgs/ApplyBodyWrench.h>
 #include <gazebo_msgs/LinkState.h>
 
+
 #include <iostream>
 #include <fstream>
 #include <cmath>
@@ -246,7 +247,9 @@ class BLUEROV2_DOB{
     ros::Time current_time;
 
     // ros subscriber & publisher
+
     ros::Subscriber pose_sub;
+    
     ros::Publisher thrust0_pub;
     ros::Publisher thrust1_pub;
     ros::Publisher thrust2_pub;
@@ -255,7 +258,8 @@ class BLUEROV2_DOB{
     ros::Publisher thrust5_pub;
     ros::Publisher thrust6_pub;
     ros::Publisher thrust7_pub;
-
+ 
+    
     ros::Publisher ref_pose_pub;
     ros::Publisher error_pose_pub;
 
@@ -293,6 +297,7 @@ class BLUEROV2_DOB{
     void imu_cb(const sensor_msgs::Imu::ConstPtr& msg);
     void applyBodyWrench();
     void EKF();  
+    
     MatrixXd RK4(MatrixXd x, MatrixXd u);                                           // EKF predict and update
     MatrixXd f(MatrixXd x, MatrixXd u);                     // system process model
     MatrixXd h(MatrixXd x);                                 // measurement model
