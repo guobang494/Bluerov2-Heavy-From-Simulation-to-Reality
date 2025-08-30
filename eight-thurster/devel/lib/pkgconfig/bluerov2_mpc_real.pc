@@ -1,0 +1,8 @@
+prefix=/home/zeb/test-8/eight-thurster/devel
+
+Name: bluerov2_mpc_real
+Description: Description of bluerov2_mpc_real
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: uuv_gazebo_plugins_msgs

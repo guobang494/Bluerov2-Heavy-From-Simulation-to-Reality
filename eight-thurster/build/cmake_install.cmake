@@ -37,7 +37,12 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
         file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -47,7 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/zeb/test-8/eight-thurster/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -56,10 +61,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/_setup_util.py")
+  file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/zeb/test-8/eight-thurster/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -68,10 +73,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/env.sh")
+  file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE PROGRAM FILES "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/env.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/zeb/test-8/eight-thurster/install/setup.bash;/home/zeb/test-8/eight-thurster/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -80,13 +85,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES
+  file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES
     "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/setup.bash"
     "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/zeb/test-8/eight-thurster/install/setup.sh;/home/zeb/test-8/eight-thurster/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -95,13 +100,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES
+  file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES
     "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/setup.sh"
     "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/zeb/test-8/eight-thurster/install/setup.zsh;/home/zeb/test-8/eight-thurster/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -110,13 +115,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES
+  file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES
     "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/setup.zsh"
     "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/zeb/test-8/eight-thurster/install/setup.fish;/home/zeb/test-8/eight-thurster/install/local_setup.fish")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -125,13 +130,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES
+  file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES
     "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/setup.fish"
     "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/local_setup.fish"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/zeb/test-8/eight-thurster/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -140,14 +145,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/.rosinstall")
+  file(INSTALL DESTINATION "/home/zeb/test-8/eight-thurster/install" TYPE FILE FILES "/home/zeb/test-8/eight-thurster/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zeb/test-8/eight-thurster/build/gtest/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_description/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_gazebo/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_auv_control_allocator/cmake_install.cmake")
   include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_msgs/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_utils/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_simulator/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_teleop/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_tutorials/uuv_tutorial_disturbances/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_tutorials/uuv_tutorial_dp_controller/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_tutorials/uuv_tutorial_seabed_world/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_tutorials/uuv_tutorials/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins_msgs/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_mpc/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_dobmpc/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_states/cmake_install.cmake")
   include("/home/zeb/test-8/eight-thurster/build/bluerov2/bluerov2_control/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_assistants/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_control_cascaded_pids/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_worlds/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_trajectory_control/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_world_plugins/uuv_world_plugins/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_descriptions/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/cmake_install.cmake")
+  include("/home/zeb/test-8/eight-thurster/build/uuv_simulator/uuv_control/uuv_thruster_manager/cmake_install.cmake")
 
 endif()
 

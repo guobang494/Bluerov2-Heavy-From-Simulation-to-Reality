@@ -15,12 +15,12 @@ from mpl_toolkits.mplot3d import Axes3D
 
 # Parameters
 sample_time = 0.05   #
-duration = 60;                      #seconds
+duration = 180;                      #seconds
 
 # 完整八字形轨迹参数 (确定初始位置和回归)
 amp_x = 6.5    # x方向幅度 (八字形长边)
 amp_y = 0.45    # y方向幅度 (八字形短边)
-frq = 2*np.pi/60  # 频率，60秒完成一个完整八字
+frq = 2*np.pi/180 # 频率，60秒完成一个完整八字
 
 # 确定的初始位置
 x0 = 0    # 初始X位置：距tank左端5.575m，距右端14.65m

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_sc_ros_interface_plugin.pdb"
   "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_sc_ros_interface_plugin.so"
   "CMakeFiles/uuv_sc_ros_interface_plugin.dir/src/SphericalCoordinatesROSInterfacePlugin.cc.o"
+  "CMakeFiles/uuv_sc_ros_interface_plugin.dir/src/SphericalCoordinatesROSInterfacePlugin.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

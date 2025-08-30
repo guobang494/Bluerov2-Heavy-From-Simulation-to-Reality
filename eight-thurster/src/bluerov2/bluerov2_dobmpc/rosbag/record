@@ -26,7 +26,7 @@ echo "Recording duration: 60 seconds"
 echo "Save file: ${BAG_PATH}"
 
 # Start recording with timeout (60 seconds)
-timeout 63 rosbag record -O ${BAG_PATH} \
+timeout 181 rosbag record -O ${BAG_PATH} \
     /bluerov2/pose_gt \
     /bluerov2/mpc/reference \
     /bluerov2/mpc/error \
@@ -40,6 +40,14 @@ timeout 63 rosbag record -O ${BAG_PATH} \
     /bluerov2/thrusters/5/thrust \
     /bluerov2/thrusters/6/thrust \
     /bluerov2/thrusters/7/thrust \
+    /bluerov2/thrusters/0/thrust_wrench \
+    /bluerov2/thrusters/1/thrust_wrench \
+    /bluerov2/thrusters/2/thrust_wrench \
+    /bluerov2/thrusters/3/thrust_wrench \
+    /bluerov2/thrusters/4/thrust_wrench \
+    /bluerov2/thrusters/5/thrust_wrench \
+    /bluerov2/thrusters/6/thrust_wrench \
+    /bluerov2/thrusters/7/thrust_wrench \
     /bluerov2/thrusters/0/input \
     /bluerov2/thrusters/1/input \
     /bluerov2/thrusters/2/input \

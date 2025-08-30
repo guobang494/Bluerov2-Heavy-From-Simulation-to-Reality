@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_thruster_ros_plugin.pdb"
   "/home/zeb/test-8/eight-thurster/devel/lib/libuuv_thruster_ros_plugin.so"
   "CMakeFiles/uuv_thruster_ros_plugin.dir/src/ThrusterROSPlugin.cc.o"
+  "CMakeFiles/uuv_thruster_ros_plugin.dir/src/ThrusterROSPlugin.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

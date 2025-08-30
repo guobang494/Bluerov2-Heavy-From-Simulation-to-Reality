@@ -1,12 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(bluerov2_dobmpc)
 
-## Compile as C++11, supported in ROS Kinetic and newer
-if (${CMAKE_CXX_COMPILER_VERSION} VERSION_LESS "7.6") # Assuming GCC 4.9 supports C++14
-    add_compile_options(-std=c++11)
-else()
-    add_compile_options(-std=c++14)
-endif()
+## Compile as C++17, required for Gazebo 11 compatibility
+add_compile_options(-std=c++17)
 
 
 ## Find catkin macros and libraries
@@ -43,9 +39,7 @@ add_message_files(
   FILES
   Reference.msg
   Pose.msg
-  TrajectoryPoint.msg
-  SyncStatus.msg
-  SystemStatus.msg
+
 )
 
 generate_messages(

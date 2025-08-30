@@ -179,11 +179,11 @@ class BLUEROV2_DOB{
     double Iz = 0.58;
     double ZG = 0.02;
     double g = 9.81;
-    double bouyancy = 0.661618;
+    double bouyancy = 100;
     double compensate_coef = 0.032546960744430276;
     double rotor_constant = 0.026546960744430276;
-    double added_mass[6] = {1.7182,0,5.468,0,1.2481,0.4006};
-    double Dl[6] = {-11.7391, -20, -31.8678, -25, -44.9085, -5};
+    double added_mass[6] = {5.5,12.7,14.57,0.12,0.12,0.12};
+    double Dl[6] = {-4.03, -6.22, -5.18, -0.007, -0.007, -0.007};
     double Dnl[6] = {-18.18,-21.66,-36.99,-1.55,-1.55,-1.55};
     // double Dnl[6] = {0, 0, 0, 0, 0, 0};
     Matrix<double,1,6> M_values;    

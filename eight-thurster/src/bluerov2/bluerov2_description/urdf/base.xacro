@@ -101,5 +101,9 @@
     <!-- Include the sensor modules: 3D Pose, IMU, Pressure, Camera -->
     <xacro:include filename="$(find bluerov2_description)/urdf/sensors.xacro"/>
 
-  </xacro:macro>
+    </xacro:macro>
+
+
+
+  
 </robot>

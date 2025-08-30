@@ -21,8 +21,8 @@ def main():
     ny = nx + nu                 # y is x and u concatenated for compactness of the loss function
     nparam = model.p.size()[0]
 
-    N = 13
-
+    N = 35
+    # N = 13
     # set dimensions
     ocp.dims.N = N
 

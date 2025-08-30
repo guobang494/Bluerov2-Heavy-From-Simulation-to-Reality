@@ -1,0 +1,8 @@
+prefix=/home/zeb/test-8/eight-thurster/install
+
+Name: bluerov2_states_real
+Description: Description of bluerov2_states_real
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs mavros_msgs roscpp std_msgs message_generation
