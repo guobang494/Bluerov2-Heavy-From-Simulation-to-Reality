@@ -1,0 +1,58 @@
+\subsubsection usage Usage
+\verbatim
+<node name="simple_los.py" pkg="bluerov2_control" type="simple_los.py">
+  <param name="accel_x_kp" type="double" value="1.0" />
+  <param name="accel_x_ki" type="double" value="0.0" />
+  <param name="accel_x_kd" type="double" value="0.0" />
+  <param name="accel_x_sat" type="double" value="1.0" />
+  <param name="accel_y_kp" type="double" value="1.0" />
+  <param name="accel_y_ki" type="double" value="0.0" />
+  <param name="accel_y_kd" type="double" value="0.0" />
+  <param name="accel_y_sat" type="double" value="1.0" />
+  <param name="accel_z_kp" type="double" value="1.0" />
+  <param name="accel_z_ki" type="double" value="0.0" />
+  <param name="accel_z_kd" type="double" value="0.0" />
+  <param name="accel_z_sat" type="double" value="1.0" />
+  <param name="accel_r_kp" type="double" value="1.0" />
+  <param name="accel_r_ki" type="double" value="0.0" />
+  <param name="accel_r_kd" type="double" value="0.0" />
+  <param name="accel_r_sat" type="double" value="1.0" />
+  <param name="vel_x_kp" type="double" value="1.0" />
+  <param name="vel_x_ki" type="double" value="0.0" />
+  <param name="vel_x_kd" type="double" value="0.0" />
+  <param name="vel_x_sat" type="double" value="1.0" />
+  <param name="vel_x_lim" type="double" value="1.0" />
+  <param name="vel_y_kp" type="double" value="1.0" />
+  <param name="vel_y_ki" type="double" value="0.0" />
+  <param name="vel_y_kd" type="double" value="0.0" />
+  <param name="vel_y_sat" type="double" value="1.0" />
+  <param name="vel_y_lim" type="double" value="1.0" />
+  <param name="vel_z_kp" type="double" value="1.0" />
+  <param name="vel_z_ki" type="double" value="0.0" />
+  <param name="vel_z_kd" type="double" value="0.0" />
+  <param name="vel_z_sat" type="double" value="1.0" />
+  <param name="vel_z_lim" type="double" value="1.0" />
+  <param name="vel_r_kp" type="double" value="1.0" />
+  <param name="vel_r_ki" type="double" value="0.0" />
+  <param name="vel_r_kd" type="double" value="0.0" />
+  <param name="vel_r_sat" type="double" value="1.0" />
+  <param name="vel_r_lim" type="double" value="1.0" />
+  <param name="pos_x_kp" type="double" value="1.0" />
+  <param name="pos_x_ki" type="double" value="0.0" />
+  <param name="pos_x_kd" type="double" value="0.0" />
+  <param name="pos_x_sat" type="double" value="1.0" />
+  <param name="pos_y_kp" type="double" value="1.0" />
+  <param name="pos_y_ki" type="double" value="0.0" />
+  <param name="pos_y_kd" type="double" value="0.0" />
+  <param name="pos_y_sat" type="double" value="1.0" />
+  <param name="pos_z_kp" type="double" value="1.0" />
+  <param name="pos_z_ki" type="double" value="0.0" />
+  <param name="pos_z_kd" type="double" value="0.0" />
+  <param name="pos_z_sat" type="double" value="1.0" />
+  <param name="pos_r_kp" type="double" value="1.0" />
+  <param name="pos_r_ki" type="double" value="0.0" />
+  <param name="pos_r_kd" type="double" value="0.0" />
+  <param name="pos_r_sat" type="double" value="1.0" />
+</node>
+\endverbatim
+

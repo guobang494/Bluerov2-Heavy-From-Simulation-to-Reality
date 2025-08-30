@@ -1,0 +1,19 @@
+file(REMOVE_RECURSE
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/Autopilot.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/ControlMode.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/FollowWaypointsAction.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/FollowWaypointsActionFeedback.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/FollowWaypointsActionGoal.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/FollowWaypointsActionResult.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/FollowWaypointsFeedback.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/FollowWaypointsGoal.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/msg/FollowWaypointsResult.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/srv/ConvertGeoPoints.js"
+  "/home/zeb/test-8/real_world/devel/share/gennodejs/ros/bluerov2_control/srv/SetControlMode.js"
+  "CMakeFiles/bluerov2_control_generate_messages_nodejs"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/bluerov2_control_generate_messages_nodejs.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,274 @@
+#!/usr/bin/env python3
+"""
+Script to extract thrust data from BlueROV2 ROS bag and visualize xyz and yaw forces.
+Author: Assistant
+"""
+
+import rosbag
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
+import pandas as pd
+from collections import defaultdict
+import os
+
+# BlueROV2 Thruster Allocation Matrix (TAM) from TAM.yaml
+# Rows: [X-force, Y-force, Z-force, Roll-moment, Pitch-moment, Yaw-moment]
+# Columns: Thrusters 0-7
+TAM = np.array([
+    # X-direction force (surge)
+    [0.7071067811847431, 0.7071067811847431, -0.7071067811919607, -0.7071067811919607, 0.0, 0.0, 0.0, 0.0],
+    
+    # Y-direction force (sway)
+    [0.7071067811883519, -0.7071067811883519, 0.7071067811811348, -0.7071067811811348, 0.0, 0.0, 0.0, 0.0],
+    
+    # Z-direction force (heave)
+    [0.0, 0.0, 0.0, 0.0, 1.0000000000000002, 1.0000000000000002, 1.0000000000000002, 1.0000000000000002],
+    
+    # Roll moment (around X-axis)
+    [0.05126524163615552, -0.051265241636155506, 0.05126524163563227, -0.05126524163563226, -0.21805000000000005, -0.21805000000000005, 0.21805000000000005, 0.21805000000000005],
+    
+    # Pitch moment (around Y-axis)
+    [-0.05126524163589388, -0.051265241635893875, 0.051265241636417144, 0.05126524163641714, -0.1199999999999745, 0.12000000000002554, -0.11999999999997452, 0.12000000000002554],
+    
+    # Yaw moment (around Z-axis)
+    [0.166523646969496, -0.166523646969496, -0.17500892834341342, 0.17500892834341344, 0.0, 0.0, 0.0, 0.0]
+])
+
+def extract_thrust_data(bag_file):
+    """Extract thrust data from ROS bag file."""
+    print(f"Processing ROS bag: {bag_file}")
+    
+    # Dictionary to store thrust data for each thruster
+    thrust_data = defaultdict(list)
+    timestamps = []
+    
+    # Open the bag file
+    with rosbag.Bag(bag_file, 'r') as bag:
+        # Get bag info
+        info = bag.get_type_and_topic_info()
+        print(f"Bag duration: {bag.get_end_time() - bag.get_start_time():.2f} seconds")
+        
+        # Extract thrust data for all 8 thrusters
+        for topic, msg, t in bag.read_messages():
+            if '/bluerov2/thrusters/' in topic and '/thrust' in topic:
+                # Extract thruster ID from topic name
+                thruster_id = int(topic.split('/')[3])
+                if thruster_id < 8:  # Only process thrusters 0-7
+                    thrust_data[thruster_id].append({
+                        'time': t.to_sec(),
+                        'thrust': msg.data
+                    })
+    
+    print(f"Extracted data for {len(thrust_data)} thrusters")
+    for thruster_id in sorted(thrust_data.keys()):
+        print(f"  Thruster {thruster_id}: {len(thrust_data[thruster_id])} data points")
+    
+    return thrust_data
+
+def synchronize_data(thrust_data):
+    """Synchronize thrust data across all thrusters to common time points."""
+    # Find common time range
+    all_times = []
+    for thruster_id in range(8):
+        if thruster_id in thrust_data:
+            times = [d['time'] for d in thrust_data[thruster_id]]
+            all_times.extend(times)
+    
+    if not all_times:
+        raise ValueError("No thrust data found!")
+    
+    # Create time grid
+    min_time = min(all_times)
+    max_time = max(all_times)
+    
+    # Use uniform time grid with reasonable resolution
+    time_grid = np.linspace(min_time, max_time, 1000)
+    
+    # Interpolate thrust data for each thruster
+    synchronized_data = {}
+    for thruster_id in range(8):
+        if thruster_id in thrust_data:
+            times = np.array([d['time'] for d in thrust_data[thruster_id]])
+            thrusts = np.array([d['thrust'] for d in thrust_data[thruster_id]])
+            
+            # Interpolate to common time grid
+            synchronized_thrusts = np.interp(time_grid, times, thrusts)
+            synchronized_data[thruster_id] = synchronized_thrusts
+        else:
+            # If thruster data is missing, assume zero thrust
+            synchronized_data[thruster_id] = np.zeros(len(time_grid))
+    
+    return time_grid, synchronized_data
+
+def calculate_body_forces(time_grid, thrust_data):
+    """Calculate body forces and moments using TAM."""
+    n_points = len(time_grid)
+    
+    # Create thrust vector matrix (8 thrusters x n_time_points)
+    thrust_matrix = np.zeros((8, n_points))
+    for thruster_id in range(8):
+        thrust_matrix[thruster_id, :] = thrust_data[thruster_id]
+    
+    # Calculate body forces and moments: F = TAM * T
+    body_forces = TAM @ thrust_matrix
+    
+    return {
+        'time': time_grid,
+        'x_force': body_forces[0, :],    # Surge force
+        'y_force': body_forces[1, :],    # Sway force  
+        'z_force': body_forces[2, :],    # Heave force
+        'roll_moment': body_forces[3, :],   # Roll moment
+        'pitch_moment': body_forces[4, :],  # Pitch moment
+        'yaw_moment': body_forces[5, :]     # Yaw moment
+    }
+
+def create_plots(body_forces, thrust_data, time_grid, output_dir=None):
+    """Create visualization plots."""
+    if output_dir is None:
+        output_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Adjust time to start from 0
+    time_offset = body_forces['time'][0]
+    time_rel = body_forces['time'] - time_offset
+    
+    # Create figure with subplots
+    fig, axes = plt.subplots(3, 2, figsize=(15, 12))
+    fig.suptitle('BlueROV2 Thrust Analysis from ROS Bag Data', fontsize=16, fontweight='bold')
+    
+    # Plot XYZ forces
+    axes[0, 0].plot(time_rel, body_forces['x_force'], 'r-', linewidth=2, label='X-Force (Surge)')
+    axes[0, 0].set_title('X-Direction Force (Surge)', fontweight='bold')
+    axes[0, 0].set_xlabel('Time (s)')
+    axes[0, 0].set_ylabel('Force (N)')
+    axes[0, 0].grid(True, alpha=0.3)
+    axes[0, 0].legend()
+    
+    axes[0, 1].plot(time_rel, body_forces['y_force'], 'g-', linewidth=2, label='Y-Force (Sway)')
+    axes[0, 1].set_title('Y-Direction Force (Sway)', fontweight='bold')
+    axes[0, 1].set_xlabel('Time (s)')
+    axes[0, 1].set_ylabel('Force (N)')
+    axes[0, 1].grid(True, alpha=0.3)
+    axes[0, 1].legend()
+    
+    axes[1, 0].plot(time_rel, body_forces['z_force'], 'b-', linewidth=2, label='Z-Force (Heave)')
+    axes[1, 0].set_title('Z-Direction Force (Heave)', fontweight='bold')
+    axes[1, 0].set_xlabel('Time (s)')
+    axes[1, 0].set_ylabel('Force (N)')
+    axes[1, 0].grid(True, alpha=0.3)
+    axes[1, 0].legend()
+    
+    # Plot Yaw moment
+    axes[1, 1].plot(time_rel, body_forces['yaw_moment'], 'm-', linewidth=2, label='Yaw Moment')
+    axes[1, 1].set_title('Yaw Moment (around Z-axis)', fontweight='bold')
+    axes[1, 1].set_xlabel('Time (s)')
+    axes[1, 1].set_ylabel('Moment (N·m)')
+    axes[1, 1].grid(True, alpha=0.3)
+    axes[1, 1].legend()
+    
+    # Plot total XYZ force magnitude
+    total_xyz_force = np.sqrt(body_forces['x_force']**2 + 
+                             body_forces['y_force']**2 + 
+                             body_forces['z_force']**2)
+    axes[2, 0].plot(time_rel, total_xyz_force, 'k-', linewidth=2, label='Total XYZ Force')
+    axes[2, 0].set_title('Total XYZ Force Magnitude', fontweight='bold')
+    axes[2, 0].set_xlabel('Time (s)')
+    axes[2, 0].set_ylabel('Force (N)')
+    axes[2, 0].grid(True, alpha=0.3)
+    axes[2, 0].legend()
+    
+    # Plot individual thruster forces
+    colors = plt.cm.tab10(np.linspace(0, 1, 8))
+    for thruster_id in range(8):
+        axes[2, 1].plot(time_rel, thrust_data[thruster_id], 
+                       color=colors[thruster_id], linewidth=1.5, 
+                       label=f'Thruster {thruster_id}')
+    axes[2, 1].set_title('Individual Thruster Forces', fontweight='bold')
+    axes[2, 1].set_xlabel('Time (s)')
+    axes[2, 1].set_ylabel('Thrust (N)')
+    axes[2, 1].grid(True, alpha=0.3)
+    axes[2, 1].legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    
+    plt.tight_layout()
+    
+    # Save plot
+    plot_file = os.path.join(output_dir, 'thrust_analysis.png')
+    plt.savefig(plot_file, dpi=300, bbox_inches='tight')
+    print(f"Plot saved to: {plot_file}")
+    
+    # Show plot
+    plt.show()
+    
+    # Create summary statistics
+    create_summary_stats(body_forces, total_xyz_force, output_dir)
+
+def create_summary_stats(body_forces, total_xyz_force, output_dir):
+    """Create and save summary statistics."""
+    stats = {
+        'Metric': [
+            'Max X-Force (N)', 'Min X-Force (N)', 'RMS X-Force (N)',
+            'Max Y-Force (N)', 'Min Y-Force (N)', 'RMS Y-Force (N)', 
+            'Max Z-Force (N)', 'Min Z-Force (N)', 'RMS Z-Force (N)',
+            'Max Yaw Moment (N·m)', 'Min Yaw Moment (N·m)', 'RMS Yaw Moment (N·m)',
+            'Max Total XYZ Force (N)', 'Mean Total XYZ Force (N)', 'RMS Total XYZ Force (N)'
+        ],
+        'Value': [
+            np.max(body_forces['x_force']), np.min(body_forces['x_force']), np.sqrt(np.mean(body_forces['x_force']**2)),
+            np.max(body_forces['y_force']), np.min(body_forces['y_force']), np.sqrt(np.mean(body_forces['y_force']**2)),
+            np.max(body_forces['z_force']), np.min(body_forces['z_force']), np.sqrt(np.mean(body_forces['z_force']**2)),
+            np.max(body_forces['yaw_moment']), np.min(body_forces['yaw_moment']), np.sqrt(np.mean(body_forces['yaw_moment']**2)),
+            np.max(total_xyz_force), np.mean(total_xyz_force), np.sqrt(np.mean(total_xyz_force**2))
+        ]
+    }
+    
+    df_stats = pd.DataFrame(stats)
+    
+    # Save to CSV
+    stats_file = os.path.join(output_dir, 'thrust_statistics.csv')
+    df_stats.to_csv(stats_file, index=False, float_format='%.4f')
+    print(f"Statistics saved to: {stats_file}")
+    
+    # Print summary
+    print("\n" + "="*50)
+    print("THRUST ANALYSIS SUMMARY")
+    print("="*50)
+    print(df_stats.to_string(index=False, float_format='%.4f'))
+    print("="*50)
+
+def main():
+    """Main function."""
+    # ROS bag file path
+    bag_file = '/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/rosbag/bluerov2_dobmpc_20250731_083732.bag'
+    
+    # Check if bag file exists
+    if not os.path.exists(bag_file):
+        print(f"Error: ROS bag file not found: {bag_file}")
+        return
+    
+    try:
+        # Extract thrust data from bag
+        print("Step 1: Extracting thrust data from ROS bag...")
+        thrust_data = extract_thrust_data(bag_file)
+        
+        # Synchronize data
+        print("Step 2: Synchronizing data across thrusters...")
+        time_grid, synchronized_thrust_data = synchronize_data(thrust_data)
+        
+        # Calculate body forces
+        print("Step 3: Calculating body forces using TAM...")
+        body_forces = calculate_body_forces(time_grid, synchronized_thrust_data)
+        
+        # Create plots
+        print("Step 4: Creating visualizations...")
+        output_dir = os.path.dirname(os.path.abspath(__file__))
+        create_plots(body_forces, synchronized_thrust_data, time_grid, output_dir)
+        
+        print("\nAnalysis completed successfully!")
+        
+    except Exception as e:
+        print(f"Error during analysis: {e}")
+        import traceback
+        traceback.print_exc()
+
+if __name__ == '__main__':
+    main()

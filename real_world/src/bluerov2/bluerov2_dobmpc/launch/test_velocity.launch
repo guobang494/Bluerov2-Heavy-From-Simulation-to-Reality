@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Test launch file for velocity output without Gazebo -->
+	
+	<!-- MPC输出到单独的速度话题 -->
+	<node pkg="bluerov2_dobmpc" type="bluerov2_dob_node" name="bluerov2_dob_node" output="screen">
+		<!-- Load parameters for this node -->
+		<rosparam command="load" file="/home/zeb/test-8/real_world/src/bluerov2/bluerov2_dobmpc/config/gazebo_tank.yaml" />
+		<param name="velocity_topic" value="/bluerov2/cmd_vel" />
+	</node>
+
+	<!-- 真实机器人控制节点订阅速度话题 -->
+	<node pkg="real_test" type="pubreal.py" name="pubreal_node" output="screen">
+		<param name="velocity_topic" value="/bluerov2/cmd_vel" />
+	</node>
+
+</launch> 

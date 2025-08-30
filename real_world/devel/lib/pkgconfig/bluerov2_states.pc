@@ -1,0 +1,8 @@
+prefix=/home/zeb/test-8/real_world/devel
+
+Name: bluerov2_states
+Description: Description of bluerov2_states
+Version: 0.0.0
+Cflags: -I/home/zeb/test-8/real_world/src/bluerov2/bluerov2_states/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs mavros_msgs roscpp std_msgs message_generation

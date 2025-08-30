@@ -1,0 +1,47 @@
+# DOBMPC到真实BlueROV2的速度提取配置文件
+
+# ROS话题配置
+pose_topic: "/bluerov2/pose_gt"          # 从DOBMPC环境订阅的位姿话题
+output_topic: "/mavros/rc/override"       # 发送到真实BlueROV2的PWM话题
+
+# 速度提取方式
+velocity_source: "twist"                 # "twist" - 从twist字段直接获取 (推荐)
+                                         # "derivative" - 通过位置差分计算
+
+# PWM参数配置
+pwm_min: 1100                            # PWM最小值
+pwm_mid: 1500                            # PWM中性值  
+pwm_max: 1900                            # PWM最大值
+deadband: 0.023                          # 死区大小
+
+# BlueROV2性能限制 (根据实际测试调整)
+vmax_x: 0.424593                         # 前进/后退最大速度 (m/s)
+vmax_y: 0.147                            # 左右最大速度 (m/s)
+vmax_z: 0.2                              # 上下最大速度 (m/s) 
+yaw_max: 0.334                           # 最大角速度 (rad/s)
+
+# 通道映射 (根据您的BlueROV2配置调整)
+ch_forward: 5                            # 前进/后退通道 (通常是Channel 5)
+ch_lateral: 6                            # 左右移动通道 (通常是Channel 6)  
+ch_vertical: 3                           # 上下移动通道 (通常是Channel 3)
+ch_yaw: 4                                # 偏航旋转通道 (通常是Channel 4)
+
+# 针对不同轴的PWM参数微调 (可选)
+# 如果不同方向的推进器响应特性不同，可以分别调整
+pwm_params:
+  x:                                     # 前进/后退轴
+    min: 1440
+    mid: 1500  
+    max: 1560
+  y:                                     # 左右轴
+    min: 1464
+    mid: 1500
+    max: 1536
+  z:                                     # 上下轴  
+    min: 1464
+    mid: 1500
+    max: 1536
+  yaw:                                   # 偏航轴
+    min: 1464
+    mid: 1500
+    max: 1536 

@@ -1,0 +1,8 @@
+prefix=/home/zeb/test-8/real_world/install
+
+Name: real_test
+Description: Description of real_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs geometry_msgs nav_msgs mavros_msgs

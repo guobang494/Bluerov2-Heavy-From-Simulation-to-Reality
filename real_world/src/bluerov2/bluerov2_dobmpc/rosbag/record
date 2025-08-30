@@ -1,0 +1,72 @@
+#!/bin/bash
+
+# BlueROV2 8-Thruster DOB-MPC Data Recording Script
+# Records robot position, reference path, velocity, and thruster thrust
+
+# Set rosbag filename (with timestamp)
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+BAG_NAME="bluerov2_dobmpc_${TIMESTAMP}"
+
+# Set save path
+BAG_PATH="/home/zeb/test-8/eight-thurster/src/bluerov2/bluerov2_dobmpc/rosbag/${BAG_NAME}.bag"
+
+echo "BlueROV2 DOB-MPC Data Recording Script"
+echo "======================================"
+echo "Waiting for simulation to start..."
+
+# Wait for simulation to start by checking for key topics
+echo "Checking for simulation topics..."
+while ! rostopic list | grep -q "/bluerov2/pose_gt"; do
+    echo "Waiting for /bluerov2/pose_gt topic..."
+    sleep 1
+done
+
+echo "Simulation detected! Starting recording..."
+echo "Recording duration: 60 seconds"
+echo "Save file: ${BAG_PATH}"
+
+# Start recording with timeout (60 seconds)
+timeout 181 rosbag record -O ${BAG_PATH} \
+    /bluerov2/pose_gt \
+    /bluerov2/mpc/reference \
+    /bluerov2/mpc/error \
+    /bluerov2/ekf/pose \
+    /bluerov2/ekf/disturbance \
+    /bluerov2/thrusters/0/thrust \
+    /bluerov2/thrusters/1/thrust \
+    /bluerov2/thrusters/2/thrust \
+    /bluerov2/thrusters/3/thrust \
+    /bluerov2/thrusters/4/thrust \
+    /bluerov2/thrusters/5/thrust \
+    /bluerov2/thrusters/6/thrust \
+    /bluerov2/thrusters/7/thrust \
+    /bluerov2/thrusters/0/thrust_wrench \
+    /bluerov2/thrusters/1/thrust_wrench \
+    /bluerov2/thrusters/2/thrust_wrench \
+    /bluerov2/thrusters/3/thrust_wrench \
+    /bluerov2/thrusters/4/thrust_wrench \
+    /bluerov2/thrusters/5/thrust_wrench \
+    /bluerov2/thrusters/6/thrust_wrench \
+    /bluerov2/thrusters/7/thrust_wrench \
+    /bluerov2/thrusters/0/input \
+    /bluerov2/thrusters/1/input \
+    /bluerov2/thrusters/2/input \
+    /bluerov2/thrusters/3/input \
+    /bluerov2/thrusters/4/input \
+    /bluerov2/thrusters/5/input \
+    /bluerov2/thrusters/6/input \
+    /bluerov2/thrusters/7/input \
+    /bluerov2/control_input/0 \
+    /bluerov2/control_input/1 \
+    /bluerov2/control_input/2 \
+    /bluerov2/control_input/3
+
+# Check if recording completed successfully
+if [ $? -eq 124 ]; then
+    echo "Recording completed after 60 seconds!"
+else
+    echo "Recording stopped manually or simulation ended."
+fi
+
+echo "Recording finished! File saved at: ${BAG_PATH}"
+echo "File size: $(du -h ${BAG_PATH} | cut -f1)"

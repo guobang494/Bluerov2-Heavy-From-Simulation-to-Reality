@@ -1,0 +1,8 @@
+prefix=/home/zeb/test-8/real_world/devel
+
+Name: uuv_control_msgs
+Description: Description of uuv_control_msgs
+Version: 0.6.13
+Cflags: -I/home/zeb/test-8/real_world/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs geometry_msgs message_runtime

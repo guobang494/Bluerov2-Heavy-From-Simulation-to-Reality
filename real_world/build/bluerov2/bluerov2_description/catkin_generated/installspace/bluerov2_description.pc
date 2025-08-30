@@ -1,0 +1,8 @@
+prefix=/home/zeb/test-8/real_world/install
+
+Name: bluerov2_description
+Description: Description of bluerov2_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

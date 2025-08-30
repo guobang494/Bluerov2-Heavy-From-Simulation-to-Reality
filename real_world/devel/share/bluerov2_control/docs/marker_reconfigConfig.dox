@@ -1,0 +1,12 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~scale_x" : \b [double] Marker Scale x min: 0.0, default: 1.0, max: 400.0
+- \b "~scale_y" : \b [double] Marker Scale y min: 0.0, default: 1.0, max: 400.0
+- \b "~scale_z" : \b [double] Marker Scale z min: 0.0, default: 1.0, max: 400.0
+- \b "~color_r" : \b [double] Marker Color r min: 0.0, default: 1.0, max: 1.0
+- \b "~color_g" : \b [double] Marker Color g min: 0.0, default: 0.0, max: 1.0
+- \b "~color_b" : \b [double] Marker Color b min: 0.0, default: 0.0, max: 1.0
+- \b "~color_a" : \b [double] Marker Opacity min: 0.0, default: 1.0, max: 1.0
+
