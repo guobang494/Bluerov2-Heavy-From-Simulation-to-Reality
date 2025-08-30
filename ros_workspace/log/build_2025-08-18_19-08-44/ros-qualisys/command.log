@@ -1,0 +1,2 @@
+Invoking command in '/home/zeb/ros_workspace/build/ros-qualisys': /usr/local/bin/cmake --build /home/zeb/ros_workspace/build/ros-qualisys -- -j22 -l22
+Invoked command in '/home/zeb/ros_workspace/build/ros-qualisys' returned '2': /usr/local/bin/cmake --build /home/zeb/ros_workspace/build/ros-qualisys -- -j22 -l22

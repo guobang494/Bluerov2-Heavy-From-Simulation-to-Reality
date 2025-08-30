@@ -1,0 +1,120 @@
+/opt/cmake-3.26.4-linux-x86_64/bin/cmake -S/home/zeb/ros_workspace/src/ros-qualisys -B/home/zeb/ros_workspace/build/ros-qualisys --check-build-system CMakeFiles/Makefile.cmake 0
+/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_progress_start /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles /home/zeb/ros_workspace/build/ros-qualisys//CMakeFiles/progress.marks
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/usr/bin/make  -f CMakeFiles/ros-qualisys.dir/build.make CMakeFiles/ros-qualisys.dir/depend
+make[2]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+cd /home/zeb/ros_workspace/build/ros-qualisys && /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles/ros-qualisys.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/usr/bin/make  -f CMakeFiles/ros-qualisys.dir/build.make CMakeFiles/ros-qualisys.dir/build
+make[2]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+make[2]: Nothing to be done for 'CMakeFiles/ros-qualisys.dir/build'.
+make[2]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+[ 50%] Built target ros-qualisys
+/usr/bin/make  -f CMakeFiles/ros-qualisys-node.dir/build.make CMakeFiles/ros-qualisys-node.dir/depend
+make[2]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+cd /home/zeb/ros_workspace/build/ros-qualisys && /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles/ros-qualisys-node.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/usr/bin/make  -f CMakeFiles/ros-qualisys-node.dir/build.make CMakeFiles/ros-qualisys-node.dir/build
+make[2]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+make[2]: Nothing to be done for 'CMakeFiles/ros-qualisys-node.dir/build'.
+make[2]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+[100%] Built target ros-qualisys-node
+make[1]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_progress_start /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles 0
+-- Install configuration: "Release"
+/opt/cmake-3.26.4-linux-x86_64/bin/cmake -S/home/zeb/ros_workspace/src/ros-qualisys -B/home/zeb/ros_workspace/build/ros-qualisys --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/make  -f CMakeFiles/Makefile2 uninstall
+make[1]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/opt/cmake-3.26.4-linux-x86_64/bin/cmake -S/home/zeb/ros_workspace/src/ros-qualisys -B/home/zeb/ros_workspace/build/ros-qualisys --check-build-system CMakeFiles/Makefile.cmake 0
+/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_progress_start /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles 0
+/usr/bin/make  -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
+make[2]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/usr/bin/make  -f CMakeFiles/ros-qualisys-uninstall.dir/build.make CMakeFiles/ros-qualisys-uninstall.dir/depend
+make[3]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+cd /home/zeb/ros_workspace/build/ros-qualisys && /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles/ros-qualisys-uninstall.dir/DependInfo.cmake --color=
+make[3]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/usr/bin/make  -f CMakeFiles/ros-qualisys-uninstall.dir/build.make CMakeFiles/ros-qualisys-uninstall.dir/build
+make[3]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/opt/cmake-3.26.4-linux-x86_64/bin/cmake -DPACKAGE_CREATES_DOT_CATKIN=TRUE -P /home/zeb/ros_workspace/build/ros-qualisys/cmake/cmake_uninstall.cmake
+-- catkin path: /home/zeb/ros_workspace/install/ros-qualisys/.catkin
+-- Try to remove /home/zeb/ros_workspace/install/ros-qualisys/.catkin
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysTargets-release.cmake"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysTargets.cmake"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysConfigVersion.cmake"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysConfig.cmake"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/package.xml"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/hook/python_path.dsv"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/hook/ament_prefix_path.dsv"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/share/ament_index/resource_index/packages/ros-qualisys"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/include/ros-qualisys/qualisys-to-ros.hpp"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/lib/pkgconfig/ros-qualisys.pc"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/launch/qualisys_bauzil_bringup.launch"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/config/bauzil-qualisys.yaml"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/package.xml"
+-- File "/home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/package.xml" does not exist.
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/lib/ros-qualisys/ros-qualisys"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/lib/libros-qualisys.so"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/lib/libros-qualisys.so.1.0.0"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/.rosinstall"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/local_setup.fish"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/setup.fish"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/local_setup.zsh"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/setup.zsh"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/local_setup.sh"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/setup.sh"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/local_setup.bash"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/setup.bash"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/env.sh"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/_setup_util.py"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/include/ros-qualisys/warning.hh"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/include/ros-qualisys/deprecated.hh"
+-- Uninstalling "/home/zeb/ros_workspace/install/ros-qualisys/include/ros-qualisys/config.hh"
+make[3]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+Built target ros-qualisys-uninstall
+/usr/bin/make  -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
+make[3]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+cd /home/zeb/ros_workspace/build/ros-qualisys && /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles/uninstall.dir/DependInfo.cmake --color=
+make[3]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/usr/bin/make  -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
+make[3]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+make[3]: Nothing to be done for 'CMakeFiles/uninstall.dir/build'.
+make[3]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+Built target uninstall
+make[2]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_progress_start /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles 0
+make[1]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/include/ros-qualisys/config.hh
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/include/ros-qualisys/deprecated.hh
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/include/ros-qualisys/warning.hh
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/_setup_util.py
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/env.sh
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/setup.bash
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/local_setup.bash
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/setup.sh
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/local_setup.sh
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/setup.zsh
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/local_setup.zsh
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/setup.fish
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/local_setup.fish
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/.rosinstall
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/lib/libros-qualisys.so.1.0.0
+-- Set runtime path of "/home/zeb/ros_workspace/install/ros-qualisys/lib/libros-qualisys.so.1.0.0" to ""
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/lib/libros-qualisys.so
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/lib/ros-qualisys/ros-qualisys
+-- Set runtime path of "/home/zeb/ros_workspace/install/ros-qualisys/lib/ros-qualisys/ros-qualisys" to "$ORIGIN/../lib"
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/package.xml
+-- Up-to-date: /home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/config
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/config/bauzil-qualisys.yaml
+-- Up-to-date: /home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/launch
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/launch/qualisys_bauzil_bringup.launch
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/lib/pkgconfig/ros-qualisys.pc
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/include/ros-qualisys/qualisys-to-ros.hpp
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/share/ament_index/resource_index/packages/ros-qualisys
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/hook/ament_prefix_path.dsv
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/hook/python_path.dsv
+-- Up-to-date: /home/zeb/ros_workspace/install/ros-qualisys/share/ros-qualisys/package.xml
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysConfig.cmake
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysConfigVersion.cmake
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysTargets.cmake
+-- Installing: /home/zeb/ros_workspace/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysTargets-release.cmake

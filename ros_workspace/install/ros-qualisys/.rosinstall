@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zeb/ros_workspace/install/ros-qualisys/setup.sh

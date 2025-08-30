@@ -1,0 +1,2 @@
+Invoking command in '/home/zeb/ros_workspace/build/ros-qualisys': /usr/local/bin/cmake /home/zeb/ros_workspace/src/ros-qualisys -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/zeb/ros_workspace/install/ros-qualisys
+Invoked command in '/home/zeb/ros_workspace/build/ros-qualisys' returned '1': /usr/local/bin/cmake /home/zeb/ros_workspace/src/ros-qualisys -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/zeb/ros_workspace/install/ros-qualisys

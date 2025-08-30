@@ -1,0 +1,129 @@
+[0mCMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:[m[K In member function ‘[01m[Kbool ros_qualisys::QualisysToRos::connect()[m[K’:
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:108:9:[m[K [01;31m[Kerror: [m[Kcontinue statement not within a loop
+  108 |         [01;31m[Kcontinue[m[K;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:118:7:[m[K [01;31m[Kerror: [m[Kcontinue statement not within a loop
+  118 |       [01;31m[Kcontinue[m[K;
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:121:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  121 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/zeb/ros_workspace/src/ros-qualisys/include/ros-qualisys/qualisys-to-ros.hpp:9[m[K,
+                 from [01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:5[m[K:
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:[m[K At global scope:
+[01m[K/opt/ros/noetic/include/ros/console.h:404:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+  404 |   [01;31m[Kdo[m[K \
+      |   [01;31m[K^~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:582:43:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_STREAM_COND[m[K’
+  582 | #define ROS_LOG_STREAM(level, name, args) [01;36m[KROS_LOG_STREAM_COND[m[K(true, level, name, args)
+      |                                           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:111:31:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_STREAM[m[K’
+  111 | #define ROS_INFO_STREAM(args) [01;36m[KROS_LOG_STREAM[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+      |                               [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:122:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO_STREAM[m[K’
+  122 |   [01;36m[KROS_INFO_STREAM[m[K("QualisysToRos::connect(): Connected successfully");
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:411:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+  411 |   } [01;31m[Kwhile[m[K(false)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:582:43:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_STREAM_COND[m[K’
+  582 | #define ROS_LOG_STREAM(level, name, args) [01;36m[KROS_LOG_STREAM_COND[m[K(true, level, name, args)
+      |                                           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:111:31:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_STREAM[m[K’
+  111 | #define ROS_INFO_STREAM(args) [01;36m[KROS_LOG_STREAM[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+      |                               [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:122:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO_STREAM[m[K’
+  122 |   [01;36m[KROS_INFO_STREAM[m[K("QualisysToRos::connect(): Connected successfully");
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:123:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  123 |   [01;31m[Kreturn[m[K failure >= 20 && success;
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:126:6:[m[K [01;31m[Kerror: [m[K‘[01m[KQualisysToRos[m[K’ has not been declared
+  126 | void [01;31m[KQualisysToRos[m[K::run() {
+      |      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:[m[K In function ‘[01m[Kvoid run()[m[K’:
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:130:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krt_packet_[m[K’ was not declared in this scope
+  130 |   [01;31m[Krt_packet_[m[K = crt_protocol_.GetRTPacket();
+      |   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:130:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kcrt_protocol_[m[K’ was not declared in this scope
+  130 |   rt_packet_ = [01;31m[Kcrt_protocol_[m[K.GetRTPacket();
+      |                [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:131:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kbody_count_[m[K’ was not declared in this scope
+  131 |   [01;31m[Kbody_count_[m[K = rt_packet_->Get6DOFBodyCount();
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:134:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kpacket_type_[m[K’ was not declared in this scope
+  134 |   if (crt_protocol_.Receive([01;31m[Kpacket_type_[m[K, true) ==
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:152:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx_[m[K’ was not declared in this scope
+  152 |             if (rt_packet_->Get6DOFBody(i, [01;31m[Kpx_[m[K, py_, pz_,
+      |                                            [01;31m[K^~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:152:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kpy_[m[K’ was not declared in this scope
+  152 |             if (rt_packet_->Get6DOFBody(i, px_, [01;31m[Kpy_[m[K, pz_,
+      |                                                 [01;31m[K^~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:152:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kpz_[m[K’ was not declared in this scope
+  152 |             if (rt_packet_->Get6DOFBody(i, px_, py_, [01;31m[Kpz_[m[K,
+      |                                                      [01;31m[K^~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:153:41:[m[K [01;31m[Kerror: [m[K‘[01m[Krotation_matrix_[m[K’ was not declared in this scope
+  153 |                                         [01;31m[Krotation_matrix_[m[K.data())) {
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:164:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbody_name_[m[K’ was not declared in this scope
+  164 |                 [01;31m[Kbody_name_[m[K = crt_protocol_.Get6DOFBodyName(i);
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:165:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kros_rotation_matrix_[m[K’ was not declared in this scope
+  165 |                 [01;31m[Kros_rotation_matrix_[m[K.setValue(
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:171:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kros_quaternion_[m[K’ was not declared in this scope
+  171 |                 ros_rotation_matrix_.getRotation([01;31m[Kros_quaternion_[m[K);
+      |                                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:176:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kros_transform_[m[K’ was not declared in this scope
+  176 |                 [01;31m[Kros_transform_[m[K.transform.translation.x = px_ / 1000.0;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:183:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kfixed_frame_id_[m[K’ was not declared in this scope
+  183 |                 ros_transform_.header.frame_id = [01;31m[Kfixed_frame_id_[m[K;
+      |                                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:186:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope
+  186 |                 [01;31m[Kpublisher_[m[K.sendTransform(ros_transform_);
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:198:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krate_[m[K’ was not declared in this scope
+  198 |   [01;31m[Krate_[m[K->sleep();
+      |   [01;31m[K^~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:[m[K At global scope:
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:201:6:[m[K [01;31m[Kerror: [m[K‘[01m[KQualisysToRos[m[K’ has not been declared
+  201 | void [01;31m[KQualisysToRos[m[K::terminate() {
+      |      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:[m[K In function ‘[01m[Kvoid terminate()[m[K’:
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:203:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcrt_protocol_[m[K’ was not declared in this scope
+  203 |   [01;31m[Kcrt_protocol_[m[K.StreamFramesStop();
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:[m[K At global scope:
+[01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:207:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  207 | [01;31m[K}[m[K  // namespace ros_qualisys
+      | [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/ros-qualisys.dir/build.make:79: CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3065: CMakeFiles/ros-qualisys.dir/all] Error 2
+make: *** [Makefile:149: all] Error 2

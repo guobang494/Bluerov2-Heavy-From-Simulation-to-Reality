@@ -1,0 +1,186 @@
+[0.000000] (-) TimerEvent: {}
+[0.000153] (ros-qualisys) JobQueued: {'identifier': 'ros-qualisys', 'dependencies': OrderedDict()}
+[0.000518] (ros-qualisys) JobStarted: {'identifier': 'ros-qualisys'}
+[0.018408] (ros-qualisys) JobProgress: {'identifier': 'ros-qualisys', 'progress': 'cmake'}
+[0.018974] (ros-qualisys) Command: {'cmd': ['/usr/local/bin/cmake', '/home/zeb/ros_workspace/src/ros-qualisys', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/zeb/ros_workspace/install/ros-qualisys'], 'cwd': '/home/zeb/ros_workspace/build/ros-qualisys', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'zeb'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '2079'), ('ROS_PACKAGE_PATH', '/home/zeb/ros_workspace/install/ros-qualisys/share:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/openrobots/lib:/home/zeb/acados/lib:/home/zeb/ros_workspace/install/ros-qualisys/lib:/opt/ros/noetic/lib'), ('ACADOS_SOURCE_DIR', '/home/zeb/acados'), ('HOME', '/home/zeb'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/zeb/ros_workspace/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1806'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '26758'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/zeb/ros_workspace/install'), ('ROS_DISTRO', 'noetic'), ('LOGNAME', 'zeb'), ('JOURNAL_STREAM', '8:29934'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '1'), ('PKG_CONFIG_PATH', '/home/zeb/ros_workspace/install/ros-qualisys/lib/x86_64-linux-gnu/pkgconfig:/home/zeb/ros_workspace/install/ros-qualisys/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/noetic/bin:/home/zeb/miniconda3/condabin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/zeb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zeb-rog:@/tmp/.ICE-unix/2137,unix/zeb-rog:/tmp/.ICE-unix/2137'), ('INVOCATION_ID', '7924bcbc540e4d9eb53e5d93fff77c23'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('CONDA_PYTHON_EXE', '/home/zeb/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:c583c19c-0cc7-49e8-9135-0811a191c221'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeb/ros_workspace/build/ros-qualisys'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zeb/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/zeb/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/noetic/lib/python3/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/zeb/ros_workspace/install/ros-qualisys:/opt/ros/noetic')]), 'shell': False}
+[0.099889] (-) TimerEvent: {}
+[0.200330] (-) TimerEvent: {}
+[0.300666] (-) TimerEvent: {}
+[0.400945] (-) TimerEvent: {}
+[0.501157] (-) TimerEvent: {}
+[0.601506] (-) TimerEvent: {}
+[0.701838] (-) TimerEvent: {}
+[0.802065] (-) TimerEvent: {}
+[0.902272] (-) TimerEvent: {}
+[1.002489] (-) TimerEvent: {}
+[1.102703] (-) TimerEvent: {}
+[1.202957] (-) TimerEvent: {}
+[1.303176] (-) TimerEvent: {}
+[1.403441] (-) TimerEvent: {}
+[1.503651] (-) TimerEvent: {}
+[1.603861] (-) TimerEvent: {}
+[1.704045] (-) TimerEvent: {}
+[1.804265] (-) TimerEvent: {}
+[1.904482] (-) TimerEvent: {}
+[2.004737] (-) TimerEvent: {}
+[2.104975] (-) TimerEvent: {}
+[2.205227] (-) TimerEvent: {}
+[2.305468] (-) TimerEvent: {}
+[2.405700] (-) TimerEvent: {}
+[2.505907] (-) TimerEvent: {}
+[2.606103] (-) TimerEvent: {}
+[2.706353] (-) TimerEvent: {}
+[2.806628] (-) TimerEvent: {}
+[2.906767] (-) TimerEvent: {}
+[3.006935] (-) TimerEvent: {}
+[3.107154] (-) TimerEvent: {}
+[3.207404] (-) TimerEvent: {}
+[3.307695] (-) TimerEvent: {}
+[3.407946] (-) TimerEvent: {}
+[3.508226] (-) TimerEvent: {}
+[3.608436] (-) TimerEvent: {}
+[3.708659] (-) TimerEvent: {}
+[3.808899] (-) TimerEvent: {}
+[3.909099] (-) TimerEvent: {}
+[4.009317] (-) TimerEvent: {}
+[4.109578] (-) TimerEvent: {}
+[4.209877] (-) TimerEvent: {}
+[4.310118] (-) TimerEvent: {}
+[4.410365] (-) TimerEvent: {}
+[4.510646] (-) TimerEvent: {}
+[4.610857] (-) TimerEvent: {}
+[4.711072] (-) TimerEvent: {}
+[4.811341] (-) TimerEvent: {}
+[4.911707] (-) TimerEvent: {}
+[5.012033] (-) TimerEvent: {}
+[5.112365] (-) TimerEvent: {}
+[5.212639] (-) TimerEvent: {}
+[5.312933] (-) TimerEvent: {}
+[5.413270] (-) TimerEvent: {}
+[5.513524] (-) TimerEvent: {}
+[5.613831] (-) TimerEvent: {}
+[5.706565] (ros-qualisys) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[5.713914] (-) TimerEvent: {}
+[5.717613] (ros-qualisys) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.778626] (ros-qualisys) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.784367] (ros-qualisys) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.784535] (ros-qualisys) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.784747] (ros-qualisys) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.787964] (ros-qualisys) StdoutLine: {'line': b'-- Configuring "jrl-cmakemodules" (http://github.com/jrl-umi3218/jrl-cmakemodules)\n'}
+[5.788056] (ros-qualisys) StdoutLine: {'line': b'-- Package version (ROS package.xml): 1.0.0\n'}
+[5.793578] (ros-qualisys) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[5.813983] (-) TimerEvent: {}
+[5.816647] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-pedantic\n'}
+[5.873856] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-pedantic - Success\n'}
+[5.874828] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wno-long-long\n'}
+[5.914108] (-) TimerEvent: {}
+[5.943375] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wno-long-long - Success\n'}
+[5.944171] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wall\n'}
+[6.004326] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wall - Success\n'}
+[6.005248] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wextra\n'}
+[6.014157] (-) TimerEvent: {}
+[6.071403] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wextra - Success\n'}
+[6.072081] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wcast-align\n'}
+[6.114292] (-) TimerEvent: {}
+[6.134597] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wcast-align - Success\n'}
+[6.135557] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wcast-qual\n'}
+[6.203802] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wcast-qual - Success\n'}
+[6.204905] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wformat\n'}
+[6.214375] (-) TimerEvent: {}
+[6.269221] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wformat - Success\n'}
+[6.270210] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wwrite-strings\n'}
+[6.314502] (-) TimerEvent: {}
+[6.332214] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wwrite-strings - Success\n'}
+[6.333292] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wconversion\n'}
+[6.393804] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Wconversion - Success\n'}
+[6.394567] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Werror\n'}
+[6.414596] (-) TimerEvent: {}
+[6.425315] (ros-qualisys) StdoutLine: {'line': b'-- Performing Test res_-Werror - Failed\n'}
+[6.433317] (ros-qualisys) StdoutLine: {'line': b'-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) \n'}
+[6.433663] (ros-qualisys) StdoutLine: {'line': b'-- Failed to find Doxygen, documentation will not be generated.\n'}
+[6.441382] (ros-qualisys) StdoutLine: {'line': b'-- Configuring "ros-qualisys" (https://github.com/gepetto/ros-qualisys)\n'}
+[6.441729] (ros-qualisys) StdoutLine: {'line': b'-- Package version (ROS package.xml): 1.0.0\n'}
+[6.457525] (ros-qualisys) StdoutLine: {'line': b'-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) \n'}
+[6.457665] (ros-qualisys) StdoutLine: {'line': b'-- Failed to find Doxygen, documentation will not be generated.\n'}
+[6.493942] (ros-qualisys) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[6.499142] (ros-qualisys) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.514681] (-) TimerEvent: {}
+[6.547726] (ros-qualisys) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.553985] (ros-qualisys) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.554173] (ros-qualisys) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.554483] (ros-qualisys) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.578103] (ros-qualisys) StdoutLine: {'line': b'-- Using CATKIN_DEVEL_PREFIX: /home/zeb/ros_workspace/build/ros-qualisys/devel\n'}
+[6.578212] (ros-qualisys) StdoutLine: {'line': b'-- Using CMAKE_PREFIX_PATH: /home/zeb/ros_workspace/install/ros-qualisys;/opt/ros/noetic\n'}
+[6.578286] (ros-qualisys) StdoutLine: {'line': b'-- This workspace overlays: /opt/ros/noetic\n'}
+[6.613431] (ros-qualisys) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[6.613702] (ros-qualisys) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.613780] (ros-qualisys) StdoutLine: {'line': b'-- Using Debian Python package layout\n'}
+[6.614743] (-) TimerEvent: {}
+[6.639992] (ros-qualisys) StdoutLine: {'line': b'-- Found PY_em: /usr/lib/python3/dist-packages/em.py  \n'}
+[6.640156] (ros-qualisys) StdoutLine: {'line': b'-- Using empy: /usr/lib/python3/dist-packages/em.py\n'}
+[6.714911] (-) TimerEvent: {}
+[6.750853] (ros-qualisys) StdoutLine: {'line': b'-- Using CATKIN_ENABLE_TESTING: ON\n'}
+[6.751023] (ros-qualisys) StdoutLine: {'line': b'-- Call enable_testing()\n'}
+[6.751078] (ros-qualisys) StdoutLine: {'line': b'-- Using CATKIN_TEST_RESULTS_DIR: /home/zeb/ros_workspace/build/ros-qualisys/test_results\n'}
+[6.815034] (-) TimerEvent: {}
+[6.915386] (-) TimerEvent: {}
+[6.939812] (ros-qualisys) StdoutLine: {'line': b'-- Forcing gtest/gmock from source, though one was otherwise available.\n'}
+[6.940041] (ros-qualisys) StdoutLine: {'line': b"-- Found gtest sources under '/usr/src/googletest': gtests will be built\n"}
+[6.940126] (ros-qualisys) StdoutLine: {'line': b"-- Found gmock sources under '/usr/src/googletest': gmock will be built\n"}
+[6.941308] (ros-qualisys) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):\n'}
+[6.941434] (ros-qualisys) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[6.941506] (ros-qualisys) StderrLine: {'line': b'  CMake.\n'}
+[6.941569] (ros-qualisys) StderrLine: {'line': b'\n'}
+[6.941629] (ros-qualisys) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[6.941704] (ros-qualisys) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[6.941767] (ros-qualisys) StderrLine: {'line': b'\n'}
+[6.941830] (ros-qualisys) StderrLine: {'line': b'\x1b[0m\n'}
+[6.945946] (ros-qualisys) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):\n'}
+[6.946018] (ros-qualisys) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[6.946076] (ros-qualisys) StderrLine: {'line': b'  CMake.\n'}
+[6.946131] (ros-qualisys) StderrLine: {'line': b'\n'}
+[6.946186] (ros-qualisys) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[6.946247] (ros-qualisys) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[6.946304] (ros-qualisys) StderrLine: {'line': b'\n'}
+[6.946360] (ros-qualisys) StderrLine: {'line': b'\x1b[0m\n'}
+[6.947065] (ros-qualisys) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):\n'}
+[6.947164] (ros-qualisys) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[6.947232] (ros-qualisys) StderrLine: {'line': b'  CMake.\n'}
+[6.947288] (ros-qualisys) StderrLine: {'line': b'\n'}
+[6.947342] (ros-qualisys) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[6.947398] (ros-qualisys) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[6.947453] (ros-qualisys) StderrLine: {'line': b'\n'}
+[6.947507] (ros-qualisys) StderrLine: {'line': b'\x1b[0m\n'}
+[6.976656] (ros-qualisys) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[6.980195] (ros-qualisys) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.987055] (ros-qualisys) StdoutLine: {'line': b'-- Using Python nosetests: /usr/bin/nosetests3\n'}
+[7.015461] (-) TimerEvent: {}
+[7.030946] (ros-qualisys) StdoutLine: {'line': b'-- catkin 0.8.12\n'}
+[7.031126] (ros-qualisys) StdoutLine: {'line': b'-- BUILD_SHARED_LIBS is on\n'}
+[7.115669] (-) TimerEvent: {}
+[7.148435] (ros-qualisys) StdoutLine: {'line': b'-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy\n'}
+[7.174600] (ros-qualisys) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: unit_test_framework \n'}
+[7.176453] (ros-qualisys) StdoutLine: {'line': b'-- Create files for AMENT (ROS 2)\n'}
+[7.177811] (ros-qualisys) StdoutLine: {'line': b'-- Create files for AMENT (ROS 2)\n'}
+[7.178657] (ros-qualisys) StdoutLine: {'line': b'-- Create files for AMENT (ROS 2)\n'}
+[7.180323] (ros-qualisys) StdoutLine: {'line': b'-- Create files for AMENT (ROS 2)\n'}
+[7.181569] (ros-qualisys) StdoutLine: {'line': b'-- Create files for AMENT (ROS 2)\n'}
+[7.182579] (ros-qualisys) StdoutLine: {'line': b'-- Create files for AMENT (ROS 2)\n'}
+[7.183426] (ros-qualisys) StdoutLine: {'line': b'-- Create files for AMENT (ROS 2)\n'}
+[7.184911] (ros-qualisys) StdoutLine: {'line': b'-- Create files for AMENT (ROS 2)\n'}
+[7.186081] (ros-qualisys) StdoutLine: {'line': b'-- Configuring done (7.2s)\n'}
+[7.188245] (ros-qualisys) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:81 (add_executable):\n'}
+[7.188320] (ros-qualisys) StderrLine: {'line': b'  Cannot find source file:\n'}
+[7.188381] (ros-qualisys) StderrLine: {'line': b'\n'}
+[7.188438] (ros-qualisys) StderrLine: {'line': b'    src/qualisys_node.cpp\n'}
+[7.188491] (ros-qualisys) StderrLine: {'line': b'\n'}
+[7.188547] (ros-qualisys) StderrLine: {'line': b'\x1b[0m\n'}
+[7.189368] (ros-qualisys) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:81 (add_executable):\n'}
+[7.189432] (ros-qualisys) StderrLine: {'line': b'  No SOURCES given to target: qualisys_node\n'}
+[7.189490] (ros-qualisys) StderrLine: {'line': b'\n'}
+[7.189547] (ros-qualisys) StderrLine: {'line': b'\x1b[0m\n'}
+[7.189602] (ros-qualisys) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[7.194364] (ros-qualisys) CommandEnded: {'returncode': 1}
+[7.205702] (ros-qualisys) JobEnded: {'identifier': 'ros-qualisys', 'rc': 1}
+[7.215810] (-) TimerEvent: {}
+[7.216084] (-) EventReactorShutdown: {}

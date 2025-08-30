@@ -1,0 +1,108 @@
+[0.019s] Invoking command in '/home/zeb/ros_workspace/build/ros-qualisys': /usr/local/bin/cmake /home/zeb/ros_workspace/src/ros-qualisys -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/zeb/ros_workspace/install/ros-qualisys
+[5.706s] -- The CXX compiler identification is GNU 9.4.0
+[5.717s] -- Detecting CXX compiler ABI info
+[5.778s] -- Detecting CXX compiler ABI info - done
+[5.784s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.784s] -- Detecting CXX compile features
+[5.784s] -- Detecting CXX compile features - done
+[5.787s] -- Configuring "jrl-cmakemodules" (http://github.com/jrl-umi3218/jrl-cmakemodules)
+[5.788s] -- Package version (ROS package.xml): 1.0.0
+[5.793s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[5.816s] -- Performing Test res_-pedantic
+[5.874s] -- Performing Test res_-pedantic - Success
+[5.874s] -- Performing Test res_-Wno-long-long
+[5.943s] -- Performing Test res_-Wno-long-long - Success
+[5.944s] -- Performing Test res_-Wall
+[6.004s] -- Performing Test res_-Wall - Success
+[6.005s] -- Performing Test res_-Wextra
+[6.071s] -- Performing Test res_-Wextra - Success
+[6.072s] -- Performing Test res_-Wcast-align
+[6.134s] -- Performing Test res_-Wcast-align - Success
+[6.135s] -- Performing Test res_-Wcast-qual
+[6.203s] -- Performing Test res_-Wcast-qual - Success
+[6.204s] -- Performing Test res_-Wformat
+[6.269s] -- Performing Test res_-Wformat - Success
+[6.270s] -- Performing Test res_-Wwrite-strings
+[6.332s] -- Performing Test res_-Wwrite-strings - Success
+[6.333s] -- Performing Test res_-Wconversion
+[6.393s] -- Performing Test res_-Wconversion - Success
+[6.394s] -- Performing Test res_-Werror
+[6.425s] -- Performing Test res_-Werror - Failed
+[6.433s] -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+[6.433s] -- Failed to find Doxygen, documentation will not be generated.
+[6.441s] -- Configuring "ros-qualisys" (https://github.com/gepetto/ros-qualisys)
+[6.441s] -- Package version (ROS package.xml): 1.0.0
+[6.457s] -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+[6.457s] -- Failed to find Doxygen, documentation will not be generated.
+[6.494s] -- The C compiler identification is GNU 9.4.0
+[6.499s] -- Detecting C compiler ABI info
+[6.547s] -- Detecting C compiler ABI info - done
+[6.554s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.554s] -- Detecting C compile features
+[6.554s] -- Detecting C compile features - done
+[6.578s] -- Using CATKIN_DEVEL_PREFIX: /home/zeb/ros_workspace/build/ros-qualisys/devel
+[6.578s] -- Using CMAKE_PREFIX_PATH: /home/zeb/ros_workspace/install/ros-qualisys;/opt/ros/noetic
+[6.578s] -- This workspace overlays: /opt/ros/noetic
+[6.613s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.613s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.613s] -- Using Debian Python package layout
+[6.640s] -- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+[6.640s] -- Using empy: /usr/lib/python3/dist-packages/em.py
+[6.750s] -- Using CATKIN_ENABLE_TESTING: ON
+[6.751s] -- Call enable_testing()
+[6.751s] -- Using CATKIN_TEST_RESULTS_DIR: /home/zeb/ros_workspace/build/ros-qualisys/test_results
+[6.939s] -- Forcing gtest/gmock from source, though one was otherwise available.
+[6.940s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[6.940s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[6.941s] [0mCMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+[6.941s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[6.941s]   CMake.
+[6.941s] 
+[6.941s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[6.941s]   CMake that the project does not need compatibility with older versions.
+[6.941s] 
+[6.941s] [0m
+[6.945s] [0mCMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+[6.946s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[6.946s]   CMake.
+[6.946s] 
+[6.946s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[6.946s]   CMake that the project does not need compatibility with older versions.
+[6.946s] 
+[6.946s] [0m
+[6.947s] [0mCMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+[6.947s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[6.947s]   CMake.
+[6.947s] 
+[6.947s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[6.947s]   CMake that the project does not need compatibility with older versions.
+[6.947s] 
+[6.947s] [0m
+[6.976s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[6.980s] -- Found Threads: TRUE  
+[6.987s] -- Using Python nosetests: /usr/bin/nosetests3
+[7.031s] -- catkin 0.8.12
+[7.031s] -- BUILD_SHARED_LIBS is on
+[7.148s] -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[7.174s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: unit_test_framework 
+[7.176s] -- Create files for AMENT (ROS 2)
+[7.177s] -- Create files for AMENT (ROS 2)
+[7.178s] -- Create files for AMENT (ROS 2)
+[7.180s] -- Create files for AMENT (ROS 2)
+[7.181s] -- Create files for AMENT (ROS 2)
+[7.182s] -- Create files for AMENT (ROS 2)
+[7.183s] -- Create files for AMENT (ROS 2)
+[7.184s] -- Create files for AMENT (ROS 2)
+[7.186s] -- Configuring done (7.2s)
+[7.188s] [31mCMake Error at CMakeLists.txt:81 (add_executable):
+[7.188s]   Cannot find source file:
+[7.188s] 
+[7.188s]     src/qualisys_node.cpp
+[7.188s] 
+[7.188s] [0m
+[7.189s] [31mCMake Error at CMakeLists.txt:81 (add_executable):
+[7.189s]   No SOURCES given to target: qualisys_node
+[7.189s] 
+[7.189s] [0m
+[7.189s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[7.194s] Invoked command in '/home/zeb/ros_workspace/build/ros-qualisys' returned '1': /usr/local/bin/cmake /home/zeb/ros_workspace/src/ros-qualisys -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/zeb/ros_workspace/install/ros-qualisys

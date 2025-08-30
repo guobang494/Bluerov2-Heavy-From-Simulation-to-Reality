@@ -1,0 +1,23 @@
+[0.024s] Invoking command in '/home/zeb/ros_workspace/build/ros-qualisys': /usr/local/bin/cmake --build /home/zeb/ros_workspace/build/ros-qualisys -- -j22 -l22
+[0.029s] /opt/cmake-3.26.4-linux-x86_64/bin/cmake -S/home/zeb/ros_workspace/src/ros-qualisys -B/home/zeb/ros_workspace/build/ros-qualisys --check-build-system CMakeFiles/Makefile.cmake 0
+[0.032s] /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_progress_start /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles /home/zeb/ros_workspace/build/ros-qualisys//CMakeFiles/progress.marks
+[0.034s] /usr/bin/make  -f CMakeFiles/Makefile2 all
+[0.036s] make[1]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+[0.036s] /usr/bin/make  -f CMakeFiles/ros-qualisys.dir/build.make CMakeFiles/ros-qualisys.dir/depend
+[0.040s] make[2]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+[0.040s] cd /home/zeb/ros_workspace/build/ros-qualisys && /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/src/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys /home/zeb/ros_workspace/build/ros-qualisys/CMakeFiles/ros-qualisys.dir/DependInfo.cmake --color=
+[0.055s] make[2]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+[0.055s] /usr/bin/make  -f CMakeFiles/ros-qualisys.dir/build.make CMakeFiles/ros-qualisys.dir/build
+[0.063s] make[2]: Entering directory '/home/zeb/ros_workspace/build/ros-qualisys'
+[0.065s] [ 25%] [32mBuilding CXX object CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o[0m
+[0.065s] /usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"ros-qualisys\" -Dros_qualisys_EXPORTS -I/home/zeb/ros_workspace/build/ros-qualisys -I/home/zeb/ros_workspace/build/ros-qualisys/include -I/home/zeb/ros_workspace/src/ros-qualisys/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/local/include/qualisys_cpp_sdk -pedantic -Wno-long-long -Wall -Wextra -Wcast-align -Wcast-qual -Wformat -Wwrite-strings -Wconversion  -O3 -DNDEBUG -fPIC -MD -MT CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o -MF CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o.d -o CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o -c /home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp
+[1.316s] [01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:[m[K In member function ‘[01m[Kbool ros_qualisys::QualisysToRos::connect()[m[K’:
+[1.316s] [01m[K/home/zeb/ros_workspace/src/ros-qualisys/src/qualisys-to-ros.cpp:86:50:[m[K [01;31m[Kerror: [m[K‘[01m[KRateAllFrames[m[K’ is not a member of ‘[01m[KCRTProtocol[m[K’
+[1.316s]    86 |     if (!crt_protocol_.StreamFrames(CRTProtocol::[01;31m[KRateAllFrames[m[K, 0, 0, NULL,
+[1.316s]       |                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[1.741s] make[2]: *** [CMakeFiles/ros-qualisys.dir/build.make:79: CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o] Error 1
+[1.741s] make[2]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+[1.741s] make[1]: *** [CMakeFiles/Makefile2:3065: CMakeFiles/ros-qualisys.dir/all] Error 2
+[1.741s] make[1]: Leaving directory '/home/zeb/ros_workspace/build/ros-qualisys'
+[1.741s] make: *** [Makefile:149: all] Error 2
+[1.743s] Invoked command in '/home/zeb/ros_workspace/build/ros-qualisys' returned '2': /usr/local/bin/cmake --build /home/zeb/ros_workspace/build/ros-qualisys -- -j22 -l22
